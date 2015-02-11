@@ -1,0 +1,25 @@
+{
+  "name": "google_supersearch",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gianordoli/google_supersearch.git"
+  },
+  "author": "Gabriel Gianordoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gianordoli/google_supersearch/issues"
+  },
+  "homepage": "https://github.com/gianordoli/google_supersearch",
+  "dependencies": {
+    "jquery": "^2.1.3",
+    "express": "^4.11.2",
+    "request": "^2.53.0",
+    "xml2js": "^0.4.4"
+  }
+}
