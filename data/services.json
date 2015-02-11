@@ -1,0 +1,9 @@
+{
+	"youtube": { "client": "youtube", "ds": "yt", "address": "https://www.youtube.com/results?search_query=X" },
+	"books": { "client": "books", "ds": "bo", "address": "https://www.google.com/search?q=X&tbm=bks" },
+	"products": { "client": "products-cc", "ds": "sh", "address": "https://www.google.com/#q=X&tbm=shop" },
+	"news": { "client": "news-cc", "ds": "n", "address": "https://www.google.com/#q=X&tbm=nws" },
+	"images": { "client": "img", "ds": "i", "address": "https://www.google.com/search?site=imghp&tbm=isch&q=X&" },
+	"web": { "client": "psy", "ds": "", "address": "https://www.google.com/#q=X" },
+	"recipes": { "client": "psy", "ds": "r", "address": "https://www.google.com/search?q=X&tbs=rcp"  }
+}
