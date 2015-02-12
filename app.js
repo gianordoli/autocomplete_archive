@@ -11,21 +11,12 @@ var languages = jf.readFileSync('data/languages.json');
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
 
-callAutocomplete('a', 'images', 'fr');
+var firstLetter = String.fromCharCode(65);
 
-function concatenateUrl(query, site, language){
-	// console.log('q: ' + query + ', site: ' + site);
-	var service = services[site];
-	// console.log(service);	
-	var requestUrl = 'https://clients1.google.com/complete/search?' +
-					 '&client=toolbar'+
-					 '&q=' + query +
-					 '&hl=' + language +
-					 '&ds=' + service.ds;
+callAutocomplete(firstLetter, 'images', 'fr');
 
-	// console.log(requestUrl);
-	return requestUrl;
-}
+
+/*-------------------- FUNCTIONS --------------------*/
 
 function callAutocomplete(query, site, language){
 	
@@ -50,9 +41,31 @@ function callAutocomplete(query, site, language){
 			// console.log(suggestions);
 
 			var newRecord = createRecord(site, language, suggestions);
-			// console.log(newRecord);
+			console.log(newRecord);
+
+			var index = query.charCodeAt();
+			console.log(index);
+			index++;
+			if(index < 91){
+				var newQuery = String.fromCharCode(index);
+				callAutocomplete(newQuery, 'images', 'fr');
+			}
 		}
 	});
+}
+
+function concatenateUrl(query, site, language){
+	// console.log('q: ' + query + ', site: ' + site);
+	var service = services[site];
+	// console.log(service);	
+	var requestUrl = 'https://clients1.google.com/complete/search?' +
+					 '&client=toolbar'+
+					 '&q=' + query +
+					 '&hl=' + language +
+					 '&ds=' + service.ds;
+
+	// console.log(requestUrl);
+	return requestUrl;
 }
 
 function createRecord(site, language, suggestions){
@@ -61,6 +74,7 @@ function createRecord(site, language, suggestions){
 		date: date.getTime(),
 		service: site,
 		language: language,
+		letter: suggestions[0].charAt(0),
 		results: suggestions
 	};
 	return obj;
