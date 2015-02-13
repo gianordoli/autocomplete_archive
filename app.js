@@ -46,15 +46,13 @@ function callAutocomplete(query, service, language){
 			// Save current result
 			dailySearch.push(newRecord);
 
-			// new iteration
+			// New iteration
 			var letterIndex = query.charCodeAt();
-			// console.log(index);
-			letterIndex++;
-
 			var serviceIndex = parseInt(currIndex(service, services));
 
 			// New letter
-			if(letterIndex < 91){
+			if(letterIndex < 90){
+				letterIndex++;
 				var newQuery = String.fromCharCode(letterIndex);
 				callAutocomplete(newQuery, service, language);
 
@@ -64,9 +62,11 @@ function callAutocomplete(query, service, language){
 				var newService = services[serviceIndex + 1];
 				console.log('call letter ['+newQuery+'] in ['+newService+']');
 				callAutocomplete(newQuery, newService, language);
-				// console.log(checkLastIndex(service, services));
-				// console.log(dailySearch);
-				// saveToDB();
+			
+			// End
+			}else{
+				// console.log(dailySearch);				
+				saveToDB();
 			}
 		}
 	});
