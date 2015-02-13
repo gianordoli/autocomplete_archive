@@ -13,10 +13,12 @@ var dailySearch = [];
 
 var service = services[0];
 var firstLetter = String.fromCharCode(65);
-callAutocomplete(firstLetter, service, 'fr');
+// callAutocomplete(firstLetter, service, 'en');
+
+callAutocomplete('U', services[6], 'en');
 
 
-/*-------------------- FUNCTIONS --------------------*/
+/*-------------------- MAIN FUNCTION --------------------*/
 
 function callAutocomplete(query, service, language){
 
@@ -39,14 +41,20 @@ function callAutocomplete(query, service, language){
 			// console.log(data);
 			var suggestions = data[1];
 			// console.log(suggestions);
+			// console.log(suggestions.length);
 
-			var newRecord = createRecord(service, language, suggestions);
-			console.log(newRecord);
+			// If there's any suggestion at all...
+			if(suggestions.length > 0){
 
-			// Save current result
-			dailySearch.push(newRecord);
+				// Create a new record and save
+				var newRecord = createRecord(service, language, suggestions);
+				console.log(newRecord);
 
-			// New iteration
+				// Save current result
+				dailySearch.push(newRecord);
+			}
+
+			// Next iteration
 			var letterIndex = query.charCodeAt();
 			var serviceIndex = parseInt(currIndex(service, services));
 
@@ -55,16 +63,20 @@ function callAutocomplete(query, service, language){
 				letterIndex++;
 				var newQuery = String.fromCharCode(letterIndex);
 				callAutocomplete(newQuery, service, language);
+			}
 
 			// New service
-			}else if(serviceIndex < services.length - 1){
+			else if(serviceIndex < services.length - 1){
 				var newQuery = String.fromCharCode(65);
 				var newService = services[serviceIndex + 1];
-				console.log('call letter ['+newQuery+'] in ['+newService+']');
+				// console.log('called letter ['+newQuery+'] in ['+newService+']');
 				callAutocomplete(newQuery, newService, language);
 			
+			
+			}
+
 			// End
-			}else{
+			else{
 				// console.log(dailySearch);				
 				saveToDB();
 			}
@@ -72,37 +84,9 @@ function callAutocomplete(query, service, language){
 	});
 }
 
-function currIndex(obj, array){
-	for(var i = 0; i < array.length; i++){
-		// console.log(i);
-		if(array[i] == obj){
-			return i;
-		}		
-	}
-}
+/*-------------------- FUNCTIONS --------------------*/
 
-
-function getCharset(response){
-	var headers = response.headers;
-	var contentType = headers['content-type'];
-	var charset = contentType.substring(contentType.lastIndexOf('=') + 1);
-	// console.log(charset);
-	return charset;
-}
-
-function saveToDB(){
-	console.log('-----------------------------------------');
-	var file = 'db/data.json'
-	var obj = dailySearch;
-	 
-	jf.writeFile(file, obj, function(err) {
-	  // console.log(err);
-	  if(!err){
-	  	console.log('Results successfully saved at ' + file);
-	  }
-	});
-}
-
+// Creates url for reqquest, concatenating the parameters
 function concatenateUrl(query, service, language){
 	// console.log(service.ds);	
 	var requestUrl = 'https://clients1.google.com/complete/search?' +
@@ -115,7 +99,9 @@ function concatenateUrl(query, service, language){
 	return requestUrl;
 }
 
+// Returns a record
 function createRecord(service, language, suggestions){
+
 	var obj = {
 		date: new Date(),
 		site: service.site,
@@ -124,4 +110,39 @@ function createRecord(service, language, suggestions){
 		results: suggestions
 	};
 	return obj;
+}
+
+// Returns the current index of a given object inside an array.
+// Utilized here to check if all services
+// and languages were already retrieved
+function currIndex(obj, array){
+	for(var i = 0; i < array.length; i++){
+		// console.log(i);
+		if(array[i] == obj){
+			return i;
+		}		
+	}
+}
+
+// Scrapes the server's response to detect the charset
+function getCharset(response){
+	var headers = response.headers;
+	var contentType = headers['content-type'];
+	var charset = contentType.substring(contentType.lastIndexOf('=') + 1);
+	// console.log(charset);
+	return charset;
+}
+
+// Saves results to file
+function saveToDB(){
+	console.log('-----------------------------------------');
+	var file = 'db/data.json'
+	var obj = dailySearch;
+	 
+	jf.writeFile(file, obj, function(err) {
+	  // console.log(err);
+	  if(!err){
+	  	console.log('Results successfully saved at ' + file);
+	  }
+	});
 }
