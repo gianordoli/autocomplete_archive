@@ -13,9 +13,7 @@ var dailySearch = [];
 
 var service = services[0];
 var firstLetter = String.fromCharCode(65);
-// callAutocomplete(firstLetter, service, 'en');
-
-callAutocomplete('U', services[6], 'en');
+callAutocomplete(firstLetter, service, 'en');
 
 
 /*-------------------- MAIN FUNCTION --------------------*/
@@ -107,9 +105,37 @@ function createRecord(service, language, suggestions){
 		site: service.site,
 		language: language,
 		letter: suggestions[0].charAt(0),
-		results: suggestions
+		results: suggestionToObj(suggestions)
 	};
 	return obj;
+}
+
+// Changes the array of suggestions to an array of obj
+// [ { query: , search: }, {} ]
+function suggestionToObj(list){
+	var suggestionsObj = [];
+	for(var i = 0; i < list.length; i++){
+		var newObj = {
+			query: list[i],
+			search: getSearchableLink(list[i], service)
+		}
+		suggestionsObj.push(newObj);
+	}
+	return suggestionsObj;
+}
+
+// Combines search address with query to get searchable link
+// Ex.: www.google.com?q=amtrak
+function getSearchableLink(query, service){
+	// console.log(query);
+	// console.log(service);
+	while(query.indexOf(' ') > -1){
+		query = query.replace(' ', '+') 
+	}
+	// console.log(query);
+	var searchableLink = service['search-address']
+							    .replace('X', query);
+	return searchableLink;
 }
 
 // Returns the current index of a given object inside an array.
