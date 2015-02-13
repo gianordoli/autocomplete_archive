@@ -20,6 +20,7 @@
     "request": "^2.53.0",
     "jsonfile": "^2.0.0",
     "iconv-lite": "^0.4.7",
-    "mongodb": "^1.4.30"
+    "mongodb": "^1.4.30",
+    "forever": "^0.14.1"
   }
 }

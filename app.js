@@ -11,11 +11,10 @@ var languages = jf.readFileSync('data/languages.json');
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
 
+// All results from this day
 var dailySearch = [];
 
-var service = services[0];
-var firstLetter = String.fromCharCode(65);
-callAutocomplete(firstLetter, service, 'en');
+callAutocomplete(String.fromCharCode(65), services[0], 'en');
 
 
 /*-------------------- MAIN FUNCTION --------------------*/
@@ -43,7 +42,8 @@ function callAutocomplete(query, service, language){
 			// console.log(suggestions);
 			// console.log(suggestions.length);
 
-			// If there's any suggestion at all...
+			
+			// // If there's any suggestion at all...
 			if(suggestions.length > 0){
 
 				// Create a new record and save
@@ -65,7 +65,7 @@ function callAutocomplete(query, service, language){
 				callAutocomplete(newQuery, service, language);
 			}
 
-			// // New service
+			// New service
 			else if(serviceIndex < services.length - 1){
 				var newQuery = String.fromCharCode(65);
 				var newService = services[serviceIndex + 1];
@@ -77,7 +77,20 @@ function callAutocomplete(query, service, language){
 			else{
 				// console.log(dailySearch);				
 				saveToJSON();
-				saveToDB();
+				saveToMongoDB();
+				dailySearch = [];
+				var firstLetter = String.fromCharCode(65);
+				var firstService = services[0];				
+				console.log('--------------------------------------------');
+				console.log('Finshed daily scraping.');
+				console.log('--------------------------------------------');
+
+				setTimeout(function(){
+					callAutocomplete(firstLetter, firstService, 'en');
+				}, 3600000);
+				// setTimeout(function(){
+				// 	callAutocomplete(firstLetter, firstService, 'en');
+				// }, 86400000);				
 			}
 		}
 	});
@@ -87,6 +100,7 @@ function callAutocomplete(query, service, language){
 
 // Creates url for reqquest, concatenating the parameters
 function concatenateUrl(query, service, language){
+	console.log('Called concatenateUrl');
 	// console.log(service.ds);	
 	var requestUrl = 'https://clients1.google.com/complete/search?' +
 					 '&client=firefox'+
@@ -95,25 +109,36 @@ function concatenateUrl(query, service, language){
 					 '&ds=' + service.ds;
 
 	// console.log(requestUrl);
+	console.log('Returning ' + requestUrl);
 	return requestUrl;
 }
 
 // Returns a record
 function createRecord(service, language, suggestions){
-
+	console.log('Called createRecord');
+	// console.log('Received:');
+	// console.log(service);
+	// console.log(language);	
+	// console.log(suggestions);
 	var obj = {
 		date: new Date(),
 		site: service.site,
 		language: language,
 		letter: suggestions[0].charAt(0),
-		results: suggestionToObj(suggestions)
+		results: suggestionToObj(service, suggestions)
 	};
+	// console.log('Returning ' + obj);
 	return obj;
 }
 
 // Changes the array of suggestions to an array of obj
 // [ { query: , search: }, {} ]
-function suggestionToObj(list){
+function suggestionToObj(service, list){
+	console.log('Called suggestionToObj.')
+	// console.log('Received:');
+	// console.log(service);
+	// console.log(list);
+
 	var suggestionsObj = [];
 	for(var i = 0; i < list.length; i++){
 		var newObj = {
@@ -122,12 +147,14 @@ function suggestionToObj(list){
 		}
 		suggestionsObj.push(newObj);
 	}
+	// console.log('Returning ' + suggestionsObj);
 	return suggestionsObj;
 }
 
 // Combines search address with query to get searchable link
 // Ex.: www.google.com?q=amtrak
 function getSearchableLink(query, service){
+	console.log('Called getSearchableLink.');
 	// console.log(query);
 	// console.log(service);
 	while(query.indexOf(' ') > -1){
@@ -136,6 +163,7 @@ function getSearchableLink(query, service){
 	// console.log(query);
 	var searchableLink = service['search-address']
 							    .replace('X', query);
+	// console.log('Returning '+searchableLink);
 	return searchableLink;
 }
 
@@ -143,9 +171,11 @@ function getSearchableLink(query, service){
 // Utilized here to check if all services
 // and languages were already retrieved
 function currIndex(obj, array){
+	console.log('Called currIndex.');
 	for(var i = 0; i < array.length; i++){
 		// console.log(i);
 		if(array[i] == obj){
+			// console.log('Returning '+i);
 			return i;
 		}		
 	}
@@ -153,16 +183,17 @@ function currIndex(obj, array){
 
 // Scrapes the server's response to detect the charset
 function getCharset(response){
+	console.log('Called getCharset.');
 	var headers = response.headers;
 	var contentType = headers['content-type'];
 	var charset = contentType.substring(contentType.lastIndexOf('=') + 1);
-	// console.log(charset);
+	// console.log('Returning '+charset);
 	return charset;
 }
 
 // Saves results to JSON file
 function saveToJSON(){
-	console.log('-----------------------------------------');
+	console.log('Saving data to JSON file.')
 	var date = new Date();
 	var timestamp = date.getTime();
 	var file = 'db/data_'+timestamp+'.json'
@@ -177,7 +208,8 @@ function saveToJSON(){
 }
 
 // Save results to mongoDB
-function saveToDB(obj){
+function saveToMongoDB(obj){
+	console.log('Saving data to mongoDB.')
 	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
 		if(err) throw err;
 
