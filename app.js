@@ -9,19 +9,16 @@ var languages = jf.readFileSync('data/languages.json');
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
 
-var firstLetter = String.fromCharCode(65);
-// var site = 
-
 var dailySearch = [];
 
-callAutocomplete(firstLetter, services[1], 'fr');
+var service = services[0];
+var firstLetter = String.fromCharCode(65);
+callAutocomplete(firstLetter, service, 'fr');
 
 
 /*-------------------- FUNCTIONS --------------------*/
 
 function callAutocomplete(query, service, language){
-	
-	console.log(concatenateUrl(query, service, language));
 
 	var url = {
 		uri: concatenateUrl(query, service, language),
@@ -50,19 +47,40 @@ function callAutocomplete(query, service, language){
 			dailySearch.push(newRecord);
 
 			// new iteration
-			var index = query.charCodeAt();
+			var letterIndex = query.charCodeAt();
 			// console.log(index);
-			index++;
-			if(index < 91){			
-					var newQuery = String.fromCharCode(index);
-					callAutocomplete(newQuery, service, language);
-			}else{
+			letterIndex++;
+
+			var serviceIndex = parseInt(currIndex(service, services));
+
+			// New letter
+			if(letterIndex < 91){
+				var newQuery = String.fromCharCode(letterIndex);
+				callAutocomplete(newQuery, service, language);
+
+			// New service
+			}else if(serviceIndex < services.length - 1){
+				var newQuery = String.fromCharCode(65);
+				var newService = services[serviceIndex + 1];
+				console.log('call letter ['+newQuery+'] in ['+newService+']');
+				callAutocomplete(newQuery, newService, language);
+				// console.log(checkLastIndex(service, services));
 				// console.log(dailySearch);
-				saveToDB();
+				// saveToDB();
 			}
 		}
 	});
 }
+
+function currIndex(obj, array){
+	for(var i = 0; i < array.length; i++){
+		// console.log(i);
+		if(array[i] == obj){
+			return i;
+		}		
+	}
+}
+
 
 function getCharset(response){
 	var headers = response.headers;
