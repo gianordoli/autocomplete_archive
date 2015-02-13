@@ -22,6 +22,7 @@
     "request": "^2.53.0",
     "xml2js": "^0.4.4",
     "read-json": "^0.1.0",
-    "jsonfile": "^2.0.0"
+    "jsonfile": "^2.0.0",
+    "iconv-lite": "^0.4.7"
   }
 }
