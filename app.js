@@ -13,6 +13,8 @@ var services = jf.readFileSync('data/services.json');
 
 var firstLetter = String.fromCharCode(65);
 
+var dailySearch = [];
+
 callAutocomplete(firstLetter, 'images', 'fr');
 
 
@@ -25,7 +27,7 @@ function callAutocomplete(query, site, language){
 	request(url, function (error, response, body) {
 		// console.log(error);
 		// console.log(response);
-		// console.log(body);
+		console.log(body);
 		if (!error && response.statusCode == 200) {
 
 			var data;
@@ -43,15 +45,39 @@ function callAutocomplete(query, site, language){
 			var newRecord = createRecord(site, language, suggestions);
 			console.log(newRecord);
 
+			// Save current result
+			dailySearch.push(newRecord);
+
+			// new iteration
 			var index = query.charCodeAt();
-			console.log(index);
+			// console.log(index);
 			index++;
-			if(index < 91){
-				var newQuery = String.fromCharCode(index);
-				callAutocomplete(newQuery, 'images', 'fr');
+			if(index < 91){			
+				loopThroughLetters(index, site, language);
+			}else{
+				// console.log(dailySearch);
+				saveToDB();
 			}
 		}
 	});
+}
+
+function saveToDB(){
+	console.log('-----------------------------------------');
+	var file = 'db/data.json'
+	var obj = dailySearch;
+	 
+	jf.writeFile(file, obj, function(err) {
+	  // console.log(err);
+	  if(!err){
+	  	console.log('Results successfully saved at ' + file);
+	  }
+	});
+}
+
+function loopThroughLetters(index, site, language){
+	var newQuery = String.fromCharCode(index);
+	callAutocomplete(newQuery, site, language);
 }
 
 function concatenateUrl(query, site, language){
@@ -69,9 +95,8 @@ function concatenateUrl(query, site, language){
 }
 
 function createRecord(site, language, suggestions){
-	var date = new Date();
 	var obj = {
-		date: date.getTime(),
+		date: new Date(),
 		service: site,
 		language: language,
 		letter: suggestions[0].charAt(0),
