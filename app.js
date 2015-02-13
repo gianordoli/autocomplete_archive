@@ -1,7 +1,9 @@
 var request = require('request'),
 		 jf = require('jsonfile'),
 	   util = require('util'),
-	  iconv = require('iconv-lite');
+	  iconv = require('iconv-lite'),
+MongoClient = require('mongodb').MongoClient,
+     format = require('util').format;
 
 var languages = jf.readFileSync('data/languages.json');
 // console.log(languages);
@@ -63,19 +65,18 @@ function callAutocomplete(query, service, language){
 				callAutocomplete(newQuery, service, language);
 			}
 
-			// New service
+			// // New service
 			else if(serviceIndex < services.length - 1){
 				var newQuery = String.fromCharCode(65);
 				var newService = services[serviceIndex + 1];
 				// console.log('called letter ['+newQuery+'] in ['+newService+']');
 				callAutocomplete(newQuery, newService, language);
-			
-			
 			}
 
 			// End
 			else{
 				// console.log(dailySearch);				
+				saveToJSON();
 				saveToDB();
 			}
 		}
@@ -159,10 +160,12 @@ function getCharset(response){
 	return charset;
 }
 
-// Saves results to file
-function saveToDB(){
+// Saves results to JSON file
+function saveToJSON(){
 	console.log('-----------------------------------------');
-	var file = 'db/data.json'
+	var date = new Date();
+	var timestamp = date.getTime();
+	var file = 'db/data_'+timestamp+'.json'
 	var obj = dailySearch;
 	 
 	jf.writeFile(file, obj, function(err) {
@@ -172,3 +175,41 @@ function saveToDB(){
 	  }
 	});
 }
+
+// Save results to mongoDB
+function saveToDB(obj){
+	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
+		if(err) throw err;
+
+		var collection = db.collection('records');
+
+		var index = 0;
+		insertObject(dailySearch[index]);
+
+		function insertObject(obj){
+			collection.insert(obj, function(err, docs) {
+				if(err) throw err
+				console.log('Obj succesfully saved to DB.');
+
+				// Next iteration
+				if(index < dailySearch.length - 1){
+					index++;
+					var obj = dailySearch[index];
+					insertObject(obj);					
+				}else{
+					// Count
+					collection.count(function(err, count) {
+						console.log(format("count = %s", count));
+					});		
+
+					// Locate all the entries using find 
+					collection.find().toArray(function(err, results) {
+						console.dir(results);
+						// Let's close the db 
+						db.close();
+					});	
+				}
+			});
+		}
+	});
+}  
