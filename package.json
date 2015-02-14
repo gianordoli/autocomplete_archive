@@ -21,6 +21,7 @@
     "jsonfile": "^2.0.0",
     "iconv-lite": "^0.4.7",
     "mongodb": "^1.4.30",
-    "forever": "^0.14.1"
+    "forever": "^0.14.1",
+    "cron": "^1.0.6"
   }
 }

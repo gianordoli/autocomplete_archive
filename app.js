@@ -3,7 +3,8 @@ var request = require('request'),
 	   util = require('util'),
 	  iconv = require('iconv-lite'),
 MongoClient = require('mongodb').MongoClient,
-     format = require('util').format;
+     format = require('util').format,
+	CronJob = require('cron').CronJob;
 
 var languages = jf.readFileSync('data/languages.json');
 // console.log(languages);
@@ -14,12 +15,16 @@ var services = jf.readFileSync('data/services.json');
 // All results from this day
 var dailySearch = [];
 
-callAutocomplete(String.fromCharCode(65), services[0], 'en');
+new CronJob('* * 20 * * *', function(){
+	dailySearch = [];
+    callAutocomplete(String.fromCharCode(65), services[0], 'en');
+}, null, true, "America/New_York");
 
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
 function callAutocomplete(query, service, language){
+	console.log('Called callAutocomplete.')
 
 	var url = {
 		uri: concatenateUrl(query, service, language),
@@ -78,19 +83,10 @@ function callAutocomplete(query, service, language){
 				// console.log(dailySearch);				
 				saveToJSON();
 				saveToMongoDB();
-				dailySearch = [];
-				var firstLetter = String.fromCharCode(65);
-				var firstService = services[0];				
+
 				console.log('--------------------------------------------');
 				console.log('Finshed daily scraping.');
 				console.log('--------------------------------------------');
-
-				setTimeout(function(){
-					callAutocomplete(firstLetter, firstService, 'en');
-				}, 3600000);
-				// setTimeout(function(){
-				// 	callAutocomplete(firstLetter, firstService, 'en');
-				// }, 86400000);				
 			}
 		}
 	});
@@ -210,15 +206,18 @@ function saveToJSON(){
 // Save results to mongoDB
 function saveToMongoDB(obj){
 	console.log('Saving data to mongoDB.')
+
 	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
+		console.log('Connecting to DB...');
 		if(err) throw err;
-
+		console.log('Connected.');
 		var collection = db.collection('records');
-
 		var index = 0;
 		insertObject(dailySearch[index]);
 
 		function insertObject(obj){
+			console.log('Called insertObject.');
+			// console.log(obj);
 			collection.insert(obj, function(err, docs) {
 				if(err) throw err
 				console.log('Obj succesfully saved to DB.');
