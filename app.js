@@ -15,7 +15,10 @@ var services = jf.readFileSync('data/services.json');
 // All results from this day
 var dailySearch = [];
 
-new CronJob('* * 20 * * *', function(){
+console.log('--------------------------------------------');
+console.log('App started running');
+console.log('--------------------------------------------');
+new CronJob('0 0 22 * * *', function(){
 	dailySearch = [];
     callAutocomplete(String.fromCharCode(65), services[0], 'en');
 }, null, true, "America/New_York");
