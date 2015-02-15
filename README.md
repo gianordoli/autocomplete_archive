@@ -10,8 +10,6 @@ Faculty: Sven Travis and Loretta Wolozin
 
 Spring, 2015
 
-[Project link here](http://54.204.173.108:3011)
-
 ---
 
 ## Process
@@ -24,6 +22,8 @@ Spring, 2015
 ## To do
 
 * Explore other languages
-	* How to loop through non-latin alphabets?
+	* **Categorize latin alphabets**
+	* Loop through non-latin alphabets
+	
 * Create scraper to store link to the first results of each search
 	* Save images or just links?
