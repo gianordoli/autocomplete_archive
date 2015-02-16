@@ -1,8 +1,8 @@
 [
   {
-    "date": "2015-02-16T02:37:58.513Z",
+    "date": "2015-02-16T03:18:51.895Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "a",
     "results": [
       "amazon",
@@ -18,27 +18,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:58.645Z",
+    "date": "2015-02-16T03:18:52.019Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "b",
     "results": [
+      "bank of america",
       "best buy",
       "bloomingdales",
-      "bank of america",
       "barnes and noble",
       "bed bath and beyond",
       "bing",
       "banana republic",
       "bjs",
-      "bill cosby",
-      "buzzfeed"
+      "black friday 2014",
+      "burlington coat factory"
     ]
   },
   {
-    "date": "2015-02-16T02:37:58.752Z",
+    "date": "2015-02-16T03:18:52.126Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "c",
     "results": [
       "craigslist",
@@ -54,9 +54,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:58.903Z",
+    "date": "2015-02-16T03:18:52.258Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "d",
     "results": [
       "dictionary",
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.012Z",
+    "date": "2015-02-16T03:18:52.376Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "e",
     "results": [
       "ebay",
@@ -90,9 +90,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.128Z",
+    "date": "2015-02-16T03:18:52.498Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "f",
     "results": [
       "facebook",
@@ -101,16 +101,16 @@
       "fox news",
       "fedex",
       "fedex tracking",
+      "facebook login",
       "fifty shades of grey",
       "foot locker",
-      "flight club",
-      "fidelity"
+      "flight club"
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.234Z",
+    "date": "2015-02-16T03:18:52.644Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "g",
     "results": [
       "gmail",
@@ -126,9 +126,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.355Z",
+    "date": "2015-02-16T03:18:52.764Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "h",
     "results": [
       "hotmail",
@@ -144,9 +144,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.469Z",
+    "date": "2015-02-16T03:18:52.883Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "i",
     "results": [
       "instagram",
@@ -162,9 +162,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.576Z",
+    "date": "2015-02-16T03:18:52.999Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "j",
     "results": [
       "jetblue",
@@ -180,9 +180,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.692Z",
+    "date": "2015-02-16T03:18:53.118Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "k",
     "results": [
       "kayak",
@@ -198,9 +198,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.812Z",
+    "date": "2015-02-16T03:18:53.229Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "l",
     "results": [
       "linkedin",
@@ -216,9 +216,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:37:59.932Z",
+    "date": "2015-02-16T03:18:53.351Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "m",
     "results": [
       "maps",
@@ -234,9 +234,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.037Z",
+    "date": "2015-02-16T03:18:53.467Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "n",
     "results": [
       "netflix",
@@ -252,45 +252,45 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.139Z",
+    "date": "2015-02-16T03:18:53.596Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "o",
     "results": [
       "optimum",
       "old navy",
-      "orbitz",
       "omegle",
-      "overstock",
+      "orbitz",
       "outlook",
-      "olive garden",
+      "overstock",
       "okcupid",
-      "optonline",
-      "opentable"
+      "olive garden",
+      "opentable",
+      "once upon a time"
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.250Z",
+    "date": "2015-02-16T03:18:53.728Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "p",
     "results": [
       "pandora",
       "pinterest",
       "paypal",
-      "pizza hut",
-      "pupilpath",
-      "papa johns",
       "party city",
-      "project free tv",
+      "pupilpath",
+      "pizza hut",
+      "papa johns",
+      "pseg",
       "pc richards",
-      "pseg"
+      "pottery barn"
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.350Z",
+    "date": "2015-02-16T03:18:53.839Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "q",
     "results": [
       "quizlet",
@@ -306,9 +306,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.460Z",
+    "date": "2015-02-16T03:18:53.950Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "r",
     "results": [
       "rate my professor",
@@ -324,9 +324,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.577Z",
+    "date": "2015-02-16T03:18:54.070Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "s",
     "results": [
       "staples",
@@ -342,9 +342,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.687Z",
+    "date": "2015-02-16T03:18:54.184Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "t",
     "results": [
       "target",
@@ -360,9 +360,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.791Z",
+    "date": "2015-02-16T03:18:54.305Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "u",
     "results": [
       "united airlines",
@@ -378,9 +378,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:00.895Z",
+    "date": "2015-02-16T03:18:54.414Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "v",
     "results": [
       "valentines day",
@@ -396,9 +396,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.004Z",
+    "date": "2015-02-16T03:18:54.543Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "w",
     "results": [
       "walmart",
@@ -414,9 +414,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.139Z",
+    "date": "2015-02-16T03:18:54.663Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "x",
     "results": [
       "xbox live",
@@ -432,9 +432,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.242Z",
+    "date": "2015-02-16T03:18:54.793Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "y",
     "results": [
       "youtube",
@@ -443,16 +443,16 @@
       "youtube to mp3",
       "yelp",
       "yahoo finance",
-      "yelp nyc",
       "yahoo fantasy football",
-      "y8",
-      "yahoo news"
+      "yelp nyc",
+      "yahoo news",
+      "y8"
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.343Z",
+    "date": "2015-02-16T03:18:54.909Z",
     "site": "web",
-    "language": "af",
+    "language": "be",
     "letter": "z",
     "results": [
       "zach lavine",
@@ -468,9 +468,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.431Z",
+    "date": "2015-02-16T03:18:55.000Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "a",
     "results": [
       "ariana grande",
@@ -486,9 +486,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.526Z",
+    "date": "2015-02-16T03:18:55.096Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "b",
     "results": [
       "bruce jenner",
@@ -504,9 +504,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.639Z",
+    "date": "2015-02-16T03:18:55.193Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "c",
     "results": [
       "charlie hebdo",
@@ -522,9 +522,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.731Z",
+    "date": "2015-02-16T03:18:55.299Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "d",
     "results": [
       "dog",
@@ -540,9 +540,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.820Z",
+    "date": "2015-02-16T03:18:55.401Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "e",
     "results": [
       "emma watson",
@@ -558,9 +558,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.908Z",
+    "date": "2015-02-16T03:18:55.517Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "f",
     "results": [
       "facebook",
@@ -576,9 +576,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:01.998Z",
+    "date": "2015-02-16T03:18:55.638Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "g",
     "results": [
       "google images",
@@ -594,9 +594,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.090Z",
+    "date": "2015-02-16T03:18:55.732Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "h",
     "results": [
       "happy new year 2015",
@@ -612,9 +612,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.188Z",
+    "date": "2015-02-16T03:18:55.845Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "i",
     "results": [
       "images",
@@ -630,63 +630,63 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.277Z",
+    "date": "2015-02-16T03:18:55.954Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "j",
     "results": [
-      "justin bieber",
       "jennifer lawrence",
+      "justin bieber",
+      "janice dickinson",
       "jennifer aniston",
-      "je suis charlie",
-      "jennifer lopez",
-      "jamie dornan",
-      "jessica biel",
       "jesus",
-      "johnny depp",
-      "jessica alba"
+      "jennifer lopez",
+      "jordans",
+      "jessica alba",
+      "john cena",
+      "jared leto"
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.400Z",
+    "date": "2015-02-16T03:18:56.057Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "k",
     "results": [
+      "katy perry",
       "kylie jenner",
       "kendall jenner",
-      "katy perry",
+      "kim jong un",
       "katrina kaif",
-      "kristina pimenova",
-      "kaley cuoco",
       "kiss",
+      "kristen stewart",
       "keira knightley",
-      "karrueche tran",
-      "kristen stewart"
+      "kendra sunderland",
+      "kittens"
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.495Z",
+    "date": "2015-02-16T03:18:56.168Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "l",
     "results": [
       "love quotes",
       "love",
-      "life quotes",
       "lamborghini",
+      "life quotes",
+      "lorde",
       "lana del rey",
+      "love quotes for him",
       "lion",
-      "lindsay lohan",
-      "leonardo dicaprio",
-      "lady gaga",
-      "lizzy caplan"
+      "liam hemsworth",
+      "lady gaga"
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.600Z",
+    "date": "2015-02-16T03:18:56.267Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "m",
     "results": [
       "miley cyrus",
@@ -702,45 +702,45 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.701Z",
+    "date": "2015-02-16T03:18:56.372Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "n",
     "results": [
-      "new year 2015",
       "nicki minaj",
-      "new year",
       "nick jonas",
+      "nadia forde",
       "naruto",
-      "new year wishes",
-      "nail designs",
+      "natalie dormer",
+      "nike",
       "nina dobrev",
-      "new year quotes",
-      "nicole kidman"
+      "nature",
+      "neymar",
+      "nail designs"
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.815Z",
+    "date": "2015-02-16T03:18:56.462Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "o",
     "results": [
       "one direction",
       "olaf",
       "ombre hair",
-      "one piece",
-      "owl",
-      "odell beckham jr",
+      "oregon ducks",
       "obama",
-      "optical illusions",
-      "one direction 2014",
-      "olivia culpo"
+      "owl",
+      "one piece",
+      "odell beckham jr",
+      "olivia culpo",
+      "orlando bloom"
     ]
   },
   {
-    "date": "2015-02-16T02:38:02.918Z",
+    "date": "2015-02-16T03:18:56.567Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "p",
     "results": [
       "periodic table",
@@ -756,9 +756,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.017Z",
+    "date": "2015-02-16T03:18:56.661Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "q",
     "results": [
       "quotes",
@@ -774,9 +774,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.123Z",
+    "date": "2015-02-16T03:18:56.761Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "r",
     "results": [
       "reham khan",
@@ -792,9 +792,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.217Z",
+    "date": "2015-02-16T03:18:56.862Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "s",
     "results": [
       "sia",
@@ -810,9 +810,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.316Z",
+    "date": "2015-02-16T03:18:56.971Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "t",
     "results": [
       "taylor swift",
@@ -828,9 +828,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.414Z",
+    "date": "2015-02-16T03:18:57.069Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "u",
     "results": [
       "us map",
@@ -846,9 +846,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.503Z",
+    "date": "2015-02-16T03:18:57.162Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "v",
     "results": [
       "vanessa hudgens",
@@ -864,27 +864,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.607Z",
+    "date": "2015-02-16T03:18:57.272Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "w",
     "results": [
       "wallpaper",
       "world map",
       "weather",
-      "wedding dresses",
+      "wassily kandinsky",
       "wallpaper hd",
-      "white",
       "weed",
-      "wwe",
-      "wolf",
-      "whitney houston"
+      "winter",
+      "wedding dresses",
+      "white",
+      "wwe"
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.706Z",
+    "date": "2015-02-16T03:18:57.365Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "x",
     "results": [
       "x",
@@ -900,27 +900,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.821Z",
+    "date": "2015-02-16T03:18:57.457Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "y",
     "results": [
       "youtube",
-      "young thug",
-      "yoga pants",
       "yahoo",
+      "young thug",
       "yak",
-      "yo yo honey singh",
       "yoga",
       "yeast infection",
-      "yami gautam",
-      "yin yang"
+      "yoga poses",
+      "yoda",
+      "yorkie",
+      "yorkshire terrier"
     ]
   },
   {
-    "date": "2015-02-16T02:38:03.927Z",
+    "date": "2015-02-16T03:18:57.551Z",
     "site": "images",
-    "language": "af",
+    "language": "be",
     "letter": "z",
     "results": [
       "zac efron",
@@ -936,9 +936,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.032Z",
+    "date": "2015-02-16T03:18:57.655Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "a",
     "results": [
       "all about the bass",
@@ -954,15 +954,15 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.138Z",
+    "date": "2015-02-16T03:18:57.766Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "b",
     "results": [
       "buzzfeed",
       "beyonce grammy 2015",
-      "bruno mars uptown funk",
       "blank space taylor swift",
+      "bruno mars uptown funk",
       "beyonce",
       "bruno mars",
       "bang bang",
@@ -972,27 +972,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.243Z",
+    "date": "2015-02-16T03:18:57.875Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "c",
     "results": [
       "clash of clans hack by lukasz",
       "crazy in love fifty shades of grey",
       "chris brown",
       "conan",
+      "christmas music",
       "coco",
-      "centuries fall out boy",
-      "chief keef",
+      "christmas songs playlist",
       "chandelier sia",
-      "chris brown ayo",
-      "crimson peak trailer"
+      "chief keef",
+      "centuries fall out boy"
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.357Z",
+    "date": "2015-02-16T03:18:57.992Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "d",
     "results": [
       "drake",
@@ -1000,17 +1000,17 @@
       "drake jungle",
       "drake if you're reading this",
       "dunk contest 2015",
+      "drake new album 2015",
+      "drake know yourself",
       "drake preach",
       "drake 6pm in new york",
-      "don't tell em",
-      "dragon ball xenoverse",
-      "dubstep"
+      "don't tell em"
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.467Z",
+    "date": "2015-02-16T03:18:58.088Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "e",
     "results": [
       "ed sheeran thinking out loud lyrics",
@@ -1026,9 +1026,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.572Z",
+    "date": "2015-02-16T03:18:58.193Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "f",
     "results": [
       "five nights at freddy's 3",
@@ -1044,27 +1044,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.673Z",
+    "date": "2015-02-16T03:18:58.308Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "g",
     "results": [
+      "gangnam style",
       "grammys 2015 full show",
       "grammy 2015 performers",
-      "gangnam style",
       "gdfr",
       "game grumps",
       "good mythical morning",
       "game theory",
       "general hospital 2/13/15",
       "general hospital 2/12/15",
-      "ghost ella henderson"
+      "general hospital 2/11/15"
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.777Z",
+    "date": "2015-02-16T03:18:58.412Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "h",
     "results": [
       "hozier take me to church",
@@ -1080,45 +1080,45 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.880Z",
+    "date": "2015-02-16T03:18:58.522Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "i",
     "results": [
       "india vs pakistan 2015 world cup",
       "if you're reading this it's too late",
-      "india vs pakistan 2015 world cup highlights",
       "if you're reading this it's too late drake",
       "i dont mind usher",
       "i'm in love with the coco",
+      "iggy azalea",
       "imagine dragons",
       "isis",
-      "iggy azalea",
-      "india vs pakistan 2015 world cup live"
+      "india vs pakistan 2015 world cup live",
+      "interstellar trailer"
     ]
   },
   {
-    "date": "2015-02-16T02:38:04.981Z",
+    "date": "2015-02-16T03:18:58.640Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "j",
     "results": [
       "jimmy fallon",
+      "jealous nick jonas",
+      "jurassic world trailer",
+      "justin bieber",
       "jacksepticeye",
       "jungle drake",
       "jupiter ascending trailer",
-      "justin bieber",
       "jenna marbles",
-      "jealous nick jonas",
       "jon stewart",
-      "j cole",
-      "jamie dornan"
+      "j cole"
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.086Z",
+    "date": "2015-02-16T03:18:58.736Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "k",
     "results": [
       "kanye west grammy 2015",
@@ -1134,9 +1134,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.185Z",
+    "date": "2015-02-16T03:18:58.839Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "l",
     "results": [
       "love me like you do ellie goulding",
@@ -1152,9 +1152,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.285Z",
+    "date": "2015-02-16T03:18:59.180Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "m",
     "results": [
       "minecraft",
@@ -1170,27 +1170,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.387Z",
+    "date": "2015-02-16T03:18:59.295Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "n",
     "results": [
+      "no type rae sremmurd",
       "nba",
-      "nicki minaj",
       "nba all star 2015",
       "nba all star 2015 slam dunk contest",
-      "no type rae sremmurd",
-      "nba dunk contest 2015",
       "nicki minaj anaconda",
-      "nigahiga",
+      "nicki minaj",
       "no flex zone",
-      "nba 3 point contest 2015"
+      "nicki minaj only",
+      "nba dunk contest 2015",
+      "nick jonas jealous"
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.493Z",
+    "date": "2015-02-16T03:18:59.395Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "o",
     "results": [
       "only nicki minaj",
@@ -1206,9 +1206,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.599Z",
+    "date": "2015-02-16T03:18:59.495Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "p",
     "results": [
       "popularmmos challenge games",
@@ -1224,9 +1224,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.704Z",
+    "date": "2015-02-16T03:18:59.590Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "q",
     "results": [
       "queen",
@@ -1242,9 +1242,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.819Z",
+    "date": "2015-02-16T03:18:59.699Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "r",
     "results": [
       "rihanna four five seconds",
@@ -1260,9 +1260,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:05.915Z",
+    "date": "2015-02-16T03:18:59.805Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "s",
     "results": [
       "style taylor swift vevo",
@@ -1270,17 +1270,17 @@
       "sam smith",
       "sugar maroon 5 lyrics",
       "style",
+      "slam dunk contest 2015",
       "sam smith stay with me",
       "sia",
       "sia grammys 2015",
-      "sam smith i'm not the only one",
-      "stampy"
+      "sam smith i'm not the only one"
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.016Z",
+    "date": "2015-02-16T03:18:59.901Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "t",
     "results": [
       "taylor swift style",
@@ -1296,9 +1296,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.107Z",
+    "date": "2015-02-16T03:18:59.993Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "u",
     "results": [
       "uptown funk",
@@ -1314,9 +1314,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.201Z",
+    "date": "2015-02-16T03:19:00.091Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "v",
     "results": [
       "vanossgaming",
@@ -1327,14 +1327,14 @@
       "vanoss",
       "vince carter 2000 dunk contest",
       "vice",
-      "vsauce",
-      "victor oladipo dunk contest"
+      "victor oladipo dunk contest",
+      "vsauce"
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.311Z",
+    "date": "2015-02-16T03:19:00.189Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "w",
     "results": [
       "wiz khalifa",
@@ -1350,9 +1350,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.405Z",
+    "date": "2015-02-16T03:19:00.283Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "x",
     "results": [
       "xpertthief",
@@ -1368,9 +1368,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.514Z",
+    "date": "2015-02-16T03:19:00.410Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "y",
     "results": [
       "young thug",
@@ -1386,9 +1386,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.604Z",
+    "date": "2015-02-16T03:19:00.510Z",
     "site": "youtube",
-    "language": "af",
+    "language": "be",
     "letter": "z",
     "results": [
       "zach lavine",
@@ -1400,13 +1400,13 @@
       "zach lavine dunk mix",
       "zumba",
       "zombie the cranberries",
-      "zumba dance workout"
+      "zlatan ibrahimovic"
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.703Z",
+    "date": "2015-02-16T03:19:00.600Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "a",
     "results": [
       "airasia",
@@ -1422,9 +1422,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.805Z",
+    "date": "2015-02-16T03:19:00.686Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "b",
     "results": [
       "bruce jenner",
@@ -1440,9 +1440,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.903Z",
+    "date": "2015-02-16T03:19:00.791Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "c",
     "results": [
       "charlie hebdo",
@@ -1458,27 +1458,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:06.995Z",
+    "date": "2015-02-16T03:19:00.905Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "d",
     "results": [
+      "death",
       "dallas cowboys",
       "denver broncos",
-      "deflate gate",
-      "destiny",
-      "drake",
       "detroit lions",
-      "downton abbey",
-      "dez bryant",
-      "dying light",
-      "derrick rose"
+      "dick cheney",
+      "dish network",
+      "david cameron",
+      "diabetes mellitus",
+      "dogs",
+      "drake"
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.081Z",
+    "date": "2015-02-16T03:19:01.006Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "e",
     "results": [
       "ebola",
@@ -1494,9 +1494,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.176Z",
+    "date": "2015-02-16T03:19:01.102Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "f",
     "results": [
       "facebook",
@@ -1512,9 +1512,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.271Z",
+    "date": "2015-02-16T03:19:01.193Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "g",
     "results": [
       "google",
@@ -1530,9 +1530,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.360Z",
+    "date": "2015-02-16T03:19:01.285Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "h",
     "results": [
       "harry styles",
@@ -1548,27 +1548,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.460Z",
+    "date": "2015-02-16T03:19:01.388Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "i",
     "results": [
+      "immigration",
       "iphone",
-      "india",
-      "iphone 6",
-      "israel",
       "iran",
+      "israel",
+      "influenza vaccine",
       "instagram",
-      "influenza",
-      "iggy azalea",
-      "ibm",
-      "immigration"
+      "international space station",
+      "iraq",
+      "india",
+      "ipod"
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.557Z",
+    "date": "2015-02-16T03:19:01.488Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "j",
     "results": [
       "justin bieber",
@@ -1584,9 +1584,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.655Z",
+    "date": "2015-02-16T03:19:01.596Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "k",
     "results": [
       "katy perry",
@@ -1602,9 +1602,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.750Z",
+    "date": "2015-02-16T03:19:01.689Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "l",
     "results": [
       "lil wayne",
@@ -1620,9 +1620,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.854Z",
+    "date": "2015-02-16T03:19:01.781Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "m",
     "results": [
       "marshawn lynch",
@@ -1638,27 +1638,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:07.947Z",
+    "date": "2015-02-16T03:19:01.892Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "n",
     "results": [
-      "news",
       "new england patriots",
-      "nfl",
-      "netflix",
-      "nicki minaj",
-      "nfl scores",
-      "north korea",
+      "nasa",
       "narendra modi",
-      "nba",
-      "novak djokovic"
+      "new york city",
+      "national football league",
+      "new york giants",
+      "new york jets",
+      "nascar",
+      "national basketball association",
+      "new york"
     ]
   },
   {
-    "date": "2015-02-16T02:38:08.046Z",
+    "date": "2015-02-16T03:19:01.992Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "o",
     "results": [
       "obama",
@@ -1674,45 +1674,45 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:08.148Z",
+    "date": "2015-02-16T03:19:02.103Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "p",
     "results": [
-      "patriots",
-      "paris",
-      "pope francis",
-      "peyton manning",
       "police",
-      "ps4",
-      "pokemon",
-      "packers",
-      "pittsburgh steelers",
-      "pakistan"
+      "pope francis",
+      "philippines",
+      "phillip hughes",
+      "palestinian people",
+      "playstation 4",
+      "pakistan",
+      "philadelphia eagles",
+      "pablo sandoval",
+      "pennsylvania"
     ]
   },
   {
-    "date": "2015-02-16T02:38:08.254Z",
+    "date": "2015-02-16T03:19:02.216Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "q",
     "results": [
-      "qz8501",
-      "q",
       "qatar",
-      "qvc",
       "qualcomm",
+      "qualcomm snapdragon",
       "queen elizabeth",
-      "quotes",
-      "quantum computers",
-      "queen latifah",
-      "quentin tarantino"
+      "qantas",
+      "qvc",
+      "quantum mechanics",
+      "qubool hai",
+      "queen letizia",
+      "queen fabiola"
     ]
   },
   {
-    "date": "2015-02-16T02:38:08.352Z",
+    "date": "2015-02-16T03:19:02.306Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "r",
     "results": [
       "russia",
@@ -1728,9 +1728,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:08.723Z",
+    "date": "2015-02-16T03:19:02.397Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "s",
     "results": [
       "seattle seahawks",
@@ -1746,27 +1746,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:08.824Z",
+    "date": "2015-02-16T03:19:02.508Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "t",
     "results": [
-      "taylor swift",
-      "tom brady",
+      "torture",
       "tiger woods",
-      "the interview",
-      "teresa giudice",
-      "twitter",
-      "the bachelor",
-      "target",
-      "tesla",
-      "tim tebow"
+      "taliban",
+      "the walking dead",
+      "thanksgiving",
+      "takata corporation",
+      "taylor swift",
+      "the hobbit",
+      "thierry henry",
+      "the internet"
     ]
   },
   {
-    "date": "2015-02-16T02:38:08.920Z",
+    "date": "2015-02-16T03:19:02.605Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "u",
     "results": [
       "ukraine",
@@ -1782,9 +1782,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.037Z",
+    "date": "2015-02-16T03:19:02.691Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "v",
     "results": [
       "venezuela",
@@ -1800,27 +1800,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.133Z",
+    "date": "2015-02-16T03:19:02.799Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "w",
     "results": [
+      "washington redskins",
+      "wii u",
+      "west virginia",
+      "walmart",
+      "wayne rooney",
+      "will muschamp",
       "weather",
       "wwe",
-      "whitney houston",
-      "windows 10",
-      "walmart",
       "whatsapp",
-      "wii u",
-      "world news",
-      "walking dead",
-      "wells fargo"
+      "wild"
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.235Z",
+    "date": "2015-02-16T03:19:02.907Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "x",
     "results": [
       "xbox one",
@@ -1836,9 +1836,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.327Z",
+    "date": "2015-02-16T03:19:03.002Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "y",
     "results": [
       "youtube",
@@ -1854,9 +1854,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.427Z",
+    "date": "2015-02-16T03:19:03.108Z",
     "site": "news",
-    "language": "af",
+    "language": "be",
     "letter": "z",
     "results": [
       "zayn malik",
@@ -1872,9 +1872,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.523Z",
+    "date": "2015-02-16T03:19:03.223Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "a",
     "results": [
       "amazon",
@@ -1882,17 +1882,17 @@
       "amazon uk",
       "add reminder",
       "amazon prime",
-      "american sniper",
+      "anna freud",
       "a",
-      "allegiant",
-      "albert einstein",
-      "abraham lincoln"
+      "annie jump cannon",
+      "a christmas carol",
+      "allegiant"
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.633Z",
+    "date": "2015-02-16T03:19:03.337Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "b",
     "results": [
       "books",
@@ -1908,9 +1908,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.736Z",
+    "date": "2015-02-16T03:19:03.446Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "c",
     "results": [
       "craigslist",
@@ -1926,9 +1926,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.841Z",
+    "date": "2015-02-16T03:19:03.563Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "d",
     "results": [
       "dictionary",
@@ -1944,9 +1944,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:09.958Z",
+    "date": "2015-02-16T03:19:03.668Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "e",
     "results": [
       "ebay",
@@ -1962,9 +1962,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.056Z",
+    "date": "2015-02-16T03:19:03.786Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "f",
     "results": [
       "facebook",
@@ -1980,9 +1980,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.163Z",
+    "date": "2015-02-16T03:19:03.904Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "g",
     "results": [
       "google",
@@ -1990,17 +1990,17 @@
       "google books",
       "google translate",
       "gmail",
-      "g",
       "games",
-      "google play",
       "google maps",
-      "geronimo stilton"
+      "google play",
+      "geronimo stilton",
+      "goo"
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.272Z",
+    "date": "2015-02-16T03:19:04.010Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "h",
     "results": [
       "hotmail",
@@ -2016,9 +2016,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.376Z",
+    "date": "2015-02-16T03:19:04.112Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "i",
     "results": [
       "i",
@@ -2034,9 +2034,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.485Z",
+    "date": "2015-02-16T03:19:04.222Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "j",
     "results": [
       "j",
@@ -2052,9 +2052,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.596Z",
+    "date": "2015-02-16T03:19:04.327Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "k",
     "results": [
       "k",
@@ -2070,9 +2070,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.698Z",
+    "date": "2015-02-16T03:19:04.435Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "l",
     "results": [
       "langston hughes",
@@ -2088,9 +2088,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.801Z",
+    "date": "2015-02-16T03:19:04.538Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "m",
     "results": [
       "minecraft",
@@ -2106,9 +2106,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:10.920Z",
+    "date": "2015-02-16T03:19:04.640Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "n",
     "results": [
       "new year 2015",
@@ -2124,9 +2124,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.016Z",
+    "date": "2015-02-16T03:19:04.746Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "o",
     "results": [
       "one direction",
@@ -2142,9 +2142,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.113Z",
+    "date": "2015-02-16T03:19:04.854Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "p",
     "results": [
       "p",
@@ -2160,9 +2160,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.204Z",
+    "date": "2015-02-16T03:19:04.964Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "q",
     "results": [
       "quizlet",
@@ -2178,9 +2178,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.302Z",
+    "date": "2015-02-16T03:19:05.070Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "r",
     "results": [
       "raz kids",
@@ -2196,9 +2196,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.398Z",
+    "date": "2015-02-16T03:19:05.181Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "s",
     "results": [
       "scholar",
@@ -2214,27 +2214,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.513Z",
+    "date": "2015-02-16T03:19:05.317Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "t",
     "results": [
       "translate",
       "the fault in our stars",
       "thesaurus",
       "tumblebooks",
+      "thanksgiving day",
       "to kill a mockingbird",
-      "traductor",
-      "the boy next door",
       "t",
-      "the book thief",
-      "the great gatsby"
+      "the giver",
+      "traductor",
+      "the book thief"
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.615Z",
+    "date": "2015-02-16T03:19:05.421Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "u",
     "results": [
       "unbroken",
@@ -2250,9 +2250,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.722Z",
+    "date": "2015-02-16T03:19:05.525Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "v",
     "results": [
       "v",
@@ -2268,9 +2268,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.821Z",
+    "date": "2015-02-16T03:19:05.635Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "w",
     "results": [
       "weather",
@@ -2286,9 +2286,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:11.948Z",
+    "date": "2015-02-16T03:19:05.748Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "x",
     "results": [
       "x",
@@ -2304,9 +2304,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.051Z",
+    "date": "2015-02-16T03:19:05.866Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "y",
     "results": [
       "youtube",
@@ -2315,16 +2315,16 @@
       "youtube videos",
       "youtube to mp3",
       "youtube downloader",
-      "youtube music",
       "yahoo mail login",
+      "youtube music",
       "yoga",
-      "y8"
+      "yo yo honey singh"
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.152Z",
+    "date": "2015-02-16T03:19:05.975Z",
     "site": "books",
-    "language": "af",
+    "language": "be",
     "letter": "z",
     "results": [
       "z",
@@ -2340,9 +2340,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.250Z",
+    "date": "2015-02-16T03:19:06.089Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "a",
     "results": [
       "amazon",
@@ -2350,17 +2350,17 @@
       "amazon uk",
       "apple tv",
       "amazon prime",
-      "american sniper",
-      "autozone",
       "asda",
-      "amiibo",
-      "aliexpress"
+      "assassin's creed unity",
+      "advent calendar",
+      "american girl doll",
+      "advanced warfare"
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.351Z",
+    "date": "2015-02-16T03:19:06.199Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "b",
     "results": [
       "best buy",
@@ -2376,9 +2376,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.451Z",
+    "date": "2015-02-16T03:19:06.305Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "c",
     "results": [
       "craigslist",
@@ -2394,9 +2394,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.569Z",
+    "date": "2015-02-16T03:19:06.410Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "d",
     "results": [
       "dresses",
@@ -2412,9 +2412,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.866Z",
+    "date": "2015-02-16T03:19:06.515Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "e",
     "results": [
       "ebay",
@@ -2430,27 +2430,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:12.958Z",
+    "date": "2015-02-16T03:19:06.628Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "f",
     "results": [
       "facebook",
       "fitbit",
       "facebook login",
-      "fitbit charge hr",
+      "far cry 4",
       "five nights at freddy's",
-      "fitbit flex",
-      "fitbit charge",
       "fifa 15",
+      "frozen toys",
+      "frozen",
       "forever 21",
-      "foot locker"
+      "fitbit charge"
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.051Z",
+    "date": "2015-02-16T03:19:06.721Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "g",
     "results": [
       "google",
@@ -2466,9 +2466,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.146Z",
+    "date": "2015-02-16T03:19:06.817Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "h",
     "results": [
       "home depot",
@@ -2484,9 +2484,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.239Z",
+    "date": "2015-02-16T03:19:06.922Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "i",
     "results": [
       "iphone 6",
@@ -2502,9 +2502,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.339Z",
+    "date": "2015-02-16T03:19:07.029Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "j",
     "results": [
       "jordans",
@@ -2520,9 +2520,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.425Z",
+    "date": "2015-02-16T03:19:07.127Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "k",
     "results": [
       "kd 7",
@@ -2538,9 +2538,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.523Z",
+    "date": "2015-02-16T03:19:07.226Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "l",
     "results": [
       "laptop",
@@ -2556,27 +2556,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.623Z",
+    "date": "2015-02-16T03:19:07.336Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "m",
     "results": [
+      "michael kors watches",
       "michael kors",
       "minecraft",
-      "michael kors watches",
-      "mobile phone",
+      "michael kors handbags",
       "macy's",
       "macbook air",
-      "michael kors handbags",
+      "mobile phone",
       "macbook pro",
-      "mini fridge",
-      "microwave"
+      "minecraft toys",
+      "marks and spencer"
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.725Z",
+    "date": "2015-02-16T03:19:07.441Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "n",
     "results": [
       "nutribullet",
@@ -2592,9 +2592,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.822Z",
+    "date": "2015-02-16T03:19:07.538Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "o",
     "results": [
       "oculus rift",
@@ -2610,9 +2610,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:13.914Z",
+    "date": "2015-02-16T03:19:07.631Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "p",
     "results": [
       "ps4",
@@ -2628,9 +2628,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.040Z",
+    "date": "2015-02-16T03:19:07.751Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "q",
     "results": [
       "quadcopter",
@@ -2646,9 +2646,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.144Z",
+    "date": "2015-02-16T03:19:07.857Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "r",
     "results": [
       "rolex",
@@ -2664,9 +2664,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.250Z",
+    "date": "2015-02-16T03:19:07.956Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "s",
     "results": [
       "shoes",
@@ -2682,9 +2682,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.357Z",
+    "date": "2015-02-16T03:19:08.060Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "t",
     "results": [
       "target",
@@ -2700,9 +2700,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.702Z",
+    "date": "2015-02-16T03:19:08.154Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "u",
     "results": [
       "uggs",
@@ -2718,9 +2718,9 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.807Z",
+    "date": "2015-02-16T03:19:08.246Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "v",
     "results": [
       "victoria secret",
@@ -2736,27 +2736,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.899Z",
+    "date": "2015-02-16T03:19:08.351Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "w",
     "results": [
       "weather",
       "walmart",
       "wii u",
-      "wedding dresses",
-      "waist trainer",
       "wireless headphones",
+      "wii",
+      "wedding dresses",
+      "water speakers",
+      "womens boots",
       "wedding rings",
-      "washing machine",
-      "walgreens",
-      "windows 7"
+      "walmart store"
     ]
   },
   {
-    "date": "2015-02-16T02:38:14.996Z",
+    "date": "2015-02-16T03:19:08.450Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "x",
     "results": [
       "xbox one",
@@ -2772,27 +2772,27 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:15.099Z",
+    "date": "2015-02-16T03:19:08.768Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "y",
     "results": [
       "youtube",
       "yahoo",
       "yahoo mail",
       "youtube to mp3",
-      "yoga mat",
+      "yankee candle",
+      "yeti coolers",
+      "yankee candle advent calendar",
       "y",
       "youtube music",
-      "yoga pants",
-      "yeti coolers",
-      "yankee candle"
+      "yoga pants"
     ]
   },
   {
-    "date": "2015-02-16T02:38:15.221Z",
+    "date": "2015-02-16T03:19:08.878Z",
     "site": "products",
-    "language": "af",
+    "language": "be",
     "letter": "z",
     "results": [
       "zappos",
@@ -2808,21 +2808,471 @@
     ]
   },
   {
-    "date": "2015-02-16T02:38:15.354Z",
-    "site": "web",
-    "language": "sq",
+    "date": "2015-02-16T03:19:08.998Z",
+    "site": "recipes",
+    "language": "be",
     "letter": "a",
     "results": [
       "amazon",
-      "aol",
-      "aol mail",
-      "american express",
-      "accuweather",
-      "apple",
       "american airlines",
-      "apple store",
-      "amtrak",
-      "at&t"
+      "aol",
+      "american express",
+      "autozone",
+      "aol mail",
+      "at&t",
+      "american sniper",
+      "accuweather",
+      "apple"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.113Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "b",
+    "results": [
+      "best buy",
+      "bank of america",
+      "barnes and noble",
+      "bing",
+      "bed bath and beyond",
+      "black friday 2014",
+      "bill cosby",
+      "blank space lyrics",
+      "buzzfeed",
+      "banana republic"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.227Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "c",
+    "results": [
+      "craigslist",
+      "cnn",
+      "costco",
+      "cool math games",
+      "chase",
+      "capital one",
+      "credit karma",
+      "comcast",
+      "cool math",
+      "chris kyle"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.363Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "d",
+    "results": [
+      "dictionary",
+      "dicks sporting goods",
+      "dominos",
+      "dillards",
+      "direct tv",
+      "dropbox",
+      "drive",
+      "dsw",
+      "delta",
+      "dollar tree"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.481Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "e",
+    "results": [
+      "ebay",
+      "espn",
+      "etsy",
+      "edmodo",
+      "expedia",
+      "easybib",
+      "ebay motors",
+      "express",
+      "enterprise",
+      "email"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.593Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "fandango",
+      "fox news",
+      "forever 21",
+      "facebook login",
+      "fedex tracking",
+      "fedex",
+      "fifty shades of grey",
+      "fitbit",
+      "frontier airlines"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.713Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "g",
+    "results": [
+      "gmail",
+      "google",
+      "google maps",
+      "google drive",
+      "google docs",
+      "google translate",
+      "grammys",
+      "gamestop",
+      "groupon",
+      "google earth"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.838Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "h",
+    "results": [
+      "hotmail",
+      "home depot",
+      "hobby lobby",
+      "hulu",
+      "happy wheels",
+      "harbor freight",
+      "h&m",
+      "huffington post",
+      "horoscope",
+      "hot topic"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:09.942Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "i",
+    "results": [
+      "instagram",
+      "imdb",
+      "indeed",
+      "ikea",
+      "icloud",
+      "itunes",
+      "interstellar",
+      "irs",
+      "images",
+      "iheartradio"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.057Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "j",
+    "results": [
+      "jcpenney",
+      "jetblue",
+      "jimmy johns",
+      "jamie dornan",
+      "java",
+      "j crew",
+      "justin bieber",
+      "jennifer lawrence",
+      "jim harbaugh",
+      "johnny manziel"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.166Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "k",
+    "results": [
+      "kayak",
+      "kohl's",
+      "khan academy",
+      "kmart",
+      "kim kardashian",
+      "kahoot",
+      "kroger",
+      "kingsman",
+      "kizi",
+      "kbb"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.290Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "l",
+    "results": [
+      "lowes",
+      "linkedin",
+      "lululemon",
+      "living social",
+      "league of legends",
+      "llbean",
+      "lands end",
+      "let it go",
+      "la fitness",
+      "louis vuitton"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.401Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "m",
+    "results": [
+      "mapquest",
+      "maps",
+      "msn",
+      "macy's",
+      "minecraft",
+      "michaels",
+      "menards",
+      "metro pcs",
+      "mcdonalds",
+      "mortgage calculator"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.512Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "n",
+    "results": [
+      "netflix",
+      "nordstrom",
+      "news",
+      "nfl",
+      "nike",
+      "nfl scores",
+      "nfl standings",
+      "new york times",
+      "nba",
+      "navient"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.632Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "o",
+    "results": [
+      "old navy",
+      "omegle",
+      "outlook",
+      "orbitz",
+      "overstock",
+      "olive garden",
+      "office depot",
+      "okcupid",
+      "office 365",
+      "oil prices"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.755Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "p",
+    "results": [
+      "pinterest",
+      "pandora",
+      "paypal",
+      "pizza hut",
+      "papa johns",
+      "powerball",
+      "party city",
+      "project free tv",
+      "pbs kids",
+      "pof"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.870Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "q",
+    "results": [
+      "quizlet",
+      "qvc",
+      "quotes",
+      "quest diagnostics",
+      "quotev",
+      "quadratic formula",
+      "quickbooks",
+      "qdoba",
+      "quia",
+      "qwop"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:10.974Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "r",
+    "results": [
+      "redbox",
+      "reddit",
+      "rate my professor",
+      "rotten tomatoes",
+      "restoration hardware",
+      "roblox",
+      "rei",
+      "rite aid",
+      "radio shack",
+      "raz kids"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:11.077Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "s",
+    "results": [
+      "southwest airlines",
+      "staples",
+      "soundcloud",
+      "sprint",
+      "spotify",
+      "sears",
+      "starbucks",
+      "speed test",
+      "skype",
+      "steam"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:11.468Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "t",
+    "results": [
+      "target",
+      "twitter",
+      "thesaurus",
+      "toys r us",
+      "translate",
+      "ticketmaster",
+      "tumblr",
+      "the interview",
+      "tmz",
+      "t mobile"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:11.569Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "u",
+    "results": [
+      "ups tracking",
+      "usps tracking",
+      "united airlines",
+      "usps",
+      "ups",
+      "urban dictionary",
+      "us airways",
+      "urban outfitters",
+      "us bank",
+      "unblocked games"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:11.679Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "v",
+    "results": [
+      "verizon wireless",
+      "valentines day",
+      "victoria secret",
+      "verizon",
+      "vine",
+      "valentines",
+      "virgin mobile",
+      "vimeo",
+      "valentines day cards",
+      "vistaprint"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:11.789Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "w",
+    "results": [
+      "walmart",
+      "weather",
+      "wells fargo",
+      "walgreens",
+      "worldstarhiphop",
+      "wikipedia",
+      "white pages",
+      "webmd",
+      "wolfram alpha",
+      "whole foods"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:11.910Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "x",
+    "results": [
+      "xfinity",
+      "xbox live",
+      "xbox one",
+      "xtramath",
+      "xbox",
+      "xcel energy",
+      "xbox 360",
+      "xbmc",
+      "xanax",
+      "xkcd"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:12.021Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yahoo",
+      "yahoo mail",
+      "youtube to mp3",
+      "yelp",
+      "yahoo finance",
+      "yahoo news",
+      "yahoo fantasy football",
+      "yellow pages",
+      "y8"
+    ]
+  },
+  {
+    "date": "2015-02-16T03:19:12.122Z",
+    "site": "recipes",
+    "language": "be",
+    "letter": "z",
+    "results": [
+      "zach lavine",
+      "zillow",
+      "zappos",
+      "zara",
+      "zumiez",
+      "zulily",
+      "zodiac signs",
+      "zales",
+      "zip codes",
+      "zoosk"
     ]
   }
 ]

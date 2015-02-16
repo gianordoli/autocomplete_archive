@@ -23,7 +23,7 @@ var letters = [];
 for(var i = 65; i <= 90; i++){
 	letters.push(String.fromCharCode(i));
 }
-console.log(letters);
+// console.log(letters);
 
 // All results from this day
 var dailySearch = [];
@@ -38,7 +38,8 @@ console.log('--------------------------------------------');
 
 var letterIndex = 0;
 var serviceIndex = 0;
-var languageIndex = 0;
+var languageIndex = 19;
+var initIndex = languageIndex;
 callAutocomplete(letters[letterIndex],
 				 services[serviceIndex],
 				 languages[languageIndex]);
@@ -93,7 +94,7 @@ function callAutocomplete(query, service, language){
 			}
 
 			// Next?
-			if(languageIndex < 1){
+			if(languageIndex < initIndex + 1){
 				callAutocomplete(letters[letterIndex],
 								 services[serviceIndex],
 								 languages[languageIndex]);
