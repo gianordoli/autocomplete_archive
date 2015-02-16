@@ -22,7 +22,8 @@ Spring, 2015
 ## To do
 
 * Explore other languages
-	* **Categorize latin alphabets**
+	* ~~Categorize latin alphabets~~: added category based on [this list](http://en.wikipedia.org/wiki/List_of_languages_by_writing_system). But most languages seem to return the same result as English
+		* Try changing the VPN instead?
 	* Loop through non-latin alphabets
 	
 * Create scraper to store link to the first results of each search

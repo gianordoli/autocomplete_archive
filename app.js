@@ -4,13 +4,26 @@ var request = require('request'),
 	  iconv = require('iconv-lite'),
 MongoClient = require('mongodb').MongoClient,
      format = require('util').format,
-	CronJob = require('cron').CronJob;
+	CronJob = require('cron').CronJob
+		  _ = require('underscore');
 
 var languages = jf.readFileSync('data/languages.json');
 // console.log(languages);
 
+// For now, only latin-script languages...
+languages = _.filter(languages, function(obj){
+	return obj.script == 'latin';
+});
+// console.log(languages);
+
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
+
+var letters = [];
+for(var i = 65; i <= 90; i++){
+	letters.push(String.fromCharCode(i));
+}
+// console.log(letters);
 
 // All results from this day
 var dailySearch = [];
@@ -18,11 +31,18 @@ var dailySearch = [];
 console.log('--------------------------------------------');
 console.log('App started running');
 console.log('--------------------------------------------');
-new CronJob('0 0 22 * * *', function(){
-	dailySearch = [];
-    callAutocomplete(String.fromCharCode(65), services[0], 'en');
-}, null, true, "America/New_York");
+// new CronJob('0 0 22 * * *', function(){
+// 	dailySearch = [];
+//     callAutocomplete(String.fromCharCode(65), services[0], 'en');
+// }, null, true, "America/New_York");
 
+var letterIndex = 0;
+var serviceIndex = 0;
+var languageIndex = 19;
+var initIndex = languageIndex;
+callAutocomplete(letters[letterIndex],
+				 services[serviceIndex],
+				 languages[languageIndex]);
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
@@ -63,29 +83,25 @@ function callAutocomplete(query, service, language){
 			}
 
 			// Next iteration
-			var letterIndex = query.charCodeAt();
-			var serviceIndex = parseInt(currIndex(service, services));
-
-			// New letter
-			if(letterIndex < 90){
-				letterIndex++;
-				var newQuery = String.fromCharCode(letterIndex);
-				callAutocomplete(newQuery, service, language);
+			letterIndex++;
+			if(letterIndex == letters.length){
+				letterIndex = 0;
+				serviceIndex ++;
+				if (serviceIndex == services.length) {
+					serviceIndex = 0;
+					languageIndex++;
+				}
 			}
 
-			// New service
-			else if(serviceIndex < services.length - 1){
-				var newQuery = String.fromCharCode(65);
-				var newService = services[serviceIndex + 1];
-				// console.log('called letter ['+newQuery+'] in ['+newService+']');
-				callAutocomplete(newQuery, newService, language);
-			}
-
-			// End
-			else{
+			// Next?
+			if(languageIndex < initIndex + 1){
+				callAutocomplete(letters[letterIndex],
+								 services[serviceIndex],
+								 languages[languageIndex]);
+			}else{	// End
 				// console.log(dailySearch);				
 				saveToJSON();
-				saveToMongoDB();
+				// saveToMongoDB();
 
 				console.log('--------------------------------------------');
 				console.log('Finshed daily scraping.');
@@ -104,7 +120,7 @@ function concatenateUrl(query, service, language){
 	var requestUrl = 'https://clients1.google.com/complete/search?' +
 					 '&client=firefox'+
 					 '&q=' + query +
-					 '&hl=' + language +
+					 '&hl=' + language.hl +
 					 '&ds=' + service.ds;
 
 	// console.log(requestUrl);
@@ -122,9 +138,10 @@ function createRecord(service, language, suggestions){
 	var obj = {
 		date: new Date(),
 		site: service.site,
-		language: language,
+		language: language.hl,
 		letter: suggestions[0].charAt(0),
-		results: suggestionToObj(service, suggestions)
+		results: suggestions
+		// results: suggestionToObj(service, suggestions)
 	};
 	// console.log('Returning ' + obj);
 	return obj;

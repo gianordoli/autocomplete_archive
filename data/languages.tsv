@@ -1,150 +1,1 @@
-hl	country
-af	Afrikaans
-ak	Akan
-sq	Albanian
-am	Amharic
-ar	Arabic
-hy	Armenian
-az	Azerbaijani
-eu	Basque
-be	Belarusian
-bem	Bemba
-bn	Bengali
-bh	Bihari
-xx-bork	Bork, bork, bork!
-bs	Bosnian
-br	Breton
-bg	Bulgarian
-km	Cambodian
-ca	Catalan
-chr	Cherokee
-ny	Chichewa
-zh-CN	Chinese (Simplified)
-zh-TW	Chinese (Traditional)
-co	Corsican
-hr	Croatian
-cs	Czech
-da	Danish
-nl	Dutch
-xx-elmer	Elmer Fudd
-en	English
-eo	Esperanto
-et	Estonian
-ee	Ewe
-fo	Faroese
-tl	Filipino
-fi	Finnish
-fr	French
-fy	Frisian
-gaa	Ga
-gl	Galician
-ka	Georgian
-de	German
-el	Greek
-gn	Guarani
-gu	Gujarati
-xx-hacker	Hacker
-ht	Haitian Creole
-ha	Hausa
-haw	Hawaiian
-iw	Hebrew
-hi	Hindi
-hu	Hungarian
-is	Icelandic
-ig	Igbo
-id	Indonesian
-ia	Interlingua
-ga	Irish
-it	Italian
-ja	Japanese
-jw	Javanese
-kn	Kannada
-kk	Kazakh
-rw	Kinyarwanda
-rn	Kirundi
-xx-klingon	Klingon
-kg	Kongo
-ko	Korean
-kri	Krio (Sierra Leone)
-ku	Kurdish
-ckb	Kurdish (Soranî)
-ky	Kyrgyz
-lo	Laothian
-la	Latin
-lv	Latvian
-ln	Lingala
-lt	Lithuanian
-loz	Lozi
-lg	Luganda
-ach	Luo
-mk	Macedonian
-mg	Malagasy
-ms	Malay
-ml	Malayalam
-mt	Maltese
-mi	Maori
-mr	Marathi
-mfe	Mauritian Creole
-mo	Moldavian
-mn	Mongolian
-sr-ME	Montenegrin
-ne	Nepali
-pcm	Nigerian Pidgin
-nso	Northern Sotho
-no	Norwegian
-nn	Norwegian (Nynorsk)
-oc	Occitan
-or	Oriya
-om	Oromo
-ps	Pashto
-fa	Persian
-xx-pirate	Pirate
-pl	Polish
-pt-BR	Portuguese (Brazil)
-pt-PT	Portuguese (Portugal)
-pa	Punjabi
-qu	Quechua
-ro	Romanian
-rm	Romansh
-nyn	Runyakitara
-ru	Russian
-gd	Scots Gaelic
-sr	Serbian
-sh	Serbo-Croatian
-st	Sesotho
-tn	Setswana
-crs	Seychellois Creole
-sn	Shona
-sd	Sindhi
-si	Sinhalese
-sk	Slovak
-sl	Slovenian
-so	Somali
-es	Spanish
-es-419	Spanish (Latin American)
-su	Sundanese
-sw	Swahili
-sv	Swedish
-tg	Tajik
-ta	Tamil
-tt	Tatar
-te	Telugu
-th	Thai
-ti	Tigrinya
-to	Tonga
-lua	Tshiluba
-tum	Tumbuka
-tr	Turkish
-tk	Turkmen
-tw	Twi
-ug	Uighur
-uk	Ukrainian
-ur	Urdu
-uz	Uzbek
-vi	Vietnamese
-cy	Welsh
-wo	Wolof
-xh	Xhosa
-yi	Yiddish
-yo	Yoruba
-zu	Zulu
+hl	language	scriptaf	Afrikaans	latinak	Akan	sq	Albanian	latinam	Amharic	ar	Arabic	hy	Armenian	az	Azerbaijani	eu	Basque	latinbe	Belarusian	latinbem	Bemba	bn	Bengali	bh	Bihari	xx-bork	"Bork, bork, bork!"	bs	Bosnian	latinbr	Breton	latinbg	Bulgarian	km	Cambodian	ca	Catalan	latinchr	Cherokee	latinny	Chichewa	zh-CN	Chinese (Simplified)	zh-TW	Chinese (Traditional)	co	Corsican	latinhr	Croatian	latincs	Czech	latinda	Danish	latinnl	Dutch	latinxx-elmer	Elmer Fudd	en	English	latineo	Esperanto	latinet	Estonian	latinee	Ewe	fo	Faroese	latintl	Filipino	latinfi	Finnish	latinfr	French	latinfy	Frisian	latingaa	Ga	gl	Galician	latinka	Georgian	de	German	latinel	Greek	gn	Guarani	latingu	Gujarati	xx-hacker	Hacker	ht	Haitian Creole	latinha	Hausa	latinhaw	Hawaiian	latiniw	Hebrew	hi	Hindi	hu	Hungarian	latinis	Icelandic	latinig	Igbo	latinid	Indonesian	latinia	Interlingua	latinga	Irish	latinit	Italian	latinja	Japanese	jw	Javanese	latinkn	Kannada	kk	Kazakh	rw	Kinyarwanda	latinrn	Kirundi	latinxx-klingon	Klingon	kg	Kongo	latinko	Korean	kri	Krio (Sierra Leone)	ku	Kurdish	latinckb	Kurdish (Soran̨)	ky	Kyrgyz	lo	Laothian	la	Latin	latinlv	Latvian	latinln	Lingala	latinlt	Lithuanian	latinloz	Lozi	lg	Luganda	latinach	Luo	mk	Macedonian	mg	Malagasy	latinms	Malay	latinml	Malayalam	mt	Maltese	latinmi	Maori	latinmr	Marathi	mfe	Mauritian Creole	mo	Moldavian	latinmn	Mongolian	sr-ME	Montenegrin	latinne	Nepali	pcm	Nigerian Pidgin	nso	Northern Sotho	no	Norwegian	latinnn	Norwegian (Nynorsk)	oc	Occitan	latinor	Oriya	om	Oromo	latinps	Pashto	fa	Persian	xx-pirate	Pirate	pl	Polish	latinpt-BR	Portuguese (Brazil)	latinpt-PT	Portuguese (Portugal)	latinpa	Punjabi	qu	Quechua	latinro	Romanian	latinrm	Romansh	latinnyn	Runyakitara	ru	Russian	gd	Scots Gaelic	sr	Serbian	latinsh	Serbo-Croatian	st	Sesotho	tn	Setswana	crs	Seychellois Creole	sn	Shona	sd	Sindhi	latinsi	Sinhalese	sk	Slovak	latinsl	Slovenian	latinso	Somali	latines	Spanish	latines-419	Spanish (Latin American)	latinsu	Sundanese	sw	Swahili	latinsv	Swedish	latintg	Tajik	ta	Tamil	tt	Tatar	latinte	Telugu	th	Thai	ti	Tigrinya	to	Tonga	latinlua	Tshiluba	tum	Tumbuka	tr	Turkish	latintk	Turkmen	latintw	Twi	ug	Uighur	uk	Ukrainian	ur	Urdu	uz	Uzbek	latinvi	Vietnamese	latincy	Welsh	latinwo	Wolof	latinxh	Xhosa	latinyi	Yiddish	yo	Yoruba	latinzu	Zulu	latin
