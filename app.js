@@ -20,9 +20,10 @@ var services = jf.readFileSync('data/services.json');
 // console.log(services);
 
 var letters = [];
-for(var i = 65; i <= 91; i++){
+for(var i = 65; i <= 90; i++){
 	letters.push(String.fromCharCode(i));
 }
+console.log(letters);
 
 // All results from this day
 var dailySearch = [];
@@ -81,24 +82,22 @@ function callAutocomplete(query, service, language){
 			}
 
 			// Next iteration
-			if(serviceIndex < services.length - 1){
-
-				letterIndex++;
-				if(letterIndex == letters.length - 1){
-					// console.log('--------------------------------------------');
-					// console.log('Changed service.');
-					// console.log('--------------------------------------------');
-					letterIndex = 0;
-					serviceIndex++;
+			letterIndex++;
+			if(letterIndex == letters.length){
+				letterIndex = 0;
+				serviceIndex ++;
+				if (serviceIndex == services.length) {
+					serviceIndex = 0;
+					languageIndex++;
 				}
+			}
 
+			// Next?
+			if(languageIndex < 1){
 				callAutocomplete(letters[letterIndex],
 								 services[serviceIndex],
 								 languages[languageIndex]);
-			}
-
-			// End
-			else{
+			}else{	// End
 				// console.log(dailySearch);				
 				saveToJSON();
 				// saveToMongoDB();
