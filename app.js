@@ -7,13 +7,13 @@ MongoClient = require('mongodb').MongoClient,
 	CronJob = require('cron').CronJob
 		  _ = require('underscore');
 
-var languages = jf.readFileSync('data/languages.json');
+var countries = jf.readFileSync('data/countries.json');
 // console.log(languages);
 
 // For now, only latin-script languages...
-languages = _.filter(languages, function(obj){
-	return obj.script == 'latin';
-});
+// languages = _.filter(languages, function(obj){
+// 	return obj.script == 'latin';
+// });
 // console.log(languages);
 
 var services = jf.readFileSync('data/services.json');
@@ -38,22 +38,20 @@ console.log('--------------------------------------------');
 
 var letterIndex = 0;
 var serviceIndex = 0;
-var languageIndex = 0;
-var initIndex = languageIndex;
+var countryIndex = 3;
+var initIndex = countryIndex;
 callAutocomplete(letters[letterIndex],
 				 services[serviceIndex],
-				 languages[languageIndex]);
+				 countries[countryIndex]);
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
-function callAutocomplete(query, service, language){
+function callAutocomplete(query, service, country){
 	console.log('Called callAutocomplete.')
 
 	var url = {
-		uri: concatenateUrl(query, service, language),
+		uri: concatenateUrl(query, service, country),
 		encoding: null
-		// authority: 'www.google.com.br'
-		// referer: 'https://www.google.com.br/'
 	};
 
 	request(url, function (error, response, body) {
@@ -77,7 +75,7 @@ function callAutocomplete(query, service, language){
 			if(suggestions.length > 0){
 
 				// Create a new record and save
-				var newRecord = createRecord(service, language, suggestions);
+				var newRecord = createRecord(service, country, suggestions);
 				console.log(newRecord);
 
 				// Save current result
@@ -91,15 +89,15 @@ function callAutocomplete(query, service, language){
 				serviceIndex ++;
 				if (serviceIndex == services.length) {
 					serviceIndex = 0;
-					languageIndex++;
+					countryIndex++;
 				}
 			}
 
 			// Next?
-			if(languageIndex < initIndex + 1){
+			if(countryIndex < initIndex + 1){
 				callAutocomplete(letters[letterIndex],
 								 services[serviceIndex],
-								 languages[languageIndex]);
+								 countries[countryIndex]);
 			}else{	// End
 				// console.log(dailySearch);				
 				saveToJSON();
@@ -116,16 +114,13 @@ function callAutocomplete(query, service, language){
 /*-------------------- FUNCTIONS --------------------*/
 
 // Creates url for reqquest, concatenating the parameters
-function concatenateUrl(query, service, language){
+function concatenateUrl(query, service, country){
 	console.log('Called concatenateUrl');
 	// console.log(service.ds);	
 	var requestUrl = 
-					'https://www.google.com.br/complete/search?' +
-					// 'https://clients1.google.com/complete/search?' +
+					'https://www.'+country.Domain+'/complete/search?' +
 					 '&client=firefox'+
 					 '&q=' + query +
-					 // '&hl=' + language.hl +
-					 // '&hl=pt-br'+
 					 '&ds=' + service.ds;
 
 	// console.log(requestUrl);
@@ -134,7 +129,7 @@ function concatenateUrl(query, service, language){
 }
 
 // Returns a record
-function createRecord(service, language, suggestions){
+function createRecord(service, country, suggestions){
 	console.log('Called createRecord');
 	// console.log('Received:');
 	// console.log(service);
@@ -143,7 +138,7 @@ function createRecord(service, language, suggestions){
 	var obj = {
 		date: new Date(),
 		site: service.site,
-		language: language.hl,
+		country: country.Domain,
 		letter: suggestions[0].charAt(0),
 		results: suggestions
 		// results: suggestionToObj(service, suggestions)
