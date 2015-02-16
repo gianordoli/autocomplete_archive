@@ -51,8 +51,9 @@ function callAutocomplete(query, service, language){
 
 	var url = {
 		uri: concatenateUrl(query, service, language),
-		encoding: null,
-		referer: 'https://www.google.fr/'
+		encoding: null
+		// authority: 'www.google.com.br'
+		// referer: 'https://www.google.com.br/'
 	};
 
 	request(url, function (error, response, body) {
@@ -119,12 +120,12 @@ function concatenateUrl(query, service, language){
 	console.log('Called concatenateUrl');
 	// console.log(service.ds);	
 	var requestUrl = 
-					'https://www.google.fr/complete/search?' +
+					'https://www.google.com.br/complete/search?' +
 					// 'https://clients1.google.com/complete/search?' +
 					 '&client=firefox'+
 					 '&q=' + query +
 					 // '&hl=' + language.hl +
-					 // '&hl=' + language.hl +
+					 // '&hl=pt-br'+
 					 '&ds=' + service.ds;
 
 	// console.log(requestUrl);
