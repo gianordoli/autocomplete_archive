@@ -4,10 +4,15 @@ var request = require('request'),
 	  iconv = require('iconv-lite'),
 MongoClient = require('mongodb').MongoClient,
      format = require('util').format,
-	CronJob = require('cron').CronJob;
+	CronJob = require('cron').CronJob
+		  _ = require('underscore');
 
 var languages = jf.readFileSync('data/languages.json');
 // console.log(languages);
+var latinLanguages = _.filter(languages, function(obj){
+	return obj.script == 'latin';
+});
+// console.log(latinLanguages);
 
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
@@ -18,11 +23,11 @@ var dailySearch = [];
 console.log('--------------------------------------------');
 console.log('App started running');
 console.log('--------------------------------------------');
-new CronJob('0 0 22 * * *', function(){
-	dailySearch = [];
-    callAutocomplete(String.fromCharCode(65), services[0], 'en');
-}, null, true, "America/New_York");
-
+// new CronJob('0 0 22 * * *', function(){
+// 	dailySearch = [];
+//     callAutocomplete(String.fromCharCode(65), services[0], 'en');
+// }, null, true, "America/New_York");
+callAutocomplete(String.fromCharCode(65), services[0], languages[0].hl);
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
@@ -85,7 +90,7 @@ function callAutocomplete(query, service, language){
 			else{
 				// console.log(dailySearch);				
 				saveToJSON();
-				saveToMongoDB();
+				// saveToMongoDB();
 
 				console.log('--------------------------------------------');
 				console.log('Finshed daily scraping.');
