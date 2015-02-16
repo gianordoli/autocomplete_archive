@@ -38,7 +38,7 @@ console.log('--------------------------------------------');
 
 var letterIndex = 0;
 var serviceIndex = 0;
-var countryIndex = 3;
+var countryIndex = 88;
 var initIndex = countryIndex;
 callAutocomplete(letters[letterIndex],
 				 services[serviceIndex],
@@ -94,7 +94,8 @@ function callAutocomplete(query, service, country){
 			}
 
 			// Next?
-			if(countryIndex < initIndex + 1){
+			// if(countryIndex < initIndex + 1){
+			if(countryIndex < countries.length){
 				callAutocomplete(letters[letterIndex],
 								 services[serviceIndex],
 								 countries[countryIndex]);
