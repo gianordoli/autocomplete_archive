@@ -38,7 +38,7 @@ console.log('--------------------------------------------');
 
 var letterIndex = 0;
 var serviceIndex = 0;
-var languageIndex = 19;
+var languageIndex = 0;
 var initIndex = languageIndex;
 callAutocomplete(letters[letterIndex],
 				 services[serviceIndex],
@@ -51,7 +51,8 @@ function callAutocomplete(query, service, language){
 
 	var url = {
 		uri: concatenateUrl(query, service, language),
-		encoding: null
+		encoding: null,
+		referer: 'https://www.google.fr/'
 	};
 
 	request(url, function (error, response, body) {
@@ -117,10 +118,13 @@ function callAutocomplete(query, service, language){
 function concatenateUrl(query, service, language){
 	console.log('Called concatenateUrl');
 	// console.log(service.ds);	
-	var requestUrl = 'https://clients1.google.com/complete/search?' +
+	var requestUrl = 
+					'https://www.google.fr/complete/search?' +
+					// 'https://clients1.google.com/complete/search?' +
 					 '&client=firefox'+
 					 '&q=' + query +
-					 '&hl=' + language.hl +
+					 // '&hl=' + language.hl +
+					 // '&hl=' + language.hl +
 					 '&ds=' + service.ds;
 
 	// console.log(requestUrl);
