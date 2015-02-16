@@ -1,0 +1,470 @@
+[
+  {
+    "date": "2015-02-16T00:12:05.924Z",
+    "site": "web",
+    "language": "af",
+    "letter": "a",
+    "results": [
+      "amazon",
+      "aol",
+      "aol mail",
+      "american express",
+      "accuweather",
+      "apple",
+      "american airlines",
+      "apple store",
+      "amtrak",
+      "at&t"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.039Z",
+    "site": "web",
+    "language": "af",
+    "letter": "b",
+    "results": [
+      "best buy",
+      "bloomingdales",
+      "bank of america",
+      "bob simon",
+      "barnes and noble",
+      "bed bath and beyond",
+      "bing",
+      "banana republic",
+      "brian williams",
+      "bjs"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.143Z",
+    "site": "web",
+    "language": "af",
+    "letter": "c",
+    "results": [
+      "craigslist",
+      "craigslist ny",
+      "cnn",
+      "chase",
+      "craigslist nj",
+      "capital one",
+      "cool math games",
+      "citibank",
+      "chase online",
+      "costco"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.291Z",
+    "site": "web",
+    "language": "af",
+    "letter": "d",
+    "results": [
+      "dictionary",
+      "dsw",
+      "dropbox",
+      "drive",
+      "dominos",
+      "dicks sporting goods",
+      "delta",
+      "daily news",
+      "direct tv",
+      "discover"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.398Z",
+    "site": "web",
+    "language": "af",
+    "letter": "e",
+    "results": [
+      "ebay",
+      "espn",
+      "expedia",
+      "etsy",
+      "edmodo",
+      "express",
+      "easybib",
+      "ebay motors",
+      "ez pass ny",
+      "engrade"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.515Z",
+    "site": "web",
+    "language": "af",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "forever 21",
+      "fandango",
+      "fox news",
+      "fedex",
+      "fedex tracking",
+      "facebook login",
+      "foot locker",
+      "flight club",
+      "fitbit"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.617Z",
+    "site": "web",
+    "language": "af",
+    "letter": "g",
+    "results": [
+      "gmail",
+      "google",
+      "google maps",
+      "google drive",
+      "google docs",
+      "google translate",
+      "groupon",
+      "gamestop",
+      "google classroom",
+      "gap"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.742Z",
+    "site": "web",
+    "language": "af",
+    "letter": "h",
+    "results": [
+      "hotmail",
+      "home depot",
+      "h&m",
+      "hopstop",
+      "hulu",
+      "huffington post",
+      "hollister",
+      "harbor freight",
+      "horoscope",
+      "happy wheels"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.857Z",
+    "site": "web",
+    "language": "af",
+    "letter": "i",
+    "results": [
+      "instagram",
+      "ikea",
+      "imdb",
+      "indeed",
+      "icloud",
+      "interstellar",
+      "itunes",
+      "iggy azalea",
+      "iphone 6",
+      "images"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:06.972Z",
+    "site": "web",
+    "language": "af",
+    "letter": "j",
+    "results": [
+      "jetblue",
+      "jcpenney",
+      "j crew",
+      "jupiter grades",
+      "justin bieber",
+      "jimmy johns",
+      "jennifer lawrence",
+      "java",
+      "jimmy jazz",
+      "jimmy fallon"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.105Z",
+    "site": "web",
+    "language": "af",
+    "letter": "k",
+    "results": [
+      "kayak",
+      "kohl's",
+      "kmart",
+      "khan academy",
+      "kim kardashian",
+      "kayla mueller",
+      "kate spade",
+      "kylie jenner",
+      "knicks",
+      "kbb"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.211Z",
+    "site": "web",
+    "language": "af",
+    "letter": "l",
+    "results": [
+      "linkedin",
+      "lowes",
+      "lirr",
+      "lord and taylor",
+      "lululemon",
+      "living social",
+      "llbean",
+      "louis vuitton",
+      "lands end",
+      "labcorp"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.359Z",
+    "site": "web",
+    "language": "af",
+    "letter": "m",
+    "results": [
+      "maps",
+      "mapquest",
+      "macy's",
+      "mta",
+      "msn",
+      "metro north schedule",
+      "moviefone",
+      "michael kors",
+      "modells",
+      "minecraft"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.476Z",
+    "site": "web",
+    "language": "af",
+    "letter": "n",
+    "results": [
+      "netflix",
+      "nordstrom",
+      "nj transit",
+      "news",
+      "ny times",
+      "news 12",
+      "nj lottery",
+      "nfl",
+      "ny daily news",
+      "ny post"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.589Z",
+    "site": "web",
+    "language": "af",
+    "letter": "o",
+    "results": [
+      "optimum",
+      "old navy",
+      "orbitz",
+      "omegle",
+      "overstock",
+      "outlook",
+      "okcupid",
+      "optonline",
+      "opentable",
+      "olive garden"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.702Z",
+    "site": "web",
+    "language": "af",
+    "letter": "p",
+    "results": [
+      "pandora",
+      "pinterest",
+      "paypal",
+      "pizza hut",
+      "pupilpath",
+      "papa johns",
+      "party city",
+      "project free tv",
+      "pc richards",
+      "pseg"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.822Z",
+    "site": "web",
+    "language": "af",
+    "letter": "q",
+    "results": [
+      "quizlet",
+      "qvc",
+      "queens library",
+      "quotes",
+      "queens college",
+      "queen of the night",
+      "quickbooks",
+      "quantum of the seas",
+      "quotev",
+      "queens center mall"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:07.936Z",
+    "site": "web",
+    "language": "af",
+    "letter": "r",
+    "results": [
+      "rate my professor",
+      "redbox",
+      "reddit",
+      "rotten tomatoes",
+      "restoration hardware",
+      "rite aid",
+      "raz kids",
+      "roblox",
+      "ralph lauren",
+      "radio shack"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.047Z",
+    "site": "web",
+    "language": "af",
+    "letter": "s",
+    "results": [
+      "staples",
+      "soundcloud",
+      "southwest airlines",
+      "shoprite",
+      "spotify",
+      "sephora",
+      "skype",
+      "showbox",
+      "sears",
+      "sprint"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.158Z",
+    "site": "web",
+    "language": "af",
+    "letter": "t",
+    "results": [
+      "target",
+      "twitter",
+      "td bank",
+      "translate",
+      "toys r us",
+      "thesaurus",
+      "ticketmaster",
+      "the interview",
+      "t mobile",
+      "tmz"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.275Z",
+    "site": "web",
+    "language": "af",
+    "letter": "u",
+    "results": [
+      "united airlines",
+      "ups tracking",
+      "usps tracking",
+      "urban outfitters",
+      "usps",
+      "ups",
+      "urban dictionary",
+      "uggs",
+      "uniqlo",
+      "uber"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.390Z",
+    "site": "web",
+    "language": "af",
+    "letter": "v",
+    "results": [
+      "verizon wireless",
+      "victoria secret",
+      "verizon",
+      "verizon fios",
+      "vine",
+      "verizon email",
+      "vimeo",
+      "virgin america",
+      "valentines day",
+      "vrbo"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.504Z",
+    "site": "web",
+    "language": "af",
+    "letter": "w",
+    "results": [
+      "walmart",
+      "weather",
+      "worldstarhiphop",
+      "wells fargo",
+      "weather nyc",
+      "walgreens",
+      "wikipedia",
+      "white pages",
+      "webmd",
+      "wwe"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.603Z",
+    "site": "web",
+    "language": "af",
+    "letter": "x",
+    "results": [
+      "xbox live",
+      "xbox one",
+      "xbox",
+      "xfinity",
+      "xtramath",
+      "xbmc",
+      "xanax",
+      "xbox 360",
+      "xoom",
+      "xi'an famous foods"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.733Z",
+    "site": "web",
+    "language": "af",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yahoo",
+      "yahoo mail",
+      "youtube to mp3",
+      "yelp",
+      "yahoo finance",
+      "yelp nyc",
+      "yahoo fantasy football",
+      "y8",
+      "yahoo news"
+    ]
+  },
+  {
+    "date": "2015-02-16T00:12:08.847Z",
+    "site": "web",
+    "language": "af",
+    "letter": "z",
+    "results": [
+      "zara",
+      "zappos",
+      "zillow",
+      "zocdoc",
+      "zumiez",
+      "zodiac signs",
+      "zulily",
+      "zahra schreiber",
+      "zipcar",
+      "zara usa"
+    ]
+  }
+]

@@ -9,7 +9,7 @@ MongoClient = require('mongodb').MongoClient,
 
 var languages = jf.readFileSync('data/languages.json');
 // console.log(languages);
-var latinLanguages = _.filter(languages, function(obj){
+languages = _.filter(languages, function(obj){
 	return obj.script == 'latin';
 });
 // console.log(latinLanguages);
@@ -27,7 +27,13 @@ console.log('--------------------------------------------');
 // 	dailySearch = [];
 //     callAutocomplete(String.fromCharCode(65), services[0], 'en');
 // }, null, true, "America/New_York");
-callAutocomplete(String.fromCharCode(65), services[0], languages[0].hl);
+
+var letterIndex = 65;
+var serviceIndex = 0;
+var languageIndex = 0;
+callAutocomplete(String.fromCharCode(letterIndex),
+				 services[serviceIndex],
+				 languages[languageIndex]);
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
@@ -68,34 +74,72 @@ function callAutocomplete(query, service, language){
 			}
 
 			// Next iteration
-			var letterIndex = query.charCodeAt();
-			var serviceIndex = parseInt(currIndex(service, services));
 
 			// New letter
-			if(letterIndex < 90){
+			if(serviceIndex < services.length){
+
 				letterIndex++;
-				var newQuery = String.fromCharCode(letterIndex);
-				callAutocomplete(newQuery, service, language);
+				if(letterIndex == 91){
+					console.log('--------------------------------------------');
+					console.log('Changed service.');
+					console.log('--------------------------------------------');
+					letterIndex = 65;
+					serviceIndex++;
+				}
+
+				callAutocomplete(String.fromCharCode(letterIndex),
+								 services[serviceIndex],
+								 languages[languageIndex]);
 			}
 
-			// New service
-			else if(serviceIndex < services.length - 1){
-				var newQuery = String.fromCharCode(65);
-				var newService = services[serviceIndex + 1];
-				// console.log('called letter ['+newQuery+'] in ['+newService+']');
-				callAutocomplete(newQuery, newService, language);
-			}
+			
+			// 	letterIndex++;
+			// 	// if(serviceIndex < services.length){
+
+			// 	// }
+			// }else{
+			// 	letterIndex = 0;
+			// 	// serviceIndex ++;
+			// }
+
+			// var newQuery = String.fromCharCode(letterIndex);
+			// var newService = services[serviceIndex + 1];
+
+
+				// // New service
+				// if(letterIndex)
+				// if(serviceIndex < services.length - 1){
+				// 	var newQuery = String.fromCharCode(65);
+					// var newService = services[serviceIndex + 1];
+				// 	// console.log('called letter ['+newQuery+'] in ['+newService+']');
+				// 	callAutocomplete(newQuery, newService, language);
+				// }
+
+				
+			// }
+
+			// // New service
+			// else if(serviceIndex < services.length - 1){
+			// 	var newQuery = String.fromCharCode(65);
+			// 	var newService = services[serviceIndex + 1];
+			// 	// console.log('called letter ['+newQuery+'] in ['+newService+']');
+			// 	callAutocomplete(newQuery, newService, language);
+			// }
+
+			// else if(languageIndex < 2){
+
+			// }
 
 			// End
-			else{
-				// console.log(dailySearch);				
-				saveToJSON();
-				// saveToMongoDB();
+			// else{
+			// 	// console.log(dailySearch);				
+			// 	saveToJSON();
+			// 	// saveToMongoDB();
 
-				console.log('--------------------------------------------');
-				console.log('Finshed daily scraping.');
-				console.log('--------------------------------------------');
-			}
+			// 	console.log('--------------------------------------------');
+			// 	console.log('Finshed daily scraping.');
+			// 	console.log('--------------------------------------------');
+			// }
 		}
 	});
 }
@@ -109,7 +153,7 @@ function concatenateUrl(query, service, language){
 	var requestUrl = 'https://clients1.google.com/complete/search?' +
 					 '&client=firefox'+
 					 '&q=' + query +
-					 '&hl=' + language +
+					 '&hl=' + language.hl +
 					 '&ds=' + service.ds;
 
 	// console.log(requestUrl);
@@ -127,9 +171,10 @@ function createRecord(service, language, suggestions){
 	var obj = {
 		date: new Date(),
 		site: service.site,
-		language: language,
+		language: language.hl,
 		letter: suggestions[0].charAt(0),
-		results: suggestionToObj(service, suggestions)
+		results: suggestions
+		// results: suggestionToObj(service, suggestions)
 	};
 	// console.log('Returning ' + obj);
 	return obj;
