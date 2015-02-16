@@ -9,13 +9,20 @@ MongoClient = require('mongodb').MongoClient,
 
 var languages = jf.readFileSync('data/languages.json');
 // console.log(languages);
+
+// For now, only latin-script languages...
 languages = _.filter(languages, function(obj){
 	return obj.script == 'latin';
 });
-// console.log(latinLanguages);
+// console.log(languages);
 
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
+
+var letters = [];
+for(var i = 65; i <= 91; i++){
+	letters.push(String.fromCharCode(i));
+}
 
 // All results from this day
 var dailySearch = [];
@@ -28,10 +35,10 @@ console.log('--------------------------------------------');
 //     callAutocomplete(String.fromCharCode(65), services[0], 'en');
 // }, null, true, "America/New_York");
 
-var letterIndex = 65;
+var letterIndex = 0;
 var serviceIndex = 0;
 var languageIndex = 0;
-callAutocomplete(String.fromCharCode(letterIndex),
+callAutocomplete(letters[letterIndex],
 				 services[serviceIndex],
 				 languages[languageIndex]);
 
@@ -74,72 +81,32 @@ function callAutocomplete(query, service, language){
 			}
 
 			// Next iteration
-
-			// New letter
-			if(serviceIndex < services.length){
+			if(serviceIndex < services.length - 1){
 
 				letterIndex++;
-				if(letterIndex == 91){
-					console.log('--------------------------------------------');
-					console.log('Changed service.');
-					console.log('--------------------------------------------');
-					letterIndex = 65;
+				if(letterIndex == letters.length - 1){
+					// console.log('--------------------------------------------');
+					// console.log('Changed service.');
+					// console.log('--------------------------------------------');
+					letterIndex = 0;
 					serviceIndex++;
 				}
 
-				callAutocomplete(String.fromCharCode(letterIndex),
+				callAutocomplete(letters[letterIndex],
 								 services[serviceIndex],
 								 languages[languageIndex]);
 			}
 
-			
-			// 	letterIndex++;
-			// 	// if(serviceIndex < services.length){
-
-			// 	// }
-			// }else{
-			// 	letterIndex = 0;
-			// 	// serviceIndex ++;
-			// }
-
-			// var newQuery = String.fromCharCode(letterIndex);
-			// var newService = services[serviceIndex + 1];
-
-
-				// // New service
-				// if(letterIndex)
-				// if(serviceIndex < services.length - 1){
-				// 	var newQuery = String.fromCharCode(65);
-					// var newService = services[serviceIndex + 1];
-				// 	// console.log('called letter ['+newQuery+'] in ['+newService+']');
-				// 	callAutocomplete(newQuery, newService, language);
-				// }
-
-				
-			// }
-
-			// // New service
-			// else if(serviceIndex < services.length - 1){
-			// 	var newQuery = String.fromCharCode(65);
-			// 	var newService = services[serviceIndex + 1];
-			// 	// console.log('called letter ['+newQuery+'] in ['+newService+']');
-			// 	callAutocomplete(newQuery, newService, language);
-			// }
-
-			// else if(languageIndex < 2){
-
-			// }
-
 			// End
-			// else{
-			// 	// console.log(dailySearch);				
-			// 	saveToJSON();
-			// 	// saveToMongoDB();
+			else{
+				// console.log(dailySearch);				
+				saveToJSON();
+				// saveToMongoDB();
 
-			// 	console.log('--------------------------------------------');
-			// 	console.log('Finshed daily scraping.');
-			// 	console.log('--------------------------------------------');
-			// }
+				console.log('--------------------------------------------');
+				console.log('Finshed daily scraping.');
+				console.log('--------------------------------------------');
+			}
 		}
 	});
 }
