@@ -86,11 +86,11 @@ function callAutocomplete(query, service, country){
 			letterIndex++;
 			if(letterIndex == letters.length){
 				letterIndex = 0;
-				serviceIndex ++;
-				if (serviceIndex == services.length) {
-					serviceIndex = 0;
+				// serviceIndex ++;
+				// if (serviceIndex == services.length) {
+				// 	serviceIndex = 0;
 					countryIndex++;
-				}
+				// }
 			}
 
 			// Next?
@@ -137,7 +137,7 @@ function createRecord(service, country, suggestions){
 	// console.log(suggestions);
 	var obj = {
 		date: new Date(),
-		site: service.site,
+		service: service.site,
 		country: country.Domain,
 		letter: suggestions[0].charAt(0),
 		results: suggestions
