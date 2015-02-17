@@ -14,7 +14,7 @@ var countries = jf.readFileSync('data/countries_domains_languages.json');
 countries = _.filter(countries, function(obj){
 	return obj.language_a_script == 'latin';
 });
-// console.log(countries);
+console.log(countries);
 
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
@@ -38,7 +38,7 @@ console.log('--------------------------------------------');
 
 var letterIndex = 0;
 var serviceIndex = 0;
-var countryIndex = 97;
+var countryIndex = 0;
 var initIndex = countryIndex;
 callAutocomplete(letters[letterIndex],
 				 services[serviceIndex],
@@ -93,29 +93,20 @@ function callAutocomplete(query, service, country){
 				}
 			}
 
-			if(serviceIndex < services.length){
+			// Next?
+			if(countryIndex < countries.length){
 				callAutocomplete(letters[letterIndex],
 								 services[serviceIndex],
-								 countries[countryIndex]);				
-			}else{
-				// if(countryIndex < countries.length){
+								 countries[countryIndex]);
+			}else{	// End
+				// console.log(dailySearch);				
+				saveToJSON();
+				saveToMongoDB();
 
-				// }
 				console.log('--------------------------------------------');
-				console.log('Finished country scraping.');
+				console.log('Finshed daily scraping.');
 				console.log('--------------------------------------------');
-
-				saveToJSON(saveToMongoDB());
 			}
-
-			// Next?
-			
-				
-			// }else{	// End
-			// 	// console.log(dailySearch);				
-				
-
-			// }
 		}
 	});
 }
@@ -159,7 +150,7 @@ function createRecord(service, country, suggestions){
 }
 
 // Saves results to JSON file
-function saveToJSON(callback){
+function saveToJSON(){
 	console.log('Saving data to JSON file.')
 	var date = new Date();
 	var timestamp = date.getTime();
@@ -170,13 +161,12 @@ function saveToJSON(callback){
 	  // console.log(err);
 	  if(!err){
 	  	console.log('Results successfully saved at ' + file);
-	  	callback();
 	  }
 	});
 }
 
 // Save results to mongoDB
-function saveToMongoDB(){
+function saveToMongoDB(obj){
 	console.log('Saving data to mongoDB.')
 
 	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
