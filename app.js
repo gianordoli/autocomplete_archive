@@ -93,22 +93,33 @@ function callAutocomplete(query, service, country){
 				var msg = letters[letterIndex] + ', ';
 				saveLog(msg);
 				callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+			
 			}else{
+
 				letterIndex = 0;
 				serviceIndex ++;
+			
 				if (serviceIndex < services.length) {
 					var msg = '\n' + services[serviceIndex].site + ': ' +
 							  letters[letterIndex] + ', ';;
 					saveLog(msg);					
 					callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+			
 				}else{
+			
 					serviceIndex  = 0;
 					countryIndex ++;
 					var msg = '\nFinished scraping ' +
 							  countries[countryIndex - 1].domain + '\n' +
 							  '--------------------------------------------\n';
 					console.log(msg);
-					saveToJSON(saveLog(msg));
+					saveToJSON(countries[countryIndex - 1], saveLog(msg));
+			
+					// if(countryIndex < countries.length){
+					// 	var msg = 'Started scraping ' + countries[countryIndex].domain +
+					// 			  '\n' + services[serviceIndex].site + ': ' +
+					// 			  letters[letterIndex] + ', ';						
+					// }
 				}
 			}
 
@@ -187,11 +198,12 @@ function saveLog(msg){
 }
 
 // Saves results to JSON file
-function saveToJSON(callback){
+function saveToJSON(country, callback){
 	console.log('Saving data to JSON file.')
 	var date = new Date();
 	var timestamp = date.getTime();
-	var file = 'db/data_'+timestamp+'.json'
+	var domain = country.domain.replace('.', '_');
+	var file = 'db/data_'+domain+'_'+timestamp+'.json'
 	var obj = dailySearch;
 	 
 	jf.writeFile(file, obj, function(err) {
