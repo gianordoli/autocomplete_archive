@@ -14,21 +14,10 @@ var countries = jf.readFileSync('data/countries_domains_languages.json');
 countries = _.filter(countries, function(obj){
 	return obj.language_a_script == 'latin';
 });
-// console.log(countries);
+console.log(countries);
 
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
-
-var allData = jf.readFileSync('db/data_1424187172162.json');
-// var thisDate = new Date(allData[0].date);
-// var currDate = new Date();
-// console.log(thisDate.toUTCString());
-// console.log(currDate.toUTCString());
-for(var i = 0; i < allData.length; i++){
-	var newDate = new Date(allData[i].date);
-	console.log(newDate.toDateString());
-}
-
 
 var letters = [];
 for(var i = 65; i <= 90; i++){
@@ -51,9 +40,9 @@ var letterIndex = 0;
 var serviceIndex = 0;
 var countryIndex = 0;
 var initIndex = countryIndex;
-// callAutocomplete(letters[letterIndex],
-// 				 services[serviceIndex],
-// 				 countries[countryIndex]);
+callAutocomplete(letters[letterIndex],
+				 services[serviceIndex],
+				 countries[countryIndex]);
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
