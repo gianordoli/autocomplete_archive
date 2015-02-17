@@ -1,0 +1,3460 @@
+[
+  {
+    "date": "2015-02-17T17:46:43.786Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "a",
+    "results": [
+      "amazon",
+      "allocine",
+      "ameli",
+      "auchan",
+      "air france",
+      "annuaire",
+      "actualités",
+      "aliexpress",
+      "avito",
+      "acces d"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:43.960Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "b",
+    "results": [
+      "boulanger",
+      "bon coin",
+      "but",
+      "blablacar",
+      "bnp",
+      "badoo",
+      "brico depot",
+      "bouygues",
+      "banque postale",
+      "boursorama"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:44.131Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "c",
+    "results": [
+      "cdiscount",
+      "caf",
+      "conforama",
+      "clavier arabe",
+      "credit agricole",
+      "credit mutuel",
+      "carrefour",
+      "castorama",
+      "caisse epargne",
+      "canal plus"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:44.291Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "d",
+    "results": [
+      "decathlon",
+      "darty",
+      "deezer",
+      "dailymotion",
+      "dictionnaire",
+      "dropbox",
+      "dubsmash",
+      "dofus",
+      "dieudonné",
+      "desjardins"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:44.456Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "e",
+    "results": [
+      "ebay",
+      "easyjet",
+      "electro depot",
+      "eurosport",
+      "ecole directe",
+      "edf",
+      "equipe",
+      "etam",
+      "euromillions",
+      "europe 1"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:44.623Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "fnac",
+      "free",
+      "friv",
+      "france 2",
+      "fdj",
+      "film streaming",
+      "fly",
+      "free mobile",
+      "full stream"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:44.788Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "g",
+    "results": [
+      "gmail",
+      "google",
+      "google traduction",
+      "google map",
+      "google image",
+      "gifi",
+      "groupon",
+      "google earth",
+      "go sport",
+      "google translate"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:44.959Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "h",
+    "results": [
+      "hotmail",
+      "hespress",
+      "h&m",
+      "hibapress",
+      "horoscope",
+      "histoire d'or",
+      "hotmail sign in",
+      "h et m",
+      "happy wheels",
+      "hihi2"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:45.126Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "i",
+    "results": [
+      "ikea",
+      "instagram",
+      "impots",
+      "intersport",
+      "itineraire",
+      "indeed",
+      "itunes",
+      "icloud",
+      "immoweb",
+      "infogreffe"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:45.281Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "j",
+    "results": [
+      "jeux",
+      "jouet club",
+      "jeux video",
+      "jules",
+      "jennyfer",
+      "java",
+      "jeux de fille",
+      "jeux de voiture",
+      "jeux de moto",
+      "justfab"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:45.444Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "k",
+    "results": [
+      "kooora",
+      "kiabi",
+      "kijiji",
+      "kayak",
+      "kapaza",
+      "kickass",
+      "king jouet",
+      "kizi",
+      "kiko",
+      "keno"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:45.605Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "l",
+    "results": [
+      "le bon coin",
+      "leroy merlin",
+      "la redoute",
+      "le monde",
+      "la banque postale",
+      "laposte",
+      "lcl",
+      "lequipe",
+      "la centrale",
+      "linkedin"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:45.762Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "m",
+    "results": [
+      "mappy",
+      "meteo france",
+      "maps",
+      "marmiton",
+      "msn",
+      "michelin",
+      "m6 replay",
+      "micromania",
+      "messagerie orange",
+      "match en direct"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:45.931Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "n",
+    "results": [
+      "nabilla",
+      "netflix",
+      "norauto",
+      "nrj",
+      "nike",
+      "nocibe",
+      "numericable",
+      "nespresso",
+      "naf naf",
+      "new look"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:46.102Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "o",
+    "results": [
+      "outlook",
+      "orange",
+      "oscaro",
+      "ouedkniss",
+      "ouest france",
+      "orchestra",
+      "onisep",
+      "ouigo",
+      "open office",
+      "om"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:46.261Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "p",
+    "results": [
+      "programme tv",
+      "pages jaunes",
+      "pole emploi",
+      "pages blanches",
+      "papystreaming",
+      "portail orange",
+      "paypal",
+      "priceminister",
+      "pmu",
+      "pinterest"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:46.414Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "q",
+    "results": [
+      "quiche lorraine",
+      "quick",
+      "qapa",
+      "qoqa",
+      "quinte",
+      "que choisir",
+      "que faire",
+      "quiche",
+      "quenel+",
+      "qatar"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:46.573Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "r",
+    "results": [
+      "reverso",
+      "ratp",
+      "rue du commerce",
+      "ryanair",
+      "rtl",
+      "rmc",
+      "roland dumas",
+      "rojadirecta",
+      "rugbyrama",
+      "rds"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:46.727Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "s",
+    "results": [
+      "sncf",
+      "sfr",
+      "skype",
+      "sephora",
+      "societe generale",
+      "sign in",
+      "sfr mail",
+      "scolinfo",
+      "saint valentin",
+      "se loger"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:46.905Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "t",
+    "results": [
+      "traduction",
+      "twitter",
+      "tf1",
+      "traducteur",
+      "translate",
+      "transilien",
+      "tati",
+      "taylor kinney",
+      "tubidy",
+      "tripadvisor"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:47.060Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "u",
+    "results": [
+      "utorrent",
+      "undiz",
+      "urssaf",
+      "ubaldi",
+      "ugc",
+      "ups",
+      "uniqlo",
+      "utube",
+      "urban outfitters",
+      "uber"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:47.226Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "v",
+    "results": [
+      "vente privee",
+      "viamichelin",
+      "vivastreet",
+      "voyages sncf",
+      "vlc",
+      "viadeo",
+      "vdm",
+      "voila mail",
+      "vacances scolaires",
+      "vertbaudet"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:47.378Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "w",
+    "results": [
+      "wikipedia",
+      "wordreference",
+      "wetransfer",
+      "walmart",
+      "w9 replay",
+      "whatsapp",
+      "wawa mania",
+      "winrar",
+      "wish",
+      "wiko"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:47.538Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "x",
+    "results": [
+      "xe",
+      "xbox",
+      "xbox one",
+      "x",
+      "xbox live",
+      "xbmc",
+      "xperia z3",
+      "xiaomi",
+      "xavier dolan",
+      "xl airways"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:47.701Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yahoo",
+      "youtube mp3",
+      "yahoo mail",
+      "yves rocher",
+      "y8",
+      "youtube mp4",
+      "youwatch",
+      "yamaha",
+      "yamli"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:47.875Z",
+    "service": "web",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "z",
+    "results": [
+      "zalando",
+      "zara",
+      "zimbra",
+      "zara home",
+      "zemmour",
+      "zaz",
+      "zap de spi0n",
+      "zazie",
+      "zeturf",
+      "zara femme"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:48.041Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "a",
+    "results": [
+      "alexandra lange",
+      "attentat charlie hebdo",
+      "anniversaire",
+      "amour",
+      "air max",
+      "anonymous",
+      "amedy coulibaly",
+      "adidas",
+      "attentat paris",
+      "angelina jolie"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:48.206Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "b",
+    "results": [
+      "bonne année 2015",
+      "bonne année",
+      "bernard maris",
+      "berger australien",
+      "beyonce",
+      "black m",
+      "bebe",
+      "boko haram",
+      "bmw",
+      "blake lively"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:48.375Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "c",
+    "results": [
+      "charlie hebdo",
+      "cabu",
+      "charb",
+      "calendrier 2015",
+      "caricature charlie hebdo",
+      "charlie",
+      "coeur",
+      "chat",
+      "carte du monde",
+      "cristiano ronaldo"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:48.536Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "d",
+    "results": [
+      "dessin",
+      "demis roussos",
+      "dubai",
+      "dragon",
+      "dakota johnson",
+      "dylan o'brien",
+      "drapeau français",
+      "dessin cabu",
+      "dragon ball z",
+      "doberman"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:48.690Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "e",
+    "results": [
+      "elsa cayat",
+      "emma watson",
+      "enora malagré",
+      "elsa wolinski",
+      "elodie frege",
+      "eva green",
+      "emilia clarke",
+      "eva mendes",
+      "eugenie bouchard",
+      "emma stone"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:48.848Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "fond d'écran",
+      "fleur",
+      "fond d'écran hd",
+      "fb",
+      "farid benyettou",
+      "france",
+      "ferrari",
+      "framboisier",
+      "film 2014"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:49.012Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "g",
+    "results": [
+      "google",
+      "google image",
+      "google traduction",
+      "galette des rois",
+      "gaia weiss",
+      "gign",
+      "gradur",
+      "g",
+      "golden retriever",
+      "gta 5"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:49.173Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "h",
+    "results": [
+      "happy new year 2015",
+      "hayat boumediene",
+      "happy birthday",
+      "happy new year",
+      "huarache",
+      "hipster",
+      "husky",
+      "hotmail",
+      "houellebecq",
+      "hiba tawaji"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:49.324Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "i",
+    "results": [
+      "image",
+      "irina shayk",
+      "iphone 6",
+      "image drole",
+      "iphone 5s",
+      "iggy azalea",
+      "iphone 5c",
+      "image je suis charlie",
+      "ian somerhalder",
+      "image swag"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:49.485Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "j",
+    "results": [
+      "je suis charlie",
+      "joyeux anniversaire",
+      "jeannette bougrab",
+      "justin bieber",
+      "jennifer lawrence",
+      "je t'aime",
+      "je suis charlie image",
+      "je suis charlie hebdo",
+      "jamie dornan",
+      "johnny depp"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:49.638Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "k",
+    "results": [
+      "kendji girac",
+      "kalachnikov",
+      "katy perry",
+      "kylie jenner",
+      "kristina pimenova",
+      "kendall jenner",
+      "kouachi",
+      "keira knightley",
+      "kendji",
+      "kristen stewart"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:49.854Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "l",
+    "results": [
+      "le bon coin",
+      "love",
+      "lucia villalon",
+      "lettre de motivation",
+      "la joconde",
+      "lamborghini",
+      "louboutin",
+      "la reine des neiges",
+      "lion",
+      "lol"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:50.007Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "m",
+    "results": [
+      "messi",
+      "miley cyrus",
+      "minecraft",
+      "maddie ziegler",
+      "mila kunis",
+      "miss univers 2015",
+      "meilleurs voeux 2015",
+      "manga",
+      "megan fox",
+      "météo"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:50.171Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "n",
+    "results": [
+      "nicki minaj",
+      "nike",
+      "neymar",
+      "new york",
+      "new balance",
+      "natalie portman",
+      "naruto",
+      "nous sommes charlie",
+      "nina dobrev",
+      "nike roshe run"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:50.322Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "o",
+    "results": [
+      "ou est charlie",
+      "one direction",
+      "one piece",
+      "oceane dodin",
+      "olaf",
+      "ornithorynque",
+      "orlando bloom",
+      "orange",
+      "om",
+      "oiseaux"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:50.485Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "p",
+    "results": [
+      "paris",
+      "photo",
+      "paulina vega",
+      "photo de couverture",
+      "paysage",
+      "pokemon",
+      "pitbull",
+      "poeme d'amour",
+      "panda",
+      "photo de profil"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:50.635Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "q",
+    "results": [
+      "qatar",
+      "qu'est ce qu'on a fait au bon dieu",
+      "quad",
+      "quebec",
+      "quotes",
+      "quenelle",
+      "question",
+      "quinoa",
+      "qashqai",
+      "quentin bruno"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:50.795Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "r",
+    "results": [
+      "rihanna",
+      "ronaldo",
+      "robe de mariée",
+      "robe de soirée",
+      "real madrid",
+      "ryan gosling",
+      "rose",
+      "rita ora",
+      "rottweiler",
+      "rayane bensetti"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:50.958Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "s",
+    "results": [
+      "sia",
+      "scarlett johansson",
+      "selena gomez",
+      "smiley",
+      "stan smith",
+      "shia labeouf",
+      "swag",
+      "shakira",
+      "shy'm",
+      "salle de bain"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:51.121Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "t",
+    "results": [
+      "tignous",
+      "taylor swift",
+      "tatouage",
+      "traduction",
+      "timberland",
+      "tal",
+      "tour eiffel",
+      "tanga",
+      "tigre",
+      "thailande"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:51.274Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "u",
+    "results": [
+      "une charlie hebdo",
+      "ugg",
+      "urticaire",
+      "une du point",
+      "usa",
+      "unkut",
+      "uma thurman",
+      "univers",
+      "uterus",
+      "usher"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:51.434Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "v",
+    "results": [
+      "voeux 2015",
+      "violetta",
+      "voiture",
+      "vans",
+      "vanessa hudgens",
+      "vanessa paradis",
+      "victoria secret",
+      "vache",
+      "venise",
+      "volkswagen"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:51.595Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "w",
+    "results": [
+      "wolinski",
+      "wallpaper",
+      "wiko",
+      "wallpaper hd",
+      "wiz khalifa",
+      "windows 10",
+      "weed",
+      "wiko rainbow",
+      "we heart it",
+      "whatsapp"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:51.745Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "x",
+    "results": [
+      "x",
+      "xbox one",
+      "xperia z3",
+      "xbox",
+      "xn",
+      "xavier dolan",
+      "xbox 360",
+      "xperia m2",
+      "x6",
+      "xperia z2"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:51.905Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yves saint laurent",
+      "yahoo",
+      "yemen",
+      "yorkshire",
+      "y",
+      "yoav hattab",
+      "yamaha",
+      "yeux",
+      "youtube video telecharger en ligne"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:52.058Z",
+    "service": "images",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "z",
+    "results": [
+      "zac efron",
+      "zayn malik",
+      "zaz",
+      "zx flux",
+      "zombie",
+      "zona",
+      "zara",
+      "zoe saldana",
+      "zlatan",
+      "zanzibar"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:52.218Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "a",
+    "results": [
+      "ariana grande",
+      "ariana grande one last time",
+      "aronchupa - i'm an albatraoz",
+      "a toz",
+      "aypierr",
+      "arab got talent 2015",
+      "ayo",
+      "all star game 2015",
+      "american sniper bande annonce vf",
+      "andalouse kendji"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:52.366Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "b",
+    "results": [
+      "bruno mars uptown funk",
+      "black m on s'fait du mal",
+      "black m",
+      "barca vs levante 2015",
+      "bruno mars",
+      "black m c'est tout moi",
+      "booba",
+      "beyonce",
+      "black m je ne dirai rien",
+      "barcelona vs levante 2015"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:52.511Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "c",
+    "results": [
+      "christine and the queens",
+      "cyprien",
+      "chris brown ayo",
+      "clown soprano",
+      "chanson d'amour",
+      "caroline et safia",
+      "chris brown",
+      "cheba wissam 2015",
+      "charlie hebdo attentat",
+      "cheb nadir 2015"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:52.674Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "d",
+    "results": [
+      "da3ech",
+      "drake",
+      "dieudonné",
+      "daech",
+      "da3ech i3dam",
+      "da3ech 2015",
+      "da3ich",
+      "da3ich i3dam",
+      "domingo",
+      "david guetta dangerous"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:52.829Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "e",
+    "results": [
+      "elissa 2015",
+      "elle m'a aimé kendji",
+      "eminem",
+      "enjoyphoenix",
+      "ed sheeran",
+      "evolve",
+      "elissa",
+      "enrique iglesias",
+      "elastic heart sia lyrics",
+      "ellie goulding"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:52.994Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "f",
+    "results": [
+      "film complet en francais",
+      "fauve",
+      "film romantique en francais complet",
+      "film complet en francais 2014 nouveauté",
+      "film",
+      "frero delavega mon petit pays",
+      "four five seconds rihanna",
+      "fresh prince soprano",
+      "failarmy",
+      "fantabobgames"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:53.154Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "g",
+    "results": [
+      "gradur",
+      "gradur la peuf",
+      "gga",
+      "galantis runaway",
+      "gradur jamais",
+      "google",
+      "gangnam style",
+      "gta 5",
+      "grammy awards 2015",
+      "guizmo"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:53.321Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "h",
+    "results": [
+      "hek lili nifi",
+      "hugo tout seul",
+      "hugoposay",
+      "hatim ammor 2015",
+      "hamzaoui med amine",
+      "hozier take me to church",
+      "hozier",
+      "haunted beyonce",
+      "hokli nifi",
+      "haramtou bik nouassi"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:53.492Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "i",
+    "results": [
+      "indila",
+      "ibeyi",
+      "i'm in love with the coco",
+      "iggy azalea",
+      "isis",
+      "indila derniere danse",
+      "i am albatros",
+      "indila love story",
+      "indila sos",
+      "iam petit frere"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:53.650Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "j",
+    "results": [
+      "jul",
+      "jul la fusee 2015",
+      "julien doré",
+      "jean baptiste grange",
+      "je suis charlie",
+      "josspace",
+      "justin bieber",
+      "jul je trouve pas le sommeil",
+      "jimmyfaitlcon",
+      "joueur du grenier"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:53.823Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "k",
+    "results": [
+      "kendji ariana grande",
+      "klay 2015",
+      "keen'v saltimbanque",
+      "kendji andalouse",
+      "khoya hakli nifi",
+      "khoya hek lili nifi",
+      "kaaris",
+      "kendji girac ariana grande",
+      "kendji girac",
+      "katy perry"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:53.998Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "l",
+    "results": [
+      "louane avenir",
+      "le rire jaune",
+      "love me like u do",
+      "lacrim",
+      "la fouine",
+      "le woop",
+      "la reine des neiges",
+      "labes 2015",
+      "louane",
+      "lil wayne"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:54.159Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "m",
+    "results": [
+      "mrbboy45",
+      "maroon 5",
+      "maitre gims feat mac tyer",
+      "musique 2015 nouveauté nrj",
+      "maitre gims",
+      "m pokora",
+      "mister v",
+      "musique 50 nuances de grey",
+      "mchiti fiha",
+      "michael jackson"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:54.315Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "n",
+    "results": [
+      "norman",
+      "nicki minaj",
+      "niska",
+      "natoo",
+      "nba",
+      "niro",
+      "norman fait des videos",
+      "nba all star 2015",
+      "nabilson",
+      "nti baghya wahed"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:54.488Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "o",
+    "results": [
+      "one last time ariana grande kendji",
+      "on s'fait du mal",
+      "one last time ariana grande",
+      "one direction",
+      "outpost 37 bande annonce vf",
+      "oussama el fatmi a toz",
+      "outside calvin harris",
+      "on est pas tout seul",
+      "orelsan",
+      "olivier dion si j'etais son soleil"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:54.645Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "p",
+    "results": [
+      "primetimefut",
+      "pso thug",
+      "psg caen",
+      "plus belle la vie episode 2697",
+      "palmashow",
+      "pitbull",
+      "pewdiepie",
+      "peppa pig en francais",
+      "papaoutai",
+      "poisson fecond"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:54.805Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "q",
+    "results": [
+      "queen",
+      "quand je t'aime demis roussos",
+      "qu'est ce qu'on a fait au bon dieu film complet",
+      "quran karim",
+      "queen biz",
+      "quran",
+      "queen don't stop me now",
+      "qataris",
+      "quand la musique est bonne",
+      "queen we will rock you"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:54.956Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "r",
+    "results": [
+      "ridsa",
+      "rihanna",
+      "real madrid vs deportivo 2015",
+      "raja vs diable noir",
+      "rihanna four five seconds",
+      "runaway",
+      "rire jaune",
+      "roland dumas",
+      "raja 2015",
+      "rohff"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:55.116Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "s",
+    "results": [
+      "soprano clown",
+      "sia",
+      "squeezie",
+      "slg",
+      "sam smith",
+      "soprano",
+      "sia heart elastic",
+      "super konar",
+      "shekini",
+      "samira brahmia the voice"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:55.284Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "t",
+    "results": [
+      "taylor swift",
+      "the voice france",
+      "the weeknd",
+      "taylor swift style",
+      "take me to church hozier",
+      "tal",
+      "the voice france 2015 samira brahmia",
+      "the voice",
+      "timmy trumpet freaks",
+      "thoyy"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:55.436Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "u",
+    "results": [
+      "uptown funk bruno mars lyrics",
+      "un cafe avec saison 3 episode 25",
+      "uptown funk bruno mars",
+      "un cafe avec saison 3 episode 23",
+      "un cafe avec saison 3 episode 24",
+      "uncover zara larsson",
+      "usher",
+      "u2",
+      "une merveilleuse histoire du temps bande annonce",
+      "un café avec....saison3 - episode n°25"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:55.596Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "v",
+    "results": [
+      "victoire de la musique 2015",
+      "vitaa vivre",
+      "vianney pas la",
+      "violetta",
+      "vinsky",
+      "vianney",
+      "voyage sans retour",
+      "vevo",
+      "video drole",
+      "violetta saison 3"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:55.762Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "w",
+    "results": [
+      "what the cut",
+      "wiz khalifa",
+      "wael jassar 2015",
+      "what i did for love david guetta",
+      "walilowelela",
+      "will sparks ah yeah",
+      "wadi diab 9 ep 33+34",
+      "wicked wonderland martin tungevaag",
+      "woop",
+      "wadi diab 9 ep 33"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:55.930Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "x",
+    "results": [
+      "xxl xxl nike",
+      "xef",
+      "xnxn8",
+      "xari et jiji",
+      "xxnxافلام عربية",
+      "xxl 16 يوتيوب",
+      "xxl xxl xxl",
+      "xef 19921",
+      "x factor",
+      "xxnikkixx video nik"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:56.093Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yomax",
+      "youssoupha",
+      "yomax38",
+      "youssoupha entourage",
+      "yara 2015",
+      "you and i",
+      "yseult",
+      "young thug",
+      "yasmine ammari"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:56.256Z",
+    "service": "youtube",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "z",
+    "results": [
+      "zerator",
+      "zina daoudia",
+      "zap de spion",
+      "zifou",
+      "zlatan ibrahimovic",
+      "zaza",
+      "zephirr",
+      "zaho",
+      "zap de spion 254",
+      "zaz"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:56.424Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "a",
+    "results": [
+      "actualités",
+      "algerie",
+      "attentat",
+      "attentat charlie hebdo",
+      "avito",
+      "air asia",
+      "attentat paris",
+      "anonymous",
+      "arsenal",
+      "a"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:56.594Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "b",
+    "results": [
+      "boko haram",
+      "ballon d'or 2014",
+      "ballon d'or",
+      "barca",
+      "booba",
+      "bougrab",
+      "beyonce",
+      "ballon d'or 2015",
+      "barcelone",
+      "bfm"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:56.758Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "c",
+    "results": [
+      "charlie hebdo",
+      "can 2015",
+      "cristiano ronaldo",
+      "cr7",
+      "chelsea",
+      "charb",
+      "chris brown",
+      "charly hebdo",
+      "can",
+      "coulibaly"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:56.930Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "d",
+    "results": [
+      "dieudonné",
+      "drogba",
+      "demis roussos",
+      "dammartin",
+      "didier drogba",
+      "drake",
+      "daesh",
+      "daech",
+      "dakaractu",
+      "dakar"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:57.098Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "e",
+    "results": [
+      "ebola",
+      "etat islamique",
+      "eric zemmour",
+      "egypte",
+      "eurosport",
+      "eminem",
+      "euro",
+      "ebay",
+      "eto'o",
+      "ei"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:57.260Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "france",
+      "fc barcelone",
+      "fusillade",
+      "friv",
+      "france 24",
+      "free",
+      "fn",
+      "federer",
+      "franc suisse"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:57.422Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "g",
+    "results": [
+      "google",
+      "google traduction",
+      "gmail",
+      "guineenews",
+      "grece",
+      "gabon",
+      "g",
+      "googl",
+      "google image",
+      "guinee"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:57.594Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "h",
+    "results": [
+      "hespress",
+      "hotmail",
+      "hibapress",
+      "houellebecq",
+      "hihi2",
+      "hollande",
+      "hayat boumediene",
+      "handball",
+      "harry styles",
+      "hezbollah"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:57.758Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "i",
+    "results": [
+      "israel",
+      "info",
+      "irina shayk",
+      "image",
+      "islam",
+      "iran",
+      "iphone 6",
+      "immobilier",
+      "irak",
+      "iphone"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:57.920Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "j",
+    "results": [
+      "jeannette bougrab",
+      "je suis charlie",
+      "jeux",
+      "justin bieber",
+      "japon",
+      "jennifer lawrence",
+      "jeune afrique",
+      "jeux video",
+      "johnny depp",
+      "je ne suis pas charlie"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:58.080Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "k",
+    "results": [
+      "kooora",
+      "kouachi",
+      "kim kardashian",
+      "kate middleton",
+      "kristen stewart",
+      "kylie jenner",
+      "katy perry",
+      "khloe kardashian",
+      "kendall jenner",
+      "kourtney kardashian"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:58.244Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "l",
+    "results": [
+      "le bon coin",
+      "le monde",
+      "le pen",
+      "livescore",
+      "lyon",
+      "lionel messi",
+      "luz",
+      "la fouine",
+      "lil wayne",
+      "liban"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:58.414Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "m",
+    "results": [
+      "météo",
+      "messi",
+      "maroc",
+      "montpellier",
+      "montrouge",
+      "mercato",
+      "marine le pen",
+      "mali",
+      "manchester united",
+      "marseille"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:58.588Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "n",
+    "results": [
+      "nabilla",
+      "neymar",
+      "new york",
+      "nicki minaj",
+      "nigeria",
+      "news",
+      "niger",
+      "neige",
+      "nantes",
+      "nina dobrev"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:58.743Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "o",
+    "results": [
+      "om",
+      "ol",
+      "orange",
+      "otage",
+      "obama",
+      "one direction",
+      "outlook",
+      "ouedkniss",
+      "ovni",
+      "oncf"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:58.920Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "p",
+    "results": [
+      "psg",
+      "paris",
+      "prise d'otage",
+      "play store",
+      "ps4",
+      "patrick pelloux",
+      "poutine",
+      "porte de vincennes",
+      "pole emploi",
+      "pmu"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:59.089Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "q",
+    "results": [
+      "qatar",
+      "quinte",
+      "quinte du jour",
+      "qz8501",
+      "qatar handball",
+      "q",
+      "qatar airways",
+      "quebec",
+      "quimper",
+      "qui est charlie hebdo"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:59.454Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "r",
+    "results": [
+      "real madrid",
+      "rihanna",
+      "ronaldo",
+      "russie",
+      "reims",
+      "real",
+      "renault",
+      "rfi",
+      "raja",
+      "rafale"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:59.617Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "s",
+    "results": [
+      "sarkozy",
+      "selena gomez",
+      "syrie",
+      "seneweb",
+      "samhini",
+      "samsung",
+      "stromae",
+      "skype",
+      "syriza",
+      "sncf"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:59.780Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "t",
+    "results": [
+      "tubidy",
+      "traduction",
+      "tunisie",
+      "tariq ramadan",
+      "twitter",
+      "trocadero",
+      "turquie",
+      "taylor swift",
+      "traque",
+      "the voice"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:46:59.936Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "u",
+    "results": [
+      "ukraine",
+      "uber",
+      "usa",
+      "ump",
+      "ufdg",
+      "uberpop",
+      "ubuntu",
+      "usher",
+      "une charlie hebdo",
+      "uncharted 4"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:00.108Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "v",
+    "results": [
+      "vincennes",
+      "villejuif",
+      "video",
+      "vanessa paradis",
+      "valls",
+      "viber",
+      "vampire diaries",
+      "violetta",
+      "vuclip",
+      "verviers"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:00.264Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "w",
+    "results": [
+      "whatsapp",
+      "www",
+      "waptrick",
+      "www google",
+      "windows 10",
+      "wikipedia",
+      "wolinski",
+      "wac",
+      "www.facebook.com login",
+      "wiz khalifa"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:00.430Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "x",
+    "results": [
+      "xbox one",
+      "xbox",
+      "xiaomi",
+      "xn",
+      "xperia z4",
+      "xperia z3",
+      "xix",
+      "xbmc",
+      "xavier dolan",
+      "xperia"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:00.593Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yahoo",
+      "youtube mp3",
+      "yahoo mail",
+      "youtube video",
+      "yemen",
+      "yaya toure",
+      "y8",
+      "youtube maroc",
+      "youtube music"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:00.759Z",
+    "service": "news",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "z",
+    "results": [
+      "zemmour",
+      "zara",
+      "zayn malik",
+      "zidane",
+      "zeturf",
+      "zaho",
+      "zlatan",
+      "zina daoudia",
+      "zazie",
+      "zineb smaiki"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:00.917Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "a",
+    "results": [
+      "amazon",
+      "amazon books",
+      "amazon uk",
+      "add reminder",
+      "amazon prime",
+      "american sniper",
+      "a",
+      "allegiant",
+      "albert einstein",
+      "abraham lincoln"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:01.079Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "b",
+    "results": [
+      "books",
+      "barnes and noble",
+      "books to read",
+      "bible",
+      "b",
+      "barbie",
+      "benjamin franklin",
+      "buku",
+      "bookflix",
+      "biography"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:01.247Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "c",
+    "results": [
+      "craigslist",
+      "c",
+      "chris kyle",
+      "chemistry",
+      "calculator",
+      "computer",
+      "communication",
+      "children's books",
+      "cinderella",
+      "chetan bhagat"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:01.417Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "d",
+    "results": [
+      "dictionary",
+      "diary of a wimpy kid",
+      "definition",
+      "divergent",
+      "dork diaries",
+      "d",
+      "dailymotion",
+      "dictionary english to hindi",
+      "drama",
+      "download"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:01.572Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "e",
+    "results": [
+      "ebay",
+      "ebooks",
+      "english grammar",
+      "ever after high",
+      "encyclopedia",
+      "e",
+      "edgar allan poe",
+      "english speaking",
+      "english dictionary",
+      "emotional intelligence"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:01.735Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "fifty shades of grey",
+      "free books",
+      "frozen",
+      "free",
+      "friv",
+      "free books online",
+      "free ebooks",
+      "flipkart",
+      "frozen games"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:01.904Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "g",
+    "results": [
+      "google",
+      "google scholar",
+      "google books",
+      "google translate",
+      "gmail",
+      "g",
+      "games",
+      "google play",
+      "google maps",
+      "geronimo stilton"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:02.068Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "h",
+    "results": [
+      "hotmail",
+      "harry potter",
+      "history",
+      "how to have sex",
+      "h",
+      "half girlfriend",
+      "hunger games",
+      "human resource management",
+      "helen keller",
+      "history of india"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:02.237Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "i",
+    "results": [
+      "i",
+      "if i stay",
+      "images",
+      "into the woods",
+      "internet",
+      "instagram",
+      "iphone 6",
+      "information",
+      "insurgent",
+      "illuminati"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:02.402Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "j",
+    "results": [
+      "j",
+      "jokes",
+      "james patterson",
+      "java",
+      "justin bieber",
+      "jane eyre",
+      "jackie robinson",
+      "john grisham",
+      "john green",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:02.572Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "k",
+    "results": [
+      "k",
+      "kindle",
+      "kindle books",
+      "kids books",
+      "kamasutra book pdf",
+      "king james bible",
+      "katy perry",
+      "karl marx",
+      "komik naruto",
+      "kumkum bhagya"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:02.734Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "l",
+    "results": [
+      "langston hughes",
+      "l",
+      "love",
+      "love story",
+      "leadership",
+      "lord of the flies",
+      "let it go",
+      "life magazine",
+      "library",
+      "looking for alaska"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:02.904Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "m",
+    "results": [
+      "minecraft",
+      "m",
+      "martin luther king jr",
+      "maze runner",
+      "mathematics",
+      "marketing",
+      "maslow's hierarchy of needs",
+      "monster high",
+      "management",
+      "maps"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:03.071Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "n",
+    "results": [
+      "new year 2015",
+      "n",
+      "nicholas sparks",
+      "news",
+      "novel",
+      "netflix",
+      "naruto",
+      "nelson mandela",
+      "nora roberts",
+      "nicki minaj"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:03.230Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "o",
+    "results": [
+      "one direction",
+      "oxford dictionary",
+      "online books",
+      "of mice and men",
+      "organic chemistry",
+      "odyssey",
+      "operating system",
+      "organizational behavior",
+      "operations management",
+      "ok"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:03.397Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "p",
+    "results": [
+      "p",
+      "psychology",
+      "pokemon",
+      "percy jackson",
+      "po",
+      "pride and prejudice",
+      "play store",
+      "poems",
+      "physics",
+      "peppa pig"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:03.551Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "q",
+    "results": [
+      "quizlet",
+      "q",
+      "qualitative research",
+      "quran",
+      "quotes",
+      "quantitative research",
+      "quotes about love",
+      "qualitative research methods",
+      "quantitative aptitude",
+      "quantum mechanics"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:03.722Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "r",
+    "results": [
+      "raz kids",
+      "research methodology",
+      "roald dahl",
+      "r",
+      "romeo and juliet",
+      "rick riordan",
+      "rosa parks",
+      "research methods",
+      "romance",
+      "remind me to…"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:03.878Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "s",
+    "results": [
+      "scholar",
+      "s",
+      "scholastic",
+      "sank like a bowling ball",
+      "story",
+      "sociology",
+      "short stories",
+      "sexual intercourse",
+      "science",
+      "sherlock holmes"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:04.031Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "t",
+    "results": [
+      "translate",
+      "the fault in our stars",
+      "thesaurus",
+      "tumblebooks",
+      "to kill a mockingbird",
+      "traductor",
+      "the boy next door",
+      "t",
+      "the book thief",
+      "the great gatsby"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:04.193Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "u",
+    "results": [
+      "unbroken",
+      "u",
+      "upsc",
+      "uncle tom's cabin",
+      "urdu poetry",
+      "upin ipin",
+      "utilitarianism",
+      "ulysses",
+      "urdu novels",
+      "urdu books"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:04.365Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "v",
+    "results": [
+      "v",
+      "video",
+      "vocabulary",
+      "vampire diaries",
+      "vygotsky",
+      "valentine's day",
+      "vampire",
+      "vietnam war",
+      "veronica roth",
+      "vampire academy"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:04.529Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "w",
+    "results": [
+      "weather",
+      "wattpad",
+      "wikipedia",
+      "www",
+      "whatsapp",
+      "w",
+      "wattpad tagalog",
+      "walmart",
+      "wattpad stories",
+      "ww"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:04.685Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "x",
+    "results": [
+      "x",
+      "xx",
+      "xxxi",
+      "xxxv",
+      "xxl",
+      "xxxx island",
+      "xbox one",
+      "xxxholic",
+      "xml",
+      "xv"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:04.862Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yahoo mail",
+      "yahoo",
+      "youtube videos",
+      "youtube to mp3",
+      "youtube downloader",
+      "youtube music",
+      "yahoo mail login",
+      "yoga",
+      "y8"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:05.035Z",
+    "service": "books",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "z",
+    "results": [
+      "z",
+      "zillow",
+      "zane books",
+      "zoology",
+      "zeus",
+      "zombies",
+      "zone of proximal development",
+      "zealot",
+      "zoey 101",
+      "zendaya"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:05.208Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "a",
+    "results": [
+      "amazon",
+      "argos",
+      "amazon uk",
+      "apple tv",
+      "amazon prime",
+      "american sniper",
+      "autozone",
+      "asda",
+      "amiibo",
+      "aliexpress"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:05.380Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "b",
+    "results": [
+      "best buy",
+      "boots",
+      "beats by dre",
+      "bed bath and beyond",
+      "bunk beds",
+      "bluetooth headphones",
+      "beats headphones",
+      "beats",
+      "boost mobile phones",
+      "bean boozled"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:05.540Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "c",
+    "results": [
+      "craigslist",
+      "cards against humanity",
+      "chromecast",
+      "costco",
+      "coconut oil",
+      "converse",
+      "calculator",
+      "canada goose",
+      "call of duty advanced warfare",
+      "chromebook"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:05.704Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "d",
+    "results": [
+      "dresses",
+      "drone",
+      "desk",
+      "dragon age inquisition",
+      "debenhams",
+      "dishwasher",
+      "dehumidifier",
+      "destiny",
+      "daily mail",
+      "dying light"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:05.869Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "e",
+    "results": [
+      "ebay",
+      "engagement rings",
+      "ebay uk",
+      "etsy",
+      "espn",
+      "emoji joggers",
+      "external hard drive",
+      "elliptical",
+      "electric fireplace",
+      "epic fail"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:06.032Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "fitbit",
+      "facebook login",
+      "fitbit charge hr",
+      "five nights at freddy's",
+      "fitbit flex",
+      "fitbit charge",
+      "fifa 15",
+      "forever 21",
+      "foot locker"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:06.187Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "g",
+    "results": [
+      "google",
+      "gmail",
+      "gopro",
+      "google translate",
+      "garcinia cambogia",
+      "gamestop",
+      "gumtree",
+      "galaxy s5",
+      "gta 5",
+      "galaxy note 4"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:06.350Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "h",
+    "results": [
+      "home depot",
+      "hotmail",
+      "humidifier",
+      "headphones",
+      "hunter boots",
+      "htc one m8",
+      "hobby lobby",
+      "hermes belt",
+      "huaraches",
+      "hdmi cable"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:06.508Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "i",
+    "results": [
+      "iphone 6",
+      "iphone 5s",
+      "iphone 6 cases",
+      "ipad",
+      "ipad mini",
+      "iphone 5c",
+      "ikea",
+      "ipad air 2",
+      "iphone 6 plus",
+      "iphone 5c cases"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:06.662Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "j",
+    "results": [
+      "jordans",
+      "joggers",
+      "jcpenney",
+      "john lewis",
+      "jordan shoes",
+      "juicer",
+      "jordan 11",
+      "jawbone up24",
+      "jordan future",
+      "jogger pants"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:06.812Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "k",
+    "results": [
+      "kd 7",
+      "kd shoes",
+      "kobe 9",
+      "kohl's",
+      "kindle",
+      "keurig",
+      "kmart",
+      "kaos trap",
+      "kindle fire",
+      "kitchenaid mixer"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:06.966Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "l",
+    "results": [
+      "laptop",
+      "lowes",
+      "louis vuitton",
+      "lg g3",
+      "lebron 12",
+      "lego",
+      "laptop deals",
+      "lego minecraft",
+      "lego friends",
+      "lamborghini"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:07.138Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "m",
+    "results": [
+      "michael kors",
+      "minecraft",
+      "michael kors watches",
+      "mobile phone",
+      "macy's",
+      "macbook air",
+      "michael kors handbags",
+      "macbook pro",
+      "mini fridge",
+      "microwave"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:07.300Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "n",
+    "results": [
+      "nutribullet",
+      "nike roshe run",
+      "nike",
+      "nerf guns",
+      "nike air max",
+      "nike shoes",
+      "nordstrom",
+      "nike huarache",
+      "nintendo 3ds",
+      "ninja blender"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:07.455Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "o",
+    "results": [
+      "oculus rift",
+      "overstock",
+      "old navy",
+      "ottoman",
+      "over the knee boots",
+      "ouija board",
+      "office chairs",
+      "office depot",
+      "onesie",
+      "oakley sunglasses"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:07.608Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "p",
+    "results": [
+      "ps4",
+      "prom dresses",
+      "polaroid camera",
+      "ps3",
+      "promise rings",
+      "ps4 controller",
+      "pinterest",
+      "prom dresses 2015",
+      "ps vita",
+      "pokemon cards"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:07.771Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "q",
+    "results": [
+      "qvc",
+      "quadcopter",
+      "quotes",
+      "quinoa",
+      "quest bars",
+      "queen bed frame",
+      "q",
+      "quickbooks",
+      "queen mattress",
+      "quinceanera dresses"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:07.930Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "r",
+    "results": [
+      "rolex",
+      "roshe run",
+      "record player",
+      "refrigerator",
+      "roku 3",
+      "roku",
+      "rain boots",
+      "raspberry pi",
+      "ray ban sunglasses",
+      "red dress"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:08.082Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "s",
+    "results": [
+      "shoes",
+      "selfie stick",
+      "samsung galaxy s5",
+      "shopkins",
+      "surface pro 3",
+      "sorel boots",
+      "shopping",
+      "skylanders trap team",
+      "sears",
+      "samsung galaxy s4"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:08.238Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "t",
+    "results": [
+      "target",
+      "timberland boots",
+      "toys r us",
+      "treadmill",
+      "translate",
+      "tablets",
+      "television",
+      "tv",
+      "tesco",
+      "tablet computer"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:08.392Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "u",
+    "results": [
+      "uggs",
+      "ugg boots",
+      "ukulele",
+      "under armour",
+      "ugg sale",
+      "urban outfitters",
+      "ugg slippers",
+      "ugg boots sale",
+      "ue boom",
+      "uggs for men"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:08.541Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "v",
+    "results": [
+      "victoria secret",
+      "vans",
+      "vitamix",
+      "vape pen",
+      "verizon wireless",
+      "vaporizer",
+      "vintage engagement rings",
+      "vacuum cleaner",
+      "vans shoes",
+      "vanity"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:08.687Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "w",
+    "results": [
+      "weather",
+      "walmart",
+      "wii u",
+      "wedding dresses",
+      "waist trainer",
+      "wireless headphones",
+      "wedding rings",
+      "washing machine",
+      "walgreens",
+      "windows 7"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:08.837Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "x",
+    "results": [
+      "xbox one",
+      "xbox 360",
+      "xbox one controller",
+      "xbox 360 controller",
+      "xbox one games",
+      "xbox",
+      "xbox live",
+      "xbox one kinect",
+      "xbox one bundle",
+      "xbox 360 hard drive"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:08.991Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yahoo",
+      "yahoo mail",
+      "youtube to mp3",
+      "yoga mat",
+      "y",
+      "youtube music",
+      "yoga pants",
+      "yeti coolers",
+      "yankee candle"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:09.162Z",
+    "service": "products",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "z",
+    "results": [
+      "zappos",
+      "zillow",
+      "zumiez",
+      "zulily",
+      "zara",
+      "zx flux",
+      "z",
+      "zte zmax",
+      "zales",
+      "zoopla"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:09.328Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "a",
+    "results": [
+      "amazon",
+      "allocine",
+      "ameli",
+      "auchan",
+      "air france",
+      "annuaire",
+      "actualités",
+      "aliexpress",
+      "avito",
+      "acces d"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:09.484Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "b",
+    "results": [
+      "boulanger",
+      "bon coin",
+      "but",
+      "blablacar",
+      "bnp",
+      "badoo",
+      "brico depot",
+      "bouygues",
+      "banque postale",
+      "boursorama"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:09.633Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "c",
+    "results": [
+      "cdiscount",
+      "caf",
+      "conforama",
+      "clavier arabe",
+      "credit agricole",
+      "credit mutuel",
+      "carrefour",
+      "castorama",
+      "caisse epargne",
+      "canal plus"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:09.789Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "d",
+    "results": [
+      "decathlon",
+      "darty",
+      "deezer",
+      "dailymotion",
+      "dictionnaire",
+      "dropbox",
+      "dubsmash",
+      "dofus",
+      "dieudonné",
+      "desjardins"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:09.961Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "e",
+    "results": [
+      "ebay",
+      "easyjet",
+      "electro depot",
+      "eurosport",
+      "ecole directe",
+      "edf",
+      "equipe",
+      "etam",
+      "euromillions",
+      "europe 1"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:10.125Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "f",
+    "results": [
+      "facebook",
+      "fnac",
+      "free",
+      "friv",
+      "france 2",
+      "fdj",
+      "film streaming",
+      "fly",
+      "free mobile",
+      "full stream"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:10.274Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "g",
+    "results": [
+      "gmail",
+      "google",
+      "google traduction",
+      "google map",
+      "google image",
+      "gifi",
+      "groupon",
+      "google earth",
+      "go sport",
+      "google translate"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:10.431Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "h",
+    "results": [
+      "hotmail",
+      "hespress",
+      "h&m",
+      "hibapress",
+      "horoscope",
+      "histoire d'or",
+      "hotmail sign in",
+      "h et m",
+      "happy wheels",
+      "hihi2"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:10.604Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "i",
+    "results": [
+      "ikea",
+      "instagram",
+      "impots",
+      "intersport",
+      "itineraire",
+      "indeed",
+      "itunes",
+      "icloud",
+      "immoweb",
+      "infogreffe"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:10.765Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "j",
+    "results": [
+      "jeux",
+      "jouet club",
+      "jeux video",
+      "jules",
+      "jennyfer",
+      "java",
+      "jeux de fille",
+      "jeux de voiture",
+      "jeux de moto",
+      "justfab"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:10.926Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "k",
+    "results": [
+      "kooora",
+      "kiabi",
+      "kijiji",
+      "kayak",
+      "kapaza",
+      "kickass",
+      "king jouet",
+      "kizi",
+      "kiko",
+      "keno"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:11.092Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "l",
+    "results": [
+      "le bon coin",
+      "leroy merlin",
+      "la redoute",
+      "le monde",
+      "la banque postale",
+      "laposte",
+      "lcl",
+      "lequipe",
+      "la centrale",
+      "linkedin"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:11.260Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "m",
+    "results": [
+      "mappy",
+      "meteo france",
+      "maps",
+      "marmiton",
+      "msn",
+      "michelin",
+      "m6 replay",
+      "micromania",
+      "messagerie orange",
+      "match en direct"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:11.415Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "n",
+    "results": [
+      "nabilla",
+      "netflix",
+      "norauto",
+      "nrj",
+      "nike",
+      "nocibe",
+      "numericable",
+      "nespresso",
+      "naf naf",
+      "new look"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:11.580Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "o",
+    "results": [
+      "outlook",
+      "orange",
+      "oscaro",
+      "ouedkniss",
+      "ouest france",
+      "orchestra",
+      "onisep",
+      "ouigo",
+      "open office",
+      "om"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:11.736Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "p",
+    "results": [
+      "programme tv",
+      "pages jaunes",
+      "pole emploi",
+      "pages blanches",
+      "papystreaming",
+      "portail orange",
+      "paypal",
+      "priceminister",
+      "pmu",
+      "pinterest"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:11.890Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "q",
+    "results": [
+      "quiche lorraine",
+      "quick",
+      "qapa",
+      "qoqa",
+      "quinte",
+      "que choisir",
+      "que faire",
+      "quiche",
+      "quenel+",
+      "qatar"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:12.060Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "r",
+    "results": [
+      "reverso",
+      "ratp",
+      "rue du commerce",
+      "ryanair",
+      "rtl",
+      "rmc",
+      "roland dumas",
+      "rojadirecta",
+      "rugbyrama",
+      "rds"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:12.225Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "s",
+    "results": [
+      "sncf",
+      "sfr",
+      "skype",
+      "sephora",
+      "societe generale",
+      "sign in",
+      "sfr mail",
+      "scolinfo",
+      "saint valentin",
+      "se loger"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:12.398Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "t",
+    "results": [
+      "traduction",
+      "twitter",
+      "tf1",
+      "traducteur",
+      "translate",
+      "transilien",
+      "tati",
+      "taylor kinney",
+      "tubidy",
+      "tripadvisor"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:12.554Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "u",
+    "results": [
+      "utorrent",
+      "undiz",
+      "urssaf",
+      "ubaldi",
+      "ugc",
+      "ups",
+      "uniqlo",
+      "utube",
+      "urban outfitters",
+      "uber"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:12.722Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "v",
+    "results": [
+      "vente privee",
+      "viamichelin",
+      "vivastreet",
+      "voyages sncf",
+      "vlc",
+      "viadeo",
+      "vdm",
+      "voila mail",
+      "vacances scolaires",
+      "vertbaudet"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:12.891Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "w",
+    "results": [
+      "wikipedia",
+      "wordreference",
+      "wetransfer",
+      "walmart",
+      "w9 replay",
+      "whatsapp",
+      "wawa mania",
+      "winrar",
+      "wish",
+      "wiko"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:13.071Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "x",
+    "results": [
+      "xe",
+      "xbox",
+      "xbox one",
+      "x",
+      "xbox live",
+      "xbmc",
+      "xperia z3",
+      "xiaomi",
+      "xavier dolan",
+      "xl airways"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:13.242Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "y",
+    "results": [
+      "youtube",
+      "yahoo",
+      "youtube mp3",
+      "yahoo mail",
+      "yves rocher",
+      "y8",
+      "youtube mp4",
+      "youwatch",
+      "yamaha",
+      "yamli"
+    ]
+  },
+  {
+    "date": "2015-02-17T17:47:13.394Z",
+    "service": "recipes",
+    "domain": "google.dz",
+    "language": "fr",
+    "letter": "z",
+    "results": [
+      "zalando",
+      "zara",
+      "zimbra",
+      "zara home",
+      "zemmour",
+      "zaz",
+      "zap de spi0n",
+      "zazie",
+      "zeturf",
+      "zara femme"
+    ]
+  }
+]
