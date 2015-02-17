@@ -125,7 +125,7 @@ function callAutocomplete(query, service, country){
 
 							// Save mongoDB
 							saveToMongoDB(function(err){
-								
+
 								if(!err){
 									var msg = '\nSaved to mongoDB.' +
 											  '\n--------------------------------------------\n';
@@ -133,7 +133,7 @@ function callAutocomplete(query, service, country){
 									console.log(msg);
 
 										// Neww country
-										if(countryIndex < 3){
+										if(countryIndex < countries.length){
 											var msg = 'Started scraping ' + countries[countryIndex].domain +
 													  '\n' + services[serviceIndex].site + ': ' +
 													  letters[letterIndex] + ', ';
