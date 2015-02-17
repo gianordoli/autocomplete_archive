@@ -38,11 +38,11 @@ console.log('--------------------------------------------');
 
 var letterIndex = 0;
 var serviceIndex = 0;
-var countryIndex = 88;
+var countryIndex = 0;
 var initIndex = countryIndex;
-// callAutocomplete(letters[letterIndex],
-// 				 services[serviceIndex],
-// 				 countries[countryIndex]);
+callAutocomplete(letters[letterIndex],
+				 services[serviceIndex],
+				 countries[countryIndex]);
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
@@ -61,7 +61,7 @@ function callAutocomplete(query, service, country){
 
 		if (!error && response.statusCode == 200) {
 
-			var charset = getCharset(response);
+			// var charset = getCharset(response);
 			// console.log(charset);
 
 			var data = JSON.parse(iconv.decode(body, 'ISO-8859-1'));
@@ -86,15 +86,14 @@ function callAutocomplete(query, service, country){
 			letterIndex++;
 			if(letterIndex == letters.length){
 				letterIndex = 0;
-				// serviceIndex ++;
-				// if (serviceIndex == services.length) {
-				// 	serviceIndex = 0;
+				serviceIndex ++;
+				if (serviceIndex == services.length) {
+					serviceIndex = 0;
 					countryIndex++;
-				// }
+				}
 			}
 
 			// Next?
-			// if(countryIndex < initIndex + 1){
 			if(countryIndex < countries.length){
 				callAutocomplete(letters[letterIndex],
 								 services[serviceIndex],
@@ -102,7 +101,7 @@ function callAutocomplete(query, service, country){
 			}else{	// End
 				// console.log(dailySearch);				
 				saveToJSON();
-				// saveToMongoDB();
+				saveToMongoDB();
 
 				console.log('--------------------------------------------');
 				console.log('Finshed daily scraping.');
@@ -119,10 +118,11 @@ function concatenateUrl(query, service, country){
 	console.log('Called concatenateUrl');
 	// console.log(service.ds);	
 	var requestUrl = 
-					'https://www.'+country.Domain+'/complete/search?' +
+					'https://www.'+country.domain+'/complete/search?' +
 					 '&client=firefox'+
 					 '&q=' + query +
-					 '&ds=' + service.ds;
+					 '&ds=' + service.ds +
+					 '&hl=' + country.language_a_code;
 
 	// console.log(requestUrl);
 	console.log('Returning ' + requestUrl);
@@ -139,7 +139,8 @@ function createRecord(service, country, suggestions){
 	var obj = {
 		date: new Date(),
 		service: service.site,
-		country: country.Domain,
+		domain: country.domain,
+		language: country.language_a_code,
 		letter: suggestions[0].charAt(0),
 		results: suggestions
 		// results: suggestionToObj(service, suggestions)
@@ -147,6 +148,67 @@ function createRecord(service, country, suggestions){
 	// console.log('Returning ' + obj);
 	return obj;
 }
+
+// Saves results to JSON file
+function saveToJSON(){
+	console.log('Saving data to JSON file.')
+	var date = new Date();
+	var timestamp = date.getTime();
+	var file = 'db/data_'+timestamp+'.json'
+	var obj = dailySearch;
+	 
+	jf.writeFile(file, obj, function(err) {
+	  // console.log(err);
+	  if(!err){
+	  	console.log('Results successfully saved at ' + file);
+	  }
+	});
+}
+
+// Save results to mongoDB
+function saveToMongoDB(obj){
+	console.log('Saving data to mongoDB.')
+
+	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
+		console.log('Connecting to DB...');
+		if(err) throw err;
+		console.log('Connected.');
+		var collection = db.collection('country_records');
+		var index = 0;
+		insertObject(dailySearch[index]);
+
+		function insertObject(obj){
+			console.log('Called insertObject.');
+			// console.log(obj);
+			collection.insert(obj, function(err, docs) {
+				if(err) throw err
+				console.log('Obj succesfully saved to DB.');
+
+				// Next iteration
+				if(index < dailySearch.length - 1){
+					index++;
+					var obj = dailySearch[index];
+					insertObject(obj);					
+				}else{
+					// Count
+					collection.count(function(err, count) {
+						console.log(format("count = %s", count));
+					});		
+
+					// Locate all the entries using find 
+					collection.find().toArray(function(err, results) {
+						console.dir(results);
+						// Let's close the db 
+						db.close();
+					});	
+				}
+			});
+		}
+	});
+}
+
+
+/*-------------------- NOT IN USE -------------------*/
 
 // Changes the array of suggestions to an array of obj
 // [ { query: , search: }, {} ]
@@ -207,61 +269,3 @@ function getCharset(response){
 	// console.log('Returning '+charset);
 	return charset;
 }
-
-// Saves results to JSON file
-function saveToJSON(){
-	console.log('Saving data to JSON file.')
-	var date = new Date();
-	var timestamp = date.getTime();
-	var file = 'db/data_'+timestamp+'.json'
-	var obj = dailySearch;
-	 
-	jf.writeFile(file, obj, function(err) {
-	  // console.log(err);
-	  if(!err){
-	  	console.log('Results successfully saved at ' + file);
-	  }
-	});
-}
-
-// Save results to mongoDB
-function saveToMongoDB(obj){
-	console.log('Saving data to mongoDB.')
-
-	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
-		console.log('Connecting to DB...');
-		if(err) throw err;
-		console.log('Connected.');
-		var collection = db.collection('records');
-		var index = 0;
-		insertObject(dailySearch[index]);
-
-		function insertObject(obj){
-			console.log('Called insertObject.');
-			// console.log(obj);
-			collection.insert(obj, function(err, docs) {
-				if(err) throw err
-				console.log('Obj succesfully saved to DB.');
-
-				// Next iteration
-				if(index < dailySearch.length - 1){
-					index++;
-					var obj = dailySearch[index];
-					insertObject(obj);					
-				}else{
-					// Count
-					collection.count(function(err, count) {
-						console.log(format("count = %s", count));
-					});		
-
-					// Locate all the entries using find 
-					collection.find().toArray(function(err, results) {
-						console.dir(results);
-						// Let's close the db 
-						db.close();
-					});	
-				}
-			});
-		}
-	});
-}  
