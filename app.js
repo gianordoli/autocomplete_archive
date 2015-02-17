@@ -7,14 +7,14 @@ MongoClient = require('mongodb').MongoClient,
 	CronJob = require('cron').CronJob
 		  _ = require('underscore');
 
-var countries = jf.readFileSync('data/countries.json');
-// console.log(languages);
+var countries = jf.readFileSync('data/countries_domains_languages.json');
+// console.log(countries);
 
 // For now, only latin-script languages...
-// languages = _.filter(languages, function(obj){
-// 	return obj.script == 'latin';
-// });
-// console.log(languages);
+countries = _.filter(countries, function(obj){
+	return obj.language_a_script == 'latin';
+});
+console.log(countries);
 
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
@@ -40,9 +40,9 @@ var letterIndex = 0;
 var serviceIndex = 0;
 var countryIndex = 88;
 var initIndex = countryIndex;
-callAutocomplete(letters[letterIndex],
-				 services[serviceIndex],
-				 countries[countryIndex]);
+// callAutocomplete(letters[letterIndex],
+// 				 services[serviceIndex],
+// 				 countries[countryIndex]);
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
