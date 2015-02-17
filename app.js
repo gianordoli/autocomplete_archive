@@ -87,7 +87,7 @@ function callAutocomplete(query, service, country){
 				dailySearch.push(newRecord);
 			}
 
-			// Next iteration
+			// New letter...
 			letterIndex ++;
 			if(letterIndex < letters.length){
 				var msg = letters[letterIndex] + ', ';
@@ -96,9 +96,9 @@ function callAutocomplete(query, service, country){
 			
 			}else{
 
+				// New service...
 				letterIndex = 0;
 				serviceIndex ++;
-			
 				if (serviceIndex < services.length) {
 					var msg = '\n' + services[serviceIndex].site + ': ' +
 							  letters[letterIndex] + ', ';;
@@ -106,20 +106,49 @@ function callAutocomplete(query, service, country){
 					callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
 			
 				}else{
-			
+					
+					// Save data / new country
 					serviceIndex  = 0;
 					countryIndex ++;
 					var msg = '\nFinished scraping ' +
-							  countries[countryIndex - 1].domain + '\n' +
-							  '--------------------------------------------\n';
+							  countries[countryIndex - 1].domain;
+					saveLog(msg);
 					console.log(msg);
-					saveToJSON(countries[countryIndex - 1], saveLog(msg));
+
+					// Save JSON
+					saveToJSON(countries[countryIndex - 1], function(err){
+
+						if(!err){
+							var msg = '\nSaved JSON file.';
+							saveLog(msg);
+							console.log(msg);
+
+							// Save mongoDB
+							saveToMongoDB(function(err){
+								
+								if(!err){
+									var msg = '\nSaved to mongoDB.' +
+											  '\n--------------------------------------------\n';
+									saveLog(msg);
+									console.log(msg);
+
+										// Neww country
+										if(countryIndex < 3){
+											var msg = 'Started scraping ' + countries[countryIndex].domain +
+													  '\n' + services[serviceIndex].site + ': ' +
+													  letters[letterIndex] + ', ';
+											saveLog(msg);
+											console.log(msg);
+
+											dailySearch = [];	// reset results
+											callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+										}
+								}
+							});
+						}
+					});
 			
-					// if(countryIndex < countries.length){
-					// 	var msg = 'Started scraping ' + countries[countryIndex].domain +
-					// 			  '\n' + services[serviceIndex].site + ': ' +
-					// 			  letters[letterIndex] + ', ';						
-					// }
+
 				}
 			}
 
@@ -210,13 +239,15 @@ function saveToJSON(country, callback){
 	  // console.log(err);
 	  if(!err){
 	  	console.log('Results successfully saved at ' + file);
-	  	callback();	// Save log
+	  	callback(false);	// error = false
+	  }else{
+	  	callback(true);
 	  }
 	});
 }
 
 // Save results to mongoDB
-function saveToMongoDB(obj){
+function saveToMongoDB(callback){
 	console.log('Saving data to mongoDB.')
 
 	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
@@ -240,17 +271,20 @@ function saveToMongoDB(obj){
 					var obj = dailySearch[index];
 					insertObject(obj);					
 				}else{
+
 					// Count
 					collection.count(function(err, count) {
 						console.log(format("count = %s", count));
-					});		
+						db.close();			// close database						
+						callback(false);	// err = false						
+					});
 
-					// Locate all the entries using find 
-					collection.find().toArray(function(err, results) {
-						console.dir(results);
-						// Let's close the db 
-						db.close();
-					});	
+					// // Locate all the entries using find 
+					// collection.find().toArray(function(err, results) {
+					// 	console.dir(results);
+					// 	// Let's close the db 
+					// 	db.close();
+					// });	
 				}
 			});
 		}
