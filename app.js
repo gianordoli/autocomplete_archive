@@ -8,6 +8,10 @@ MongoClient = require('mongodb').MongoClient,
 	CronJob = require('cron').CronJob
 		  _ = require('underscore');
 
+console.log('--------------------------------------------');
+console.log('App started running');
+console.log('--------------------------------------------');
+
 var countries = jf.readFileSync('data/countries_domains_languages.json');
 // console.log(countries);
 
@@ -28,25 +32,21 @@ for(var i = 65; i <= 90; i++){
 
 // All results from this day
 var dailySearch = [];
+var letterIndex, serviceIndex, countryIndex;
 
-console.log('--------------------------------------------');
-console.log('App started running');
-console.log('--------------------------------------------');
-// new CronJob('0 0 22 * * *', function(){
-// 	dailySearch = [];
-//     callAutocomplete(String.fromCharCode(65), services[0], 'en');
-// }, null, true, "America/New_York");
+new CronJob('0 0 22 * * *', function(){
 
-var letterIndex = 0;
-var serviceIndex = 0;
-var countryIndex = 0;
-var msg = 'Started scraping ' + countries[countryIndex].domain +
-		  '\n' + services[serviceIndex].site + ', ';
-saveLog(msg);
+	dailySearch = [];
+	letterIndex = 0;
+	serviceIndex = 0;
+	countryIndex = 0;
+	var msg = 'Started scraping ' + countries[countryIndex].domain +
+			  '\n' + services[serviceIndex].site + ', ';
+	saveLog(msg);
+	callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
 
-callAutocomplete(letters[letterIndex],
-				 services[serviceIndex],
-				 countries[countryIndex]);
+}, null, true, "America/New_York");
+
 
 /*-------------------- MAIN FUNCTION --------------------*/
 
@@ -229,7 +229,7 @@ function saveToMongoDB(callback){
 		console.log('Connecting to DB...');
 		if(err) throw err;
 		console.log('Connected.');
-		var collection = db.collection('country_records');
+		var collection = db.collection('records');
 		var index = 0;
 		insertObject(dailySearch[index]);
 
