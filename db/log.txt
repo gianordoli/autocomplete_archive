@@ -1,0 +1,8 @@
+Started scraping google.dz
+web, images, youtube, news, books, products, recipes, 
+Finished scraping google.dz
+Saved JSON file.
+Saved to mongoDB.
+--------------------------------------------
+Started scraping google.as
+web, 

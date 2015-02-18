@@ -19,7 +19,7 @@ var countries = jf.readFileSync('data/countries_domains_languages.json');
 countries = _.filter(countries, function(obj){
 	return obj.language_a_script == 'latin';
 });
-console.log(countries);
+// console.log(countries);
 
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
@@ -145,7 +145,11 @@ function nextIteration(){
 								console.log(msg);
 
 								dailySearch = [];	// reset results
-								callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+								// Delaying the next country call...
+								// Maybe that prevents from google shuting down the app?
+								setTimeout(function(){
+									callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+								}, 1000);
 							}
 						}
 					});
