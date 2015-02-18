@@ -5,4 +5,5 @@ Saved JSON file.
 Saved to mongoDB.
 --------------------------------------------
 Started scraping google.as
+web, Started scraping google.dz
 web, 

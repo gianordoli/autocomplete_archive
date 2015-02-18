@@ -98,7 +98,9 @@ function nextIteration(){
 	if(letterIndex < letters.length){
 		// var msg = letters[letterIndex] + ', ';
 		// saveLog(msg);
-		callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+		setTimeout(function(){	// Delay to prevent Google's shut down		
+			callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+		}, 500);
 	
 	}else{
 
@@ -107,8 +109,10 @@ function nextIteration(){
 		serviceIndex ++;
 		if (serviceIndex < services.length) {
 			var msg = services[serviceIndex].site + ', ';
-			saveLog(msg);					
-			callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+			saveLog(msg);
+			setTimeout(function(){	// Delay to prevent Google's shut down
+				callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+			}, 500);
 	
 		}else{
 			
@@ -145,11 +149,7 @@ function nextIteration(){
 								console.log(msg);
 
 								dailySearch = [];	// reset results
-								// Delaying the next country call...
-								// Maybe that prevents from google shuting down the app?
-								setTimeout(function(){
-									callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
-								}, 1000);
+								callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
 							}
 						}
 					});
