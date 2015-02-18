@@ -34,7 +34,7 @@ for(var i = 65; i <= 90; i++){
 var dailySearch = [];
 var letterIndex, serviceIndex, countryIndex;
 
-new CronJob('0 0 22 * * *', function(){
+// new CronJob('0 0 22 * * *', function(){
 
 	dailySearch = [];
 	letterIndex = 0;
@@ -45,7 +45,7 @@ new CronJob('0 0 22 * * *', function(){
 	saveLog(msg);
 	callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
 
-}, null, true, "America/New_York");
+// }, null, true, "America/New_York");
 
 
 /*-------------------- MAIN FUNCTION --------------------*/
@@ -74,85 +74,86 @@ function callAutocomplete(query, service, country){
 			// console.log(suggestions);
 			// console.log(suggestions.length);
 
-			
-			// // If there's any suggestion at all...
-			if(suggestions.length > 0){
-
-				// Create a new record and save
-				var newRecord = createRecord(service, country, suggestions);
-				console.log(newRecord);
-
-				// Save current result
-				dailySearch.push(newRecord);
-			}
-
-			// New letter...
-			letterIndex ++;
-			if(letterIndex < letters.length){
-				// var msg = letters[letterIndex] + ', ';
-				// saveLog(msg);
-				callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
-			
-			}else{
-
-				// New service...
-				letterIndex = 0;
-				serviceIndex ++;
-				if (serviceIndex < services.length) {
-					var msg = services[serviceIndex].site + ', ';
-					saveLog(msg);					
-					callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
-			
-				}else{
-					
-					// Save data / new country
-					serviceIndex  = 0;
-					countryIndex ++;
-					var msg = '\nFinished scraping ' +
-							  countries[countryIndex - 1].domain;
-					saveLog(msg);
-					console.log(msg);
-
-					// Save JSON
-					saveToJSON(countries[countryIndex - 1], function(err){
-
-						if(!err){
-							var msg = '\nSaved JSON file.';
-							saveLog(msg);
-							console.log(msg);
-
-							// Save mongoDB
-							saveToMongoDB(function(e){
-
-								if(!e){
-									var msg = '\nSaved to mongoDB.' +
-											  '\n--------------------------------------------\n';
-									saveLog(msg);
-									console.log(msg);
-
-										// Neww country
-										if(countryIndex < countries.length){
-											var msg = 'Started scraping ' + countries[countryIndex].domain +
-													  '\n' + services[serviceIndex].site + ', ';
-											saveLog(msg);
-											console.log(msg);
-
-											dailySearch = [];	// reset results
-											callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
-										}
-								}
-							});
-						}
-					});
-			
-
+			// Create a new record and store
+			createRecord(service, country, suggestions, function(err, obj){
+				if(!err){
+					console.log(obj);	
+					dailySearch.push(obj);						
 				}
-			}
+				// Call next iteration if err == true
+				// Might be the case that no suggestions were retrieved,
+				// so just jump to the next letter
+				nextIteration();				
+			});
 		}
 	});
 }
 
 /*-------------------- FUNCTIONS --------------------*/
+
+function nextIteration(){
+
+	// New letter...
+	letterIndex ++;
+	if(letterIndex < letters.length){
+		// var msg = letters[letterIndex] + ', ';
+		// saveLog(msg);
+		callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+	
+	}else{
+
+		// New service...
+		letterIndex = 0;
+		serviceIndex ++;
+		if (serviceIndex < services.length) {
+			var msg = services[serviceIndex].site + ', ';
+			saveLog(msg);					
+			callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+	
+		}else{
+			
+			// Save data / new country
+			serviceIndex  = 0;
+			countryIndex ++;
+			var msg = '\nFinished scraping ' +
+					  countries[countryIndex - 1].domain;
+			saveLog(msg);
+			console.log(msg);
+
+			// Save JSON
+			saveToJSON(countries[countryIndex - 1], function(err){
+
+				if(!err){
+					var msg = '\nSaved JSON file.';
+					saveLog(msg);
+					console.log(msg);
+
+					// Save mongoDB
+					saveToMongoDB(function(err){
+
+						if(!err){
+							var msg = '\nSaved to mongoDB.' +
+									  '\n--------------------------------------------\n';
+							saveLog(msg);
+							console.log(msg);
+
+							// New country
+							if(countryIndex < countries.length){
+								var msg = 'Started scraping ' + countries[countryIndex].domain +
+										  '\n' + services[serviceIndex].site + ', ';
+								saveLog(msg);
+								console.log(msg);
+
+								dailySearch = [];	// reset results
+								callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+							}
+						}
+					});
+				}
+			});
+		}
+	}	
+}
 
 // Creates url for reqquest, concatenating the parameters
 function concatenateUrl(query, service, country){
@@ -171,23 +172,28 @@ function concatenateUrl(query, service, country){
 }
 
 // Returns a record
-function createRecord(service, country, suggestions){
+function createRecord(service, country, suggestions, callback){
 	console.log('Called createRecord');
 	// console.log('Received:');
 	// console.log(service);
 	// console.log(language);	
 	// console.log(suggestions);
-	var obj = {
-		date: new Date(),
-		service: service.site,
-		domain: country.domain,
-		language: country.language_a_code,
-		letter: suggestions[0].charAt(0),
-		results: suggestions
-		// results: suggestionToObj(service, suggestions)
-	};
-	// console.log('Returning ' + obj);
-	return obj;
+	var obj;
+	if(suggestions.length > 0){	
+		obj = {
+			date: new Date(),
+			service: service.site,
+			domain: country.domain,
+			language: country.language_a_code,
+			letter: suggestions[0].charAt(0),
+			results: suggestions
+			// results: suggestionToObj(service, suggestions)
+		};
+		// console.log('Returning ' + obj);
+		callback(false, obj);
+	}else{
+		callback(true);	// err
+	}
 }
 
 function saveLog(msg){
