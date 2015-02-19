@@ -33,7 +33,7 @@ for(var i = 65; i <= 90; i++){
 // All results from this day
 var domainResults = [];
 var letterIndex, serviceIndex, countryIndex, errorCount;
-countryIndex = 89;
+countryIndex = 0;
 
 // new CronJob('0 0 22 * * *', function(){
 
