@@ -31,24 +31,36 @@ for(var i = 65; i <= 90; i++){
 // console.log(letters);
 
 // All results from this day
-var dailySearch = [];
-var letterIndex, serviceIndex, countryIndex;
+var domainResults = [];
+var letterIndex, serviceIndex, countryIndex, errorCount;
+countryIndex = 89;
 
 // new CronJob('0 0 22 * * *', function(){
 
-	dailySearch = [];
-	letterIndex = 0;
-	serviceIndex = 0;
-	countryIndex = 0;
-	var msg = 'Started scraping ' + countries[countryIndex].domain +
-			  '\n' + services[serviceIndex].site + ', ';
-	saveLog(msg);
-	callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+	restart(true);
 
 // }, null, true, "America/New_York");
 
 
-/*-------------------- MAIN FUNCTION --------------------*/
+/*-------------------- MAIN FUNCTIONS --------------------*/
+
+// This is used both to START (1st time) and RESTART the calls
+// Latter might be due to:
+// a) Finished scraping a given country
+// (in that case, it wouldn't be necessary to reset the variables...
+// b) errorCount > 5, so skip to the next country
+function restart(resetVars){
+	if(resetVars){
+		letterIndex = 0;
+		serviceIndex = 0;		
+	}
+	domainResults = [];
+	errorCount = 0;
+	var msg = '\nStarted scraping ' + countries[countryIndex].domain +
+			  '\n' + services[serviceIndex].site + ', ';
+	saveLog(msg);
+	callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+}
 
 function callAutocomplete(query, service, country){
 	console.log('Called callAutocomplete.')
@@ -78,13 +90,29 @@ function callAutocomplete(query, service, country){
 			createRecord(service, country, suggestions, function(err, obj){
 				if(!err){
 					console.log(obj);	
-					dailySearch.push(obj);						
+					domainResults.push(obj);						
 				}
 				// Call next iteration if err == true
 				// Might be the case that no suggestions were retrieved,
 				// so just jump to the next letter
 				nextIteration();				
 			});
+		}else{
+			console.log(error);
+			saveLog(error);
+			errorCount ++;
+			console.log('errorCount: ' + errorCount);
+			// Try at least 5 times
+			if(errorCount < 5){
+				setTimeout(function(){
+					console.log('Calling autocomplete again.');
+					callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+				}, 5000);				
+			}else{
+				countryIndex ++; // skip to the next country
+				restart(true);	 // reset letter and service
+			}
+
 		}
 	});
 }
@@ -98,9 +126,9 @@ function nextIteration(){
 	if(letterIndex < letters.length){
 		// var msg = letters[letterIndex] + ', ';
 		// saveLog(msg);
-		setTimeout(function(){	// Delay to prevent Google's shut down		
+		// setTimeout(function(){	// Delay to prevent Google's shut down		
 			callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
-		}, 500);
+		// }, 500);
 	
 	}else{
 
@@ -110,9 +138,9 @@ function nextIteration(){
 		if (serviceIndex < services.length) {
 			var msg = services[serviceIndex].site + ', ';
 			saveLog(msg);
-			setTimeout(function(){	// Delay to prevent Google's shut down
+			// setTimeout(function(){	// Delay to prevent Google's shut down
 				callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
-			}, 500);
+			// }, 500);
 	
 		}else{
 			
@@ -137,19 +165,13 @@ function nextIteration(){
 
 						if(!err){
 							var msg = '\nSaved to mongoDB.' +
-									  '\n--------------------------------------------\n';
+									  '\n--------------------------------------------';
 							saveLog(msg);
 							console.log(msg);
 
 							// New country
 							if(countryIndex < countries.length){
-								var msg = 'Started scraping ' + countries[countryIndex].domain +
-										  '\n' + services[serviceIndex].site + ', ';
-								saveLog(msg);
-								console.log(msg);
-
-								dailySearch = [];	// reset results
-								callAutocomplete(letters[letterIndex], services[serviceIndex], countries[countryIndex]);
+								restart(false);	// no need to reset letter and service
 							}
 						}
 					});
@@ -216,9 +238,12 @@ function saveToJSON(country, callback){
 	console.log('Saving data to JSON file.')
 	var date = new Date();
 	var timestamp = date.getTime();
-	var domain = country.domain.replace('.', '_');
+	var domain = country.domain;
+	while(domain.indexOf('.') > -1){
+		domain = domain.replace('.', '_');
+	}
 	var file = 'db/data_'+domain+'_'+timestamp+'.json'
-	var obj = dailySearch;
+	var obj = domainResults;
 	 
 	jf.writeFile(file, obj, function(err) {
 	  // console.log(err);
@@ -241,7 +266,7 @@ function saveToMongoDB(callback){
 		console.log('Connected.');
 		var collection = db.collection('records');
 		var index = 0;
-		insertObject(dailySearch[index]);
+		insertObject(domainResults[index]);
 
 		function insertObject(obj){
 			console.log('Called insertObject.');
@@ -252,9 +277,9 @@ function saveToMongoDB(callback){
 				}else{
 					console.log('Obj succesfully saved to DB.');	
 					// Next iteration
-					if(index < dailySearch.length - 1){
+					if(index < domainResults.length - 1){
 						index++;
-						var obj = dailySearch[index];
+						var obj = domainResults[index];
 						insertObject(obj);					
 					}else{
 						db.close();			// close database						
