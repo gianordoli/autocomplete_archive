@@ -35,11 +35,9 @@ var domainResults = [];
 var letterIndex, serviceIndex, countryIndex, errorCount;
 countryIndex = 0;
 
-// new CronJob('0 0 22 * * *', function(){
-
+new CronJob('0 35 20 * * *', function(){
 	restart(true);
-
-// }, null, true, "America/New_York");
+}, null, true, "America/New_York");
 
 
 /*-------------------- MAIN FUNCTIONS --------------------*/
@@ -171,7 +169,9 @@ function nextIteration(){
 
 							// New country
 							if(countryIndex < countries.length){
-								restart(false);	// no need to reset letter and service
+								setTimeout(function(){
+									restart(false);	// no need to reset letter and service
+								}, 120000);
 							}
 						}
 					});

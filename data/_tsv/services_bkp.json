@@ -18,5 +18,13 @@
 	{	"site": "books",
 		"client": "books",
 		"ds": "bo",
-		"search-address": "https://www.google.com/search?q=X&tbm=bks" }
+		"search-address": "https://www.google.com/search?q=X&tbm=bks" },
+	{	"site": "products",
+		"client": "products-cc",
+		"ds": "sh",
+		"search-address": "https://www.google.com/#q=X&tbm=shop" },
+	{	"site": "recipes",
+		"client": "psy",
+		"ds": "r",
+		"search-address": "https://www.google.com/search?q=X&tbs=rcp"  }
 ]
