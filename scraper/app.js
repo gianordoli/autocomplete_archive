@@ -35,9 +35,11 @@ var domainResults = [];
 var letterIndex, serviceIndex, countryIndex, errorCount;
 countryIndex = 0;
 
-new CronJob('0 35 20 * * *', function(){
+new CronJob('0 0 2 * * *', function(){
 	restart(true);
-}, null, true, "America/New_York");
+	// var now = new Date();
+	// console.log(now.getHours() + ':' + now.getMinutes());
+}, null, true, 'UTC');
 
 
 /*-------------------- MAIN FUNCTIONS --------------------*/
