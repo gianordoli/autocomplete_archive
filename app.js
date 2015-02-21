@@ -37,7 +37,7 @@ countryIndex = 0;
 
 // new CronJob('0 0 22 * * *', function(){
 
-	start(0, 0, 0);
+	restart(true);
 
 // }, null, true, "America/New_York");
 
@@ -47,11 +47,13 @@ countryIndex = 0;
 // This is used both to START (1st time) and RESTART the calls
 // Latter might be due to:
 // a) Finished scraping a given country
+// (in that case, it wouldn't be necessary to reset the variables...
 // b) errorCount > 5, so skip to the next country
-function start(let, ser, cou){
-	letterIndex = let;
-	serviceIndex = ser;
-	countryIndex = cou;
+function restart(resetVars){
+	if(resetVars){
+		letterIndex = 0;
+		serviceIndex = 0;		
+	}
 	domainResults = [];
 	errorCount = 0;
 	var msg = '\nStarted scraping ' + countries[countryIndex].domain +
@@ -108,7 +110,7 @@ function callAutocomplete(query, service, country){
 				}, 5000);				
 			}else{
 				countryIndex ++; // skip to the next country
-				start(0, 0, countryIndex);	 // reset letter and service
+				restart(true);	 // reset letter and service
 			}
 
 		}
@@ -169,9 +171,7 @@ function nextIteration(){
 
 							// New country
 							if(countryIndex < countries.length){
-								setTimeout(function(){
-									start(false);	// no need to reset letter and service
-								}, 120000);
+								restart(false);	// no need to reset letter and service
 							}
 						}
 					});
