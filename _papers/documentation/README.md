@@ -109,7 +109,7 @@ Had some more trouble with the script. This time it was clear that the Google se
 I tried to change the script to use [phantomJS](http://phantomjs.org/) and simulate a user, instead of doing simple requests. A few hours later, while testing the calls via browser, I realized that the script wasn’t being blocked anymore. So I went back to the request script, this time adding a 2-minute delay in between the calls for each country. My guess is that the real problem is the frequency. So, spreading out the calls accross a longer period — about 6 hours — would prevent the script from being blocked.
 
 
-#### Feb 20th
+#### Feb 22th
 
 The script was not blocked by Google anymore. It takes about 10 hours and 40 minutes, so that should be a frequency low enough to not cause any trouble. I'm still having problems trying to make the app run automatically every day. I'm using 2 node modules, [forever](https://www.npmjs.com/package/forever) and [cron](https://github.com/ncb000gt/node-cron) to manage that, but it's not working 100%.
 
