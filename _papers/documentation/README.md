@@ -7,7 +7,7 @@ MFA Design and Technology, Parsons The New School for Design
 
 Spring, 2015
 
-This is an ongoing documentation of my [Google Autocomplete Archive project](/).
+This is an ongoing documentation of my [Google Autocomplete Archive project](https://github.com/gianordoli/autocomplete_archive/).
 
 ---
 	
