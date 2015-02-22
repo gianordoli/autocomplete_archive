@@ -29,5 +29,5 @@ Previous projects documented [here](https://gabrielmfadt.wordpress.com/category/
 
 ## Papers
 
-* [Concept Statement](/_papers/concept_statement/body.md)
-* [Documentation](/_papers/documentation/body.md)
+* [Concept Statement](/_papers/concept_statement)
+* [Documentation](/_papers/documentation)
