@@ -19,8 +19,19 @@ mongoexport -d autocomplete -c records -o path/autocomplete.json --jsonArray
 
 ### AND queries
 
+* Different properties:
+
 ```
 db.records.find({'date': {'$gt': dia1}, 'domain': 'google.dz'})
+```
+
+* Same property (range):
+
+```
+var start = new Date('2015-02-22T11:23:00.000Z')
+var stop = new Date('2015-02-22T16:35:00.000Z')
+
+db.records.count({'date':{'$gte':start, '$lt':stop}, 'domain': 'google.dz'})
 ```
 
 ### Updating dates

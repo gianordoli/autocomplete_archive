@@ -111,6 +111,13 @@ I tried to change the script to use [phantomJS](http://phantomjs.org/) and simul
 
 #### Feb 22th
 
-The script was not blocked by Google anymore. It takes about 10 hours and 40 minutes, so that should be a frequency low enough to not cause any trouble. I'm still having problems trying to make the app run automatically every day. I'm using 2 node modules, [forever](https://www.npmjs.com/package/forever) and [cron](https://github.com/ncb000gt/node-cron) to manage that, but it's not working 100%.
+The script was not blocked by Google anymore. It takes about 5 hours and 20 minutes, so that should be a frequency low enough to not cause any trouble. I'm still having problems trying to make the app run automatically every day. I'm using 2 node modules, [forever](https://www.npmjs.com/package/forever) and [cron](https://github.com/ncb000gt/node-cron) to manage that, but it's not working 100%.
 
-Having the JSON files as a bakup has been useful. Since mongoDB doesn't have a GUI, it's hard to notice if something goes wrong. With the files, though, I can just take a look into the sequence of domains and check if everything is fine. Today, for instance, the script kep running after it reached the last country and had to be manually stopped.
+Having the JSON files as a bakcup has been useful. Since mongoDB doesn't have a GUI, it's hard to notice if something goes wrong. With the files, though, I can just take a look into the sequence of domains and check if everything is fine. Today, for instance, the script kept running after it reached the last country and had to be manually stopped.
+
+
+#### Feb 23th
+
+No problems with the scraping anymore! The script starts automatically everyday at 9 pm (2 am UTC time). Using [forever](https://www.npmjs.com/package/forever) and [cron](https://github.com/ncb000gt/node-cron).
+
+I will take a look into the results now, to see how things change from day to day. Maybe it's not wort scraping on a daily basis.
