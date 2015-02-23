@@ -33,7 +33,7 @@ app.use('/', express.static(__dirname + '/public'));
 // Create a project
 app.post('/search', function(request, response) {
     console.log(request.body);
-    searchMongoDB('', function(results){
+    searchMongoDB(request.body.letter, function(results){
     	console.log('Called callback.');
     	// console.log(results);
 	    response.json({
@@ -45,7 +45,7 @@ app.post('/search', function(request, response) {
 
 
 /*------------------ FUNCTIONS ------------------*/
-function searchMongoDB(query, callback){
+function searchMongoDB(letter, callback){
 	console.log('Called searchMongoDB.')
 
 	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
@@ -55,7 +55,7 @@ function searchMongoDB(query, callback){
 		var collection = db.collection('records');
 
 		// Locate all the entries using find 
-		collection.find().toArray(function(err, results) {
+		collection.find({'letter':letter}).toArray(function(err, results) {
 			// console.dir(results);
 			callback(results);
 			db.close();	// Let's close the db 

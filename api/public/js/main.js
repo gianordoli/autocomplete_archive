@@ -17,7 +17,7 @@ app.init = function() {
 	    $('#search').off('click').on('click', function() {
 	        // Ajax call
 	        $.post('/search', {
-	            query: 'all'
+	            letter: 'a'
 	        }, function(response) {
 	            // console.log(response);
 	            if(response.error) throw response.error
@@ -30,10 +30,25 @@ app.init = function() {
 	function printResults(data){
 		console.log('Called printResults.')
 		console.log(data);
-		// for(var i = 0; i < data.length; i++){
-		// 	var newDiv = $('<div>' + data[i] + '<div>');
-		// 	$('body').append(newDiv);
-		// }
+		for(var i = 0; i < data.length; i++){
+			var newDiv = $('<div class="results"><div>');
+
+			var letter = $('<p class="letter">'+data[i].letter+'</p>');
+			var description = $('<p>' + data[i].date + '<br>' +
+						  				data[i].domain + '<br>' +
+						  				data[i].language + '<br>' + '</p>');
+			var predictions = $('<p></p>');
+			var predictionsString = '';
+			for(var j = 0; j < data[i].results.length; j++){
+				predictionsString += data[i].results[j] + '<br>';
+			}
+			predictions.html(predictionsString);
+
+			$(newDiv).append(letter);
+			$(newDiv).append(description);
+			$(newDiv).append(predictions);
+			$('body').append(newDiv);
+		}
 	}
 }
 

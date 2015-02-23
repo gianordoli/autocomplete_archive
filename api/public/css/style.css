@@ -1,1 +1,9 @@
 /* your style begins here */
+.results{
+	display: inline-block;
+	width: 25%;
+}
+.letter{
+	font-size: 2em;
+	font-weight: bold;
+}
