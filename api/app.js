@@ -31,12 +31,38 @@ app.use('/', express.static(__dirname + '/public'));
 
 /*------------------- ROUTERS -------------------*/
 // Create a project
-app.post('/search', function(req, res) {
-    console.log(req.body);
-    // res.json({
-    //     status: 'OK'
-    // });
+app.post('/search', function(request, response) {
+    console.log(request.body);
+    searchMongoDB('', function(results){
+    	console.log('Called callback.');
+    	// console.log(results);
+	    response.json({
+	    	error: null,
+	        data: results
+	    });    	
+    });
 });
+
+
+/*------------------ FUNCTIONS ------------------*/
+function searchMongoDB(query, callback){
+	console.log('Called searchMongoDB.')
+
+	MongoClient.connect('mongodb://127.0.0.1:27017/autocomplete', function(err, db) {
+		console.log('Connecting to DB...');
+		if(err) throw err;
+		console.log('Connected.');
+		var collection = db.collection('records');
+
+		// Locate all the entries using find 
+		collection.find().toArray(function(err, results) {
+			// console.dir(results);
+			callback(results);
+			db.close();	// Let's close the db 
+		});		
+
+	});
+}
 
 
 /*----------------- INIT SERVER -----------------*/
