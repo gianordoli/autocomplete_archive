@@ -1,9 +1,22 @@
 /* your style begins here */
+body{
+	padding: 20px;
+}
+
+#search-div{
+	width: 100%;
+	text-align: left;
+}
+
+#search-box{
+	size: 1;
+}
+/*.letter{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}*/
 .results{
 	display: inline-block;
-	width: 25%;
-}
-.letter{
-	font-size: 2em;
-	font-weight: bold;
+	width: 15%;
 }

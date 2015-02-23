@@ -14,10 +14,11 @@ app.init = function() {
 
 	    // .off() is the same as removeEventListener
 	    // it is needed to cancel out any duplications
-	    $('#search').off('click').on('click', function() {
+	    $('#search-bt').off('click').on('click', function() {
+	    	var query = $('#search-box').val().toLowerCase();
 	        // Ajax call
 	        $.post('/search', {
-	            letter: 'a'
+	            letter: query
 	        }, function(response) {
 	            // console.log(response);
 	            if(response.error) throw response.error
@@ -33,7 +34,7 @@ app.init = function() {
 		for(var i = 0; i < data.length; i++){
 			var newDiv = $('<div class="results"><div>');
 
-			var letter = $('<p class="letter">'+data[i].letter+'</p>');
+			var letter = $('<h2>'+data[i].letter.toUpperCase()+'</h2>');
 			var description = $('<p>' + data[i].date + '<br>' +
 						  				data[i].domain + '<br>' +
 						  				data[i].language + '<br>' + '</p>');
