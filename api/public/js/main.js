@@ -31,25 +31,34 @@ app.init = function() {
 	function printResults(data){
 		console.log('Called printResults.')
 		console.log(data);
+		$('#container').empty();
 		for(var i = 0; i < data.length; i++){
-			var newDiv = $('<div class="results"><div>');
+			var newDiv = $('<div class="results"></div>');
 
-			var letter = $('<h2>'+data[i].letter.toUpperCase()+'</h2>');
-			var description = $('<p>' + data[i].date + '<br>' +
+			var letter = $('<h2>' + data[i].letter + '</h2>');
+			var description = $('<p>' + formatDate(data[i].date) + '<br>' +
 						  				data[i].domain + '<br>' +
 						  				data[i].language + '<br>' + '</p>');
-			var predictions = $('<p></p>');
-			var predictionsString = '';
+			var predictions = $('<ul></ul>');
 			for(var j = 0; j < data[i].results.length; j++){
-				predictionsString += data[i].results[j] + '<br>';
+				var prediction = $('<li>' + data[i].results[j] + '</li>');
+				predictions.append(prediction);
 			}
-			predictions.html(predictionsString);
 
 			$(newDiv).append(letter);
 			$(newDiv).append(description);
 			$(newDiv).append(predictions);
-			$('body').append(newDiv);
+			$('#container').append(newDiv);
 		}
+	}
+
+	function formatDate(date){
+		var newDate = new Date(date);
+		var monthString = newDate.getMonth() + 1;
+		if (monthString < 10) monthString = '0' + monthString;
+		var dateString = newDate.getDate();
+		var yearString = newDate.getFullYear();
+		return monthString + '/' + dateString + '/' + yearString;
 	}
 }
 

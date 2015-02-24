@@ -1,22 +1,67 @@
 /* your style begins here */
 body{
-	padding: 20px;
+	font-family: Georgia;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 16px;
+}
+
+h2{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	border-bottom: 1px solid black;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+}
+
+ul{
+	padding: 0 0 0 10px;
+	list-style: none;
+	text-indent: -10px;
+}
+
+input,
+button{
+	border: 1px solid black;
+	background-color: white;
+	outline: none;	
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 13px;
+	padding: 4px 6px;
+}
+
+input{
+	background-color: white;
+}
+
+button{
+	background-color: black;
+	color: white;
 }
 
 #search-div{
-	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	width: 136px;
+	height: 100%;
 	text-align: left;
 }
 
-#search-box{
-	size: 1;
+#container{
+	position: absolute;
+	left: 136px;
+	top: 0;
 }
-/*.letter{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}*/
+
 .results{
 	display: inline-block;
-	width: 15%;
+	width: 136px;
+	margin-right: 10px;
+	/*float: left;*/
+	vertical-align: top;
 }
