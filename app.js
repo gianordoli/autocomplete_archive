@@ -5,7 +5,7 @@ var request = require('request'),
 	  iconv = require('iconv-lite'),
 MongoClient = require('mongodb').MongoClient,
      format = require('util').format,
-	CronJob = require('cron').CronJob
+   schedule = require('node-schedule')
 		  _ = require('underscore');
 
 console.log('--------------------------------------------');
@@ -35,11 +35,14 @@ var domainResults = [];
 var letterIndex, serviceIndex, countryIndex, errorCount;
 countryIndex = 0;
 
-new CronJob('0 0 2 * * *', function(){
-	restart(true);
-	// var now = new Date();
-	// console.log(now.getHours() + ':' + now.getMinutes());
-}, null, true, 'UTC');
+// This is defaulting to UTC time on the server
+var rule = new schedule.RecurrenceRule();
+rule.hour = 2;
+rule.minute = 0;
+
+var j = schedule.scheduleJob(rule, function(){
+    restart(true);
+});
 
 
 /*-------------------- MAIN FUNCTIONS --------------------*/
