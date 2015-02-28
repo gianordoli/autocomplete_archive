@@ -8,7 +8,16 @@ The spinSleepTime makes sure that the app can keep up for 24 hours even without 
 
 ## Mongo DB
 
-### Export
+### Backup
+
+#### Export as a binary backup
+```
+mongodump -d autocomplete -c records -o Desktop
+```
+
+### Export/Import small sets
+
+#### Export JSON file
 
 DON'T CONNECT TO A DATABASE!  
 After running mongo, open a new terminal window and then:
@@ -16,6 +25,21 @@ After running mongo, open a new terminal window and then:
 ```
 mongoexport -d autocomplete -c records -o path/autocomplete.json --jsonArray
 ```
+
+#### Exporting with date query
+
+```
+$var day2 = new Date('2015-02-19T05:00:00.000Z')
+$print(day2.getTime())
+> 1424322000000
+mongoexport -d autocomplete -c records -q "{date:{\$lte:new Date(1424322000000)}}" -o desktop/autocomplete_day1.json --jsonArray
+```
+
+#### Import JSON file (limited to 16 MB)
+```
+mongoimport -d autocomplete -c records -file path/filename.json --jsonArray
+```
+
 
 ### AND queries
 
@@ -30,7 +54,6 @@ db.records.find({'date': {'$gt': dia1}, 'domain': 'google.dz'})
 ```
 var start = new Date('2015-02-22T11:23:00.000Z')
 var stop = new Date('2015-02-22T16:35:00.000Z')
-
 db.records.count({'date':{'$gte':start, '$lt':stop}, 'domain': 'google.dz'})
 ```
 
