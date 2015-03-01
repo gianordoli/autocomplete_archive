@@ -121,3 +121,11 @@ Having the JSON files as a bakcup has been useful. Since mongoDB doesn't have a 
 No problems with the scraping anymore! The script starts automatically everyday at 9 pm (2 am UTC time). Using [forever](https://www.npmjs.com/package/forever) and [cron](https://github.com/ncb000gt/node-cron).
 
 I will take a look into the results now, to see how things change from day to day. Maybe it's not wort scraping on a daily basis.
+
+
+#### March 1st
+
+I started developing the app to query the autocomplete archive database [here](https://github.com/gianordoli/autocomplete_archive_search). It has been helpful to check the validity of some scraping so far:
+
+* results doesn't seem to change that often in web and images as in youtube.
+* queries in international languages doesn't seem to be working for *news, books, products,* and *recipes*. I compared the results in my database to the ones I get while typing. It seems that the request is in English. There might be a different way to specify the hl parameter that I don't know about.
