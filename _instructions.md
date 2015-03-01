@@ -1,7 +1,7 @@
 ## Running the script
 
 ```
-forever start --spinSleepTime 86400 app.js
+forever start --minUpTime 240000 --spinSleepTime 86400000 app.js
 ```
 
 The spinSleepTime makes sure that the app can keep up for 24 hours even without running any script. [Cron](https://github.com/ncb000gt/node-cron) is set to start a new call at 2 AM (UTC time) every day.

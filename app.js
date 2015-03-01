@@ -37,11 +37,11 @@ countryIndex = 0;
 
 var isRunning = false;
 
-new CronJob('* 5 16 * * *', function(){
+new CronJob('* 25 16 * * *', function(){
 	// console.log(new Date());
 	if(!isRunning){
 		restart(true);
-		isRunning = true		
+		isRunning = true;	
 	}
 }, null, true, 'UTC');
 
