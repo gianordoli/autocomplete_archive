@@ -214,8 +214,15 @@ function createRecord(service, country, suggestions, callback){
 	// console.log(suggestions);
 	var obj;
 	if(suggestions.length > 0){	
+
+		var now = new Date();
+		now.setHours(0);
+		now.setMinutes(0);
+		now.setSeconds(0);
+		// console.log(now);
+
 		obj = {
-			date: new Date(),
+			date: now,
 			service: service.site,
 			domain: country.domain,
 			language: country.language_a_code,
