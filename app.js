@@ -39,7 +39,7 @@ var isRunning = false;
 
 console.log(new Date());
 
-new CronJob('* 50 16 * * *', function(){
+new CronJob('* 00 00 * * *', function(){
 	// console.log(new Date());
 	if(!isRunning){
 		restart(true);
@@ -218,6 +218,10 @@ function createRecord(service, country, suggestions, callback){
 	if(suggestions.length > 0){	
 
 		var now = new Date();
+		/*---------------------------*/
+		// REMEMBER TO REMOVE THIS!
+		now.setDate(now.getDate() - 1);
+		/*---------------------------*/
 		now.setHours(0);
 		now.setMinutes(0);
 		now.setSeconds(0);
