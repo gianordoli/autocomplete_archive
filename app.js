@@ -37,13 +37,15 @@ countryIndex = 0;
 
 var isRunning = false;
 
-new CronJob('* 25 16 * * *', function(){
+console.log(new Date());
+
+new CronJob('* 50 16 * * *', function(){
 	// console.log(new Date());
 	if(!isRunning){
 		restart(true);
 		isRunning = true;	
 	}
-}, null, true, 'UTC');
+}, null, true, 'UTC'); 
 
 
 /*-------------------- MAIN FUNCTIONS --------------------*/
@@ -219,6 +221,7 @@ function createRecord(service, country, suggestions, callback){
 		now.setHours(0);
 		now.setMinutes(0);
 		now.setSeconds(0);
+		now.setMilliseconds(0);
 		// console.log(now);
 
 		obj = {
