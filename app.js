@@ -39,7 +39,7 @@ var isRunning = false;
 
 console.log(new Date());
 
-new CronJob('* 00 00 * * *', function(){
+new CronJob('* 00 04 * * *', function(){
 	// console.log(new Date());
 	if(!isRunning){
 		restart(true);
