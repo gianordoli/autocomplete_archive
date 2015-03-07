@@ -128,4 +128,4 @@ I will take a look into the results now, to see how things change from day to da
 I started developing the app to query the autocomplete archive database [here](https://github.com/gianordoli/autocomplete_archive_search). It has been helpful to check the validity of some scraping so far:
 
 * results doesn't seem to change that often in web and images as in youtube.
-* queries in international languages doesn't seem to be working for *news, books, products,* and *recipes*. I compared the results in my database to the ones I get while typing. It seems that the request is in English. There might be a different way to specify the hl parameter that I don't know about.
+* queries in international languages doesn't seem to be working for *news, books, products,* and *recipes*. I compared the results in my database to the ones I get while typing. It seems that the request is in English. There might be a different way to specify the hl parameter that I don't know about. So I might not use these services in the final project.
