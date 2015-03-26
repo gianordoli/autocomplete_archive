@@ -129,3 +129,17 @@ I started developing the app to query the autocomplete archive database [here](h
 
 * results doesn't seem to change that often in web and images as in youtube.
 * queries in international languages doesn't seem to be working for *news, books, products,* and *recipes*. I compared the results in my database to the ones I get while typing. It seems that the request is in English. There might be a different way to specify the hl parameter that I don't know about. So I might not use these services in the final project.
+
+
+#### March 25th
+
+Double-checked all countries and found out that the calls are actually getting results for *language*, not country. So the hl parameter works, but the domain — google.dz, google.fr — doesn't matter. Also, the list of languages that work depend on the service (images, youtube, etc). Since I don't have time to fix the whole data, I'll use some countries as aliases for languages.
+
+
+#### March 26th
+
+Spent some time trying to scrape Google Trends. More specifically, I was trying to get pages like this: [Web Search results for France, from Jan to Feb 2004](http://www.google.com/trends/explore#geo=FR&date=1%2F2004%202m&cmpt=q&tz=). The page is generated dinamically, so a simple request doesn't work. I tried phantomJS as well, but no success.
+
+Google gives you the data in a pretty decent format if you choose "Download as CSV" at the top-right corner. The link is making [this call](http://www.google.com/trends/trendsReport?hl=en-US&geo=FR&date=1%2F2004%202m&cmpt=q&tz&tz&content=1&export=1). But trying to make the call from a server — either with request or phantom, doesn't work.
+
+So, no luck with this. Back to the Autocomplete data.

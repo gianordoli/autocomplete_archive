@@ -14,6 +14,11 @@ The spinSleepTime makes sure that the app can keep up for 24 hours even without 
 ```
 $ mongodump -d autocomplete -c records -o Desktop
 ```
+#### Import binary backup
+```
+mongorestore -d 5w_1h -c records --drop /Users/gabrielgianordoli/Desktop/_BKP/server/5w_1h/records.bson
+```
+*--drop* will erase all collections previously stored in the database before importing.
 
 ### Export/Import small sets
 
