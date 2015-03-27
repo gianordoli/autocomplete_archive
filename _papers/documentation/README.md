@@ -158,9 +158,9 @@ Spent some time trying to scrape Google Trends. More specifically, I was trying 
 
 ![Trends CSV Report](img/trends_csv.png)
 
-But it doesn't. The script is blocked and doesn't retrieve any data. I tried a real scraping with phantomJS as well, but no success.
+But it doesn't. The script is blocked and doesn't retrieve any data. I tried a real scraping with phantomJS as well, but no success. The page always redirct you to a regular Trends one.
 
 So, no luck with this. Back to the Autocomplete data.
 
-![Trends Scraper: trying to access the report using code redirects you to a regular google trends page.](img/trends_scraping.png)
+![Trends Scraper](img/trends_scraping.png)
 
