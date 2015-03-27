@@ -130,16 +130,27 @@ I started developing the app to query the autocomplete archive database [here](h
 * results doesn't seem to change that often in web and images as in youtube.
 * queries in international languages doesn't seem to be working for *news, books, products,* and *recipes*. I compared the results in my database to the ones I get while typing. It seems that the request is in English. There might be a different way to specify the hl parameter that I don't know about. So I might not use these services in the final project.
 
+![Archive Search](img/api_01.png)
+
 
 #### March 25th
 
 Double-checked all countries and found out that the calls are actually getting results for *language*, not country. So the hl parameter works, but the domain — google.dz, google.fr — doesn't matter. Also, the list of languages that work depend on the service (images, youtube, etc). Since I don't have time to fix the whole data, I'll use some countries as aliases for languages.
 
+This is how the search interface looks like so far. It works pretty well as a tool for internal use, but I don't think it has any use for a general audience.
+
+![Archive Search](img/api_02.png)
+
 
 #### March 26th
 
-Spent some time trying to scrape Google Trends. More specifically, I was trying to get pages like this: [Web Search results for France, from Jan to Feb 2004](http://www.google.com/trends/explore#geo=FR&date=1%2F2004%202m&cmpt=q&tz=). The page is generated dinamically, so a simple request doesn't work. I tried phantomJS as well, but no success.
+Spent some time trying to scrape Google Trends. More specifically, I was trying to get pages like this: [Web Search results for France, from Jan to Feb 2004](http://www.google.com/trends/explore#geo=FR&date=1%2F2004%202m&cmpt=q&tz=). Google gives you the data in a pretty decent format if you choose "Download as CSV" at the top-right corner. The report is generated dinamically, so a request to address below (under *Request URL*) *could* work:
 
-Google gives you the data in a pretty decent format if you choose "Download as CSV" at the top-right corner. The link is making [this call](http://www.google.com/trends/trendsReport?hl=en-US&geo=FR&date=1%2F2004%202m&cmpt=q&tz&tz&content=1&export=1). But trying to make the call from a server — either with request or phantom, doesn't work.
+![Trends CSV Report](img/trends_csv.png)
+
+But it doesn't. The script is blocked and doesn't retrieve any data. I tried a real scraping with phantomJS as well, but no success.
 
 So, no luck with this. Back to the Autocomplete data.
+
+![Trends Scraper: trying to access the report using code redirects you to a regular google trends page.](img/trends_scraping.png)
+
