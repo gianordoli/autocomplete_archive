@@ -13,7 +13,7 @@ This is an ongoing documentation of my [Google Autocomplete Archive project](htt
 	
 ## Documentation
 
-### Getting Data from Different Countries
+### Getting Data from Different ~~Countries~~ Languages (see March 25th)
 
 I've been experimenting with a sort of [undocumented Google autocomplete "API"](http://shreyaschand.com/blog/2013/01/03/google-autocomplete-api/) since [last semester](https://gabrielmfadt.wordpress.com/category/thesis-1/). To create the Autocomplete scraper, I first had to automate the calls and change all the front-end (javaScript) to back end (nodeJS).
 
@@ -132,6 +132,16 @@ I started developing the app to query the autocomplete archive database [here](h
 
 ![Archive Search](img/api_01.png)
 
+
+#### March 17th
+
+Developed an interface for the 5W (what/when/where/who/why) data. The results change a lot more often than the A-Z ones. It's possible to see daily trends — "Where is Putin," "What color is the dress," "When is Spring Break," etc. So it confirms that search patterns are incorporated pretty fast into the autocomplete predictions.
+
+![what/when/where/who/why](img/5w_01.png)
+![what/when/where/who/why](img/5w_02.png)
+![what/when/where/who/why](img/5w_03.png)
+![what/when/where/who/why](img/5w_04.png)
+![what/when/where/who/why](img/5w_05.png)
 
 #### March 25th
 
