@@ -49,7 +49,7 @@ After solving all the issues related to language, I set up a way to store the da
 
 #### mongoDB
 
-the structure of each mongoDB document is as follows: 
+The structure of each mongoDB document is as follows: 
 
 ```
   {
@@ -191,3 +191,21 @@ I tried to search for an Images craper in node, but they all seem t use the API 
 I'm having a lot of problems with character encoding so far. Search terms in Croatian are all wrong. I tried to use [Chardet](https://pypi.python.org/pypi/chardet), a Python module that detects encoding. But it seemed to mess up things even more, so I hard-coded a detection — if "Croatian", change encoding.
 
 It doesn't always work, so I'm skipping the search in those cases. I might need some more data processing after all that.
+
+#### March 30th
+
+Added a [repo with helper scripts to preprocess the data](https://github.com/gianordoli/autocomplete_helpers). For example, changing the structure to:
+
+To:
+
+``` 
+  {
+	"date": "2015-02-19T02:50:26.452Z",   
+    "service": "web", 
+    "language": "ca", 
+    "language_a_name":"Catalan", 
+    "letter": "a", 
+    "query": "amazon", 
+    "ranking": 0 
+  },
+```
