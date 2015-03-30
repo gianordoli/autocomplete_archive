@@ -164,3 +164,30 @@ So, no luck with this. Back to the Autocomplete data.
 
 ![Trends Scraper](img/trends_scraping.png)
 
+
+#### March 28th
+
+I spent the past 2 days trying to display images from the DB. First I tried to do some scraping on the Google Images search page, but that returns only the low-res images. So I tried the new *Custom Search API*. Turns out that the free version is extremely limited — 100 calls PER DAY:
+![Google new Custom Search API](img/new_custom_search_api.png)
+
+A workaround is to use the old Images API — that has been deprecated for 3 years now:
+![Images Search API](img/images_deprecated_api.png)
+
+It has a frequency limit — 60 calls per minute? —, but it doesn't seem to have a daily one.
+
+Because of all that, it's not possible to load image results "on the fly" as the user queries my database. So I'm writing a script to get all image urls first. To sum up, the final db will require a lot of preprocessing.
+
+
+#### March 29th
+
+So, the old Images API has a limit as well:
+
+![Deprecated API response](img/images_deprecated_api_response.png)
+
+I tried to search for an Images craper in node, but they all seem t use the API instead. So I found [this great scraper written in Python](https://github.com/NikolaiT/GoogleScraper). It supports several search engines — google, yandex, bing, yahoo, baidu, duckduckgo, ask —, so I can have a fallback in cases where Google doesn't return anything.
+
+<iframe src="https://player.vimeo.com/video/123568953" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+I'm having a lot of problems with character encoding so far. Search terms in Croatian are all wrong. I tried to use [Chardet](https://pypi.python.org/pypi/chardet), a Python module that detects encoding. But it seemed to mess up things even more, so I hard-coded a detection — if "Croatian", change encoding.
+
+It doesn't always work, so I'm skipping the search in those cases. I might need some more data processing after all that.
