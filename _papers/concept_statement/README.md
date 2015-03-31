@@ -6,7 +6,7 @@ Thesis Studio 2
 
 Professors Sven Travis and Loretta Wolozin
 
-February 16th, 2014
+February 16th, 2015
 
 
 ## Idea and Form
