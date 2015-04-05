@@ -186,7 +186,7 @@ So, the old Images API has a limit as well:
 
 I tried to search for an Images craper in node, but they all seem t use the API instead. So I found [this great scraper written in Python](https://github.com/NikolaiT/GoogleScraper). It supports several search engines — google, yandex, bing, yahoo, baidu, duckduckgo, ask —, so I can have a fallback in cases where Google doesn't return anything.
 
-<iframe src="https://player.vimeo.com/video/123568953" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+![Google Images Scraper](img/google_images_scraper.png)
 
 I'm having a lot of problems with character encoding so far. Search terms in Croatian are all wrong. I tried to use [Chardet](https://pypi.python.org/pypi/chardet), a Python module that detects encoding. But it seemed to mess up things even more, so I hard-coded a detection — if "Croatian", change encoding.
 
