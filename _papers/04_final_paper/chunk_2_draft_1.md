@@ -53,7 +53,7 @@ The content-area subject of this project is *cultural big data*. It will approac
 
 // "Big Data" used to be here... But I moved it to "Why it Matters."
 
-### Data Visualization
+#### Data Visualization
 
 This project defines *data visualization* as the process of giving visual form to data. The concept should not be mistaken by the final visual piece, which is only the last part of a sequence. As data artist Jer Thorp points out "people talk about visualization as a thing(...) A visualization is a noun but it’s a verbal noun, it has a verb built into it. Visualization is a process." [@_ng_]
 
@@ -62,7 +62,7 @@ This idea is also present in the framework described by data visualization exper
 A broad range of practices can fall into the *data visualization* category though. This project borrows methods from at least 3 of them: database aesthetics, slow data, and cultural analytics.
 
 
-#### Database Aesthetics
+##### Database Aesthetics
 
 *Database aesthetics* here is considered a subset of information arts, on the intersection with data visualization. It defines works of art that apply the logics and aesthetics of databases, often providing "a way of revealing (visual) patterns of knowledge, beliefs, and social behavior." [@paul_database_2007]
 
@@ -71,18 +71,36 @@ A broad range of practices can fall into the *data visualization* category thoug
 This project will apply principles from this practice in its printed form. The idea is to make visible the critical aspects of the research.
 
 
-#### Slow Data
+##### Slow Data
 
 The term *slow data* was first used by business intelligence analyst Stephen Few, as a reference to *slow food*. While the culinary movement was a response to the spread of fast-food, Few’s target is big data: "I believe that it is time to extend the Slow Movement to the realm of information technology. In this time of so-called big data, too much is being missed in our rush to expand." [@_visual_]
 
 Few argues for a better decision-making process based on big data. His principles apply directly to business intelligence. In this project, slow data is a deliberate strategy to engage users in a critical exploration of data. More than highlight findings, it will serve as a channel for reflection.
 
 
-#### Cultural Analytics
+##### Cultural Analytics
 
 The expression *cultural analytics* was introduced by researcher Lev Manovich to define both the subject and techniques applied by him and his collaborators in the *Software Studies Initiative*. It argues for a "systematic use of large-scale computational analysis and interactive visualisation of cultural patterns," [@manovich_cultural_2009] utilising of large digital datasets.
 
 This project shares some of the principles of *cultural analytics*, approaching big data as an important cultural record. However, the *Software Studies Initiative* uses mostly media publicly available — digitised works of art or pictures from social media. This project proposes the addition of aggregated search data as an asset in cultural research based on big data.
+
+// Loretta, I ended up not including any examples here. I thought it would be better to focus on the domains instead.
+// Manovich’s works are the closest to what I’m making, I think… Maybe it’d make sense to add one of his projects here.
+// The next section is full of examples, though. They show analysis of google searches — mostly in journalism, but not necessarily in visualization.
+
+### Google Searches as Analytical Tool
+
+Since Google made part of its search data available in 2008, it has been used with several different purposes, from analysing politics to predicting the spread of flu. [@GOOGLE_FLU]
+
+Seth Stephens-Davidowitz, former data scientist at Google, combines data analysis with Google Searches to write his articles for The New York Times since 2012. He has written about racism, politics, health, and sex in America. [@HOME_DO_SETH] His methodology inspired a group of researchers to map racism in the US using Google search data. [@RACISM_STUDY] Also a recent article from the Times uses this approach. It shows how fashion trends spread, from State to State. [@HOW_FASHION]
+
+![Searches for "Jogger Pants" on Google, The New York Times](images/ny_times_fashion.png)
+
+Professionals who work with search engine optimization (SEO) also rely on this source to make sure their websites show up first on a search page. To do so, they usually include the most searched keywords on their websites’ description. [@SEO]
+
+In 2013, a campaign for UN Women used Google Autocomplete to point out discrimination against women. The predictions, genuinely based on Google data, ended up revealing sexism through searches like “women should stay at home.” [@UN]
+
+![UN Women ad campaign uses Google Autocomplete to point out sexism](images/un_campaign)
 
 \newpage
 
@@ -91,6 +109,8 @@ This project shares some of the principles of *cultural analytics*, approaching 
 ### Status
 
 ### Learning
+
+// Still working on these two.
 
 ### Envisioning future end states
 
