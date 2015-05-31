@@ -39,13 +39,13 @@ var isRunning = false;
 
 console.log(new Date());
 
-// new CronJob('* 00 16 * * *', function(){
+new CronJob('* 00 16 * * *', function(){
 	// console.log(new Date());
 	if(!isRunning){
 		restart(true);
 		isRunning = true;	
 	}
-// }, null, true, 'UTC'); 
+}, null, true, 'UTC'); 
 
 
 /*-------------------- MAIN FUNCTIONS --------------------*/
