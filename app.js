@@ -13,13 +13,13 @@ console.log('App started running');
 console.log('--------------------------------------------');
 
 var countries = jf.readFileSync('data/countries_domains_languages.json');
-// console.log(countries);
-
-// For now, only latin-script languages...
-countries = _.filter(countries, function(obj){
-	return obj.language_a_script == 'latin';
+countries = _.filter(countries, function(item, index, list){
+	// Now also filtering by 'functional,' that is,
+	// languages that don't have encoding problems
+	return item['functional'] == 1;
 });
 // console.log(countries);
+console.log('Found ' + countries.length + ' functional languages.');
 
 var services = jf.readFileSync('data/services.json');
 // console.log(services);
@@ -39,13 +39,13 @@ var isRunning = false;
 
 console.log(new Date());
 
-new CronJob('* 00 16 * * *', function(){
+// new CronJob('* 00 16 * * *', function(){
 	// console.log(new Date());
 	if(!isRunning){
 		restart(true);
 		isRunning = true;	
 	}
-}, null, true, 'UTC'); 
+// }, null, true, 'UTC'); 
 
 
 /*-------------------- MAIN FUNCTIONS --------------------*/
@@ -141,7 +141,18 @@ function nextIteration(){
 		// New service...
 		letterIndex = 0;
 		serviceIndex ++;
-		if (serviceIndex < services.length) {
+		
+		// console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+		// console.log(countries[countryIndex]);
+		// console.log(services[serviceIndex]);
+		// console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+		// console.log(countries[countryIndex][services[serviceIndex]['site']]);
+		// console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+
+		// Check if the current service is available for the language!
+		if (serviceIndex < services.length &&
+			countries[countryIndex][services[serviceIndex]['site']] == 1) {
+
 			var msg = services[serviceIndex].site + ', ';
 			saveLog(msg);
 			// setTimeout(function(){	// Delay to prevent Google's shut down
